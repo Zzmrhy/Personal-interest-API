@@ -3,10 +3,10 @@ const BASE_URL = "https://api.nasa.gov";
 
 export const getPictureOfTheDay = async () => {
   const response = await fetch(
-    `${BASE_URL}/planetary/apod?api_key=${API_KEY}&date=2018-03-22`
+    `${BASE_URL}/planetary/apod?api_key=${API_KEY}` //&date=2020-03-24
   );
   const data = await response.json();
-  //console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -15,7 +15,7 @@ export const DONKICME = async () => {
     `${BASE_URL}/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -104,12 +104,13 @@ export const Rover = async () => {
     `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const ExoplanetKepler = async () => {
   const response = await fetch(
-    `httpps://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=exoplanets&format=ipac&where=pl_kepflag=1`
+    `https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=exoplanets&format=ipac&where=pl_kepflag=1`
   );
   const data = await response.json();
   return data.results;
