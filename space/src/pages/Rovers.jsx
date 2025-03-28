@@ -18,7 +18,11 @@ function Rovers() {
 
   return (
     <div>
-      <img src={`${rover}`} alt="Photo" />
+      {rover ? (
+        <img src={rover} alt="Some Photo" />
+      ) : (
+        <p>No Picture Available</p>
+      )}
     </div>
   );
 }

@@ -131,9 +131,3 @@ export const ExoplanetCandidates = async () => {
   const data = await response.json();
   return data.results;
 };
-
-export const ImageAndVideo = async () => {
-  const response = await fetch(`images-${BASE_URL}`);
-  const data = await response.json();
-  return data.json();
-};

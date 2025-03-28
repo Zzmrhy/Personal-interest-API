@@ -5,7 +5,6 @@ import DayImage from "./pages/DayImage";
 import NavBar from "./components/NavBar";
 import Donki from "./pages/Donki";
 import Rovers from "./pages/Rovers";
-import Pictures from "./pages/ImageAndVideo";
 function App() {
   return (
     <main>
@@ -14,7 +13,6 @@ function App() {
         <Route path="/" element={<DayImage />} />
         <Route path="/donki" element={<Donki />} />
         <Route path="/rover" element={<Rovers />} />
-        <Route path="/images" element={<Pictures />} />
       </Routes>
     </main>
   );

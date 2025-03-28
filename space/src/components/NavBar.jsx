@@ -18,11 +18,6 @@ function NavBar() {
           Rover
         </Link>
       </div>
-      <div className="navbar-brand, link">
-        <Link to="/images" className="nav-link">
-          Images And Videos
-        </Link>
-      </div>
     </nav>
   );
 }
