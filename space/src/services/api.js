@@ -3,7 +3,7 @@ const BASE_URL = "https://api.nasa.gov";
 
 export const getPictureOfTheDay = async () => {
   const response = await fetch(
-    `${BASE_URL}/planetary/apod?api_key=${API_KEY}` //&date=2020-03-24
+    `${BASE_URL}/planetary/apod?api_key=${API_KEY}&date=2025-03-02`
   );
   const data = await response.json();
   // console.log(data);
@@ -11,11 +11,9 @@ export const getPictureOfTheDay = async () => {
 };
 
 export const DONKICME = async () => {
-  const response = await fetch(
-    `${BASE_URL}/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
-  );
+  const response = await fetch(`${BASE_URL}/DONKI/CME?api_key=${API_KEY}`);
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 
