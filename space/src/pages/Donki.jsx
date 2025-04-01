@@ -13,22 +13,23 @@ import {
   DONKINotifications,
 } from "../services/api";
 function Donki() {
-  const [link, setLink] = useState("");
+  const [link, setLink] = useState(null);
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await DONKICME();
-      if (response.note) {
-        setLink(response.note);
+      if (response.link) {
+        setLink(response.link);
       } else {
-        setLink("");
+        setLink(null);
       }
     }
     fetchData();
   });
   return (
     <div>
-      <p>{link}</p>
+      <h1>Website For CME (Coronal Mass Ejection)</h1>
+      <a href={link}>Thing</a>
     </div>
   );
 }

@@ -3,7 +3,7 @@ const BASE_URL = "https://api.nasa.gov";
 
 export const getPictureOfTheDay = async () => {
   const response = await fetch(
-    `${BASE_URL}/planetary/apod?api_key=${API_KEY}&date=2025-03-02`
+    `${BASE_URL}/planetary/apod?api_key=${API_KEY}` //&date=2025-04-01
   );
   const data = await response.json();
   // console.log(data);
