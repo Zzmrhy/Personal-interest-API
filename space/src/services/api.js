@@ -105,27 +105,3 @@ export const Rover = async () => {
   console.log(data);
   return data;
 };
-
-export const ExoplanetKepler = async () => {
-  const response = await fetch(
-    `https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=exoplanets&format=ipac&where=pl_kepflag=1`
-  );
-  const data = await response.json();
-  return data.results;
-};
-
-export const ExoplanetHost = async () => {
-  const response = await fetch(
-    `httpps://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=exoplanets&format=ipac&where=pl_tranflag=1`
-  );
-  const data = await response.json();
-  return data.results;
-};
-
-export const ExoplanetCandidates = async () => {
-  const response = await fetch(
-    `https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&where=koi_prad<2 and koi_teq>180 and koi_teq<303 and koi_disposition like 'CANDIDATE'`
-  );
-  const data = await response.json();
-  return data.results;
-};
