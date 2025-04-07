@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 
 function Rovers() {
   const [searchParams] = useSearchParams();
-  const index = searchParams.get("index") ? searchParams.get("index") : 0;
+  let index = searchParams.get("index") ? searchParams.get("index") : 0;
   const [rover, setPic] = useState(null);
   const [earth, setEarth] = useState("");
   const [stat, setStat] = useState("");
@@ -18,7 +18,10 @@ function Rovers() {
   useEffect(() => {
     async function fetchData() {
       const response = await Rover();
-
+      if (index < 0 || index > response.photos.length) {
+        console.log("Index is out of bounds");
+        index = 0;
+      }
       if (response.photos[index].earth_date) {
         setEarth(response.photos[index].earth_date);
       } else {
@@ -80,6 +83,7 @@ function Rovers() {
     <div>
       <div>{Search()}</div>
       <h1>Rover Picture Of Mars</h1>
+      <h1>Index Number: {index}</h1>
       <h2>Picture Taken: {earth}</h2>
       <h2>Rover Status: {stat}</h2>
       <h2>Rover Name: {name}</h2>

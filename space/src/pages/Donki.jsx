@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import {
   DONKICME,
-  DONKICMEA,
   DONKIGST,
   DONKIIPS,
   DONKIFLR,
@@ -12,10 +11,17 @@ import {
   DONKIWSA,
   DONKINotifications,
 } from "../services/api";
+import "../css/Donki.css";
 function Donki() {
-  const [link, setLink] = useState(null);
+  const [links, setLink] = useState(null);
   const [activityID, setActivity] = useState("");
   const [note, setNote] = useState("");
+  const [latitude, setLatitude] = useState("");
+  const [longitude, setLongitude] = useState("");
+  const [cmeaLink, setCMEA] = useState(null);
+  const [name1, setName1] = useState("");
+  const [name2, setName2] = useState("");
+  const [name3, setName3] = useState("");
   useEffect(() => {
     async function fetchData() {
       // You can await here
@@ -37,14 +43,65 @@ function Donki() {
       } else {
         setNote(null);
       }
+
+      if (response[112].cmeAnalyses[0].latitude) {
+        setLatitude(response[112].cmeAnalyses[0].latitude);
+      } else {
+        setLatitude("");
+      }
+
+      if (response[112].cmeAnalyses[0].longitude) {
+        setLongitude(response[112].cmeAnalyses[0].longitude);
+      } else {
+        setLongitude("");
+      }
+
+      if (response[112].cmeAnalyses[0].link) {
+        setCMEA(response[112].cmeAnalyses[0].link);
+      } else {
+        setCMEA(null);
+      }
+
+      if (response[112].instruments[0].displayName) {
+        setName1(response[112].instruments[0].displayName);
+      } else {
+        setName1("");
+      }
+
+      if (response[112].instruments[1].displayName) {
+        setName2(response[112].instruments[1].displayName);
+      } else {
+        setName2("");
+      }
+
+      if (response[112].instruments[2].displayName) {
+        setName3(response[112].instruments[2].displayName);
+      } else {
+        setName3("");
+      }
     }
     fetchData();
   });
   return (
     <div>
-      <h1>Activity ID: {activityID}</h1>
-      <h2>Note {note}</h2>
-      <a href={link}>Click Here For CME information</a>
+      <div>
+        <button className="btn">Choose DONKI</button>
+        <h1>Today's CME Information</h1>
+        <h1>Activity ID: {activityID}</h1>
+        <h1>Latitude: {latitude}</h1>
+        <h1>Longitude: {longitude}</h1>
+        <h2>Name Of Instruments Used: </h2>
+        <h2>{name1}</h2>
+        <h2>{name2}</h2>
+        <h2>{name3}</h2>
+        <h2>Note: {note}</h2>
+        <h2>
+          CME Link: <a href={links}>Click Here For CME information</a>
+        </h2>
+        <h2>
+          CME Analyses Link: <a href={cmeaLink}>Link For CMEA</a>
+        </h2>
+      </div>
     </div>
   );
 }
