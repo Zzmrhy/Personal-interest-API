@@ -82,10 +82,72 @@ function Donki() {
     }
     fetchData();
   });
+
+  // useEffect(() => {
+  //   async function fetchGST() {
+  //     const response = await DONKIGST();
+  //     if (response[112].link) {
+  //       setLink(response[112].link);
+  //     } else {
+  //       setLink(null);
+  //     }
+
+  //     if (response[112].activityID) {
+  //       setActivity(response[112].activityID);
+  //     } else {
+  //       setActivity(null);
+  //     }
+
+  //     if (response[112].note) {
+  //       setNote(response[112].note);
+  //     } else {
+  //       setNote(null);
+  //     }
+
+  //     if (response[112].cmeAnalyses[0].latitude) {
+  //       setLatitude(response[112].cmeAnalyses[0].latitude);
+  //     } else {
+  //       setLatitude("");
+  //     }
+
+  //     if (response[112].cmeAnalyses[0].longitude) {
+  //       setLongitude(response[112].cmeAnalyses[0].longitude);
+  //     } else {
+  //       setLongitude("");
+  //     }
+
+  //     if (response[112].cmeAnalyses[0].link) {
+  //       setCMEA(response[112].cmeAnalyses[0].link);
+  //     } else {
+  //       setCMEA(null);
+  //     }
+
+  //     if (response[112].instruments[0].displayName) {
+  //       setName1(response[112].instruments[0].displayName);
+  //     } else {
+  //       setName1("");
+  //     }
+
+  //     if (response[112].instruments[1].displayName) {
+  //       setName2(response[112].instruments[1].displayName);
+  //     } else {
+  //       setName2("");
+  //     }
+
+  //     if (response[112].instruments[2].displayName) {
+  //       setName3(response[112].instruments[2].displayName);
+  //     } else {
+  //       setName3("");
+  //     }
+  //   }
+
+  //   fetchGST();
+  // });
   return (
     <div>
       <div>
         <button className="btn">Choose DONKI</button>
+        {/* <a href={DONKIGST}>FLR</a> */}
         <h1>Today's CME Information</h1>
         <h1>Activity ID: {activityID}</h1>
         <h1>Latitude: {latitude}</h1>

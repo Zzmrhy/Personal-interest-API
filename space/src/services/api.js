@@ -32,7 +32,8 @@ export const DONKIIPS = async () => {
     `${BASE_URL}/DONKI/IPS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKIFLR = async () => {
