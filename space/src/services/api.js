@@ -24,7 +24,8 @@ export const DONKIGST = async () => {
     `${BASE_URL}/DONKI/GST?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKIIPS = async () => {
@@ -41,7 +42,8 @@ export const DONKIFLR = async () => {
     `${BASE_URL}/DONKI/FLR?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKISEP = async () => {

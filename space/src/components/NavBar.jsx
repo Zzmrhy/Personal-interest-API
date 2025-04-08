@@ -10,7 +10,7 @@ function NavBar() {
       </div>
       <div className="navbar-brand, link">
         <Link to="/donki" className="nav-link">
-          DONKI
+          DONKICME
         </Link>
       </div>
       <div className="navbar-brand, link">

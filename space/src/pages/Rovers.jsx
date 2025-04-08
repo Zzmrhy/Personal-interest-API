@@ -19,7 +19,7 @@ function Rovers() {
     async function fetchData() {
       const response = await Rover();
       if (index < 0 || index > response.photos.length) {
-        console.log("Index is out of bounds");
+        alert("Index is out of bounds");
         index = 0;
       }
       if (response.photos[index].earth_date) {
