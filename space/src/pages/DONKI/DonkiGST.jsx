@@ -1,16 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  DONKIGST,
-  DONKIIPS,
-  DONKIFLR,
-  DONKISEP,
-  DONKIMPC,
-  DONKIRBE,
-  DONKIHSS,
-  DONKIWSA,
-  DONKINotifications,
-} from "../services/api";
-import "../css/Donki.css";
+import { DONKIGST } from "../../services/api";
 import { Link } from "react-router-dom";
 function DonkiGST() {
   const [links, setLink] = useState(null);
@@ -26,50 +15,50 @@ function DonkiGST() {
       // You can await here
       const response = await DONKIGST();
 
-      if (response[4].link) {
-        setLink(response[4].link);
+      if (response[response.length - 1].link) {
+        setLink(response[response.length - 1].link);
       } else {
         setLink(null);
       }
 
-      if (response[4].gstID) {
-        setID(response[4].gstID);
+      if (response[response.length - 1].gstID) {
+        setID(response[response.length - 1].gstID);
       } else {
         setID("");
       }
 
-      if (response[4].allKpIndex[0].kpIndex) {
-        setKpIndex(response[4].allKpIndex[0].kpIndex);
+      if (response[response.length - 1].allKpIndex[0].kpIndex) {
+        setKpIndex(response[response.length - 1].allKpIndex[0].kpIndex);
       } else {
         setKpIndex(0);
       }
 
-      if (response[4].allKpIndex[0].observedTime) {
-        setObserved(response[4].allKpIndex[0].observedTime);
+      if (response[response.length - 1].allKpIndex[0].observedTime) {
+        setObserved(response[response.length - 1].allKpIndex[0].observedTime);
       } else {
         setObserved("");
       }
 
-      if (response[4].allKpIndex[0].source) {
-        setSource(response[4].allKpIndex[0].source);
+      if (response[response.length - 1].allKpIndex[0].source) {
+        setSource(response[response.length - 1].allKpIndex[0].source);
       } else {
         setSource("");
       }
 
-      if (response[4].linkedEvents[0].activityID) {
-        setLinked(response[4].linkedEvents[0].activityID);
+      if (response[response.length - 1].linkedEvents[0].activityID) {
+        setLinked(response[response.length - 1].linkedEvents[0].activityID);
       } else {
         setLinked("");
       }
 
-      if (response[4].startTime) {
-        setStart(response[4].startTime);
+      if (response[response.length - 1].startTime) {
+        setStart(response[response.length - 1].startTime);
       } else {
         setStart("");
       }
 
-      if (response[4].submissionTime) {
-        setSubmit(response[4].submissionTime);
+      if (response[response.length - 1].submissionTime) {
+        setSubmit(response[response.length - 1].submissionTime);
       } else {
         setSubmit("");
       }

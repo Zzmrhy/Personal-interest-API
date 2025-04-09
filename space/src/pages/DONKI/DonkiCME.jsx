@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import { DONKICME } from "../services/api";
+import { DONKICME } from "../../services/api";
 import { Link } from "react-router-dom";
-import "../css/Donki.css";
-import DonkiGST from "./DonkiGST";
 function Donki() {
   const [links, setLink] = useState(null);
   const [activityID, setActivity] = useState("");
@@ -17,56 +15,56 @@ function Donki() {
     async function fetchData() {
       // You can await here
       const response = await DONKICME();
-      if (response[112].link) {
-        setLink(response[112].link);
+      if (response[response.length - 1].link) {
+        setLink(response[response.length - 1].link);
       } else {
         setLink(null);
       }
 
-      if (response[112].activityID) {
-        setActivity(response[112].activityID);
+      if (response[response.length - 1].activityID) {
+        setActivity(response[response.length - 1].activityID);
       } else {
         setActivity(null);
       }
 
-      if (response[112].note) {
-        setNote(response[112].note);
+      if (response[response.length - 1].note) {
+        setNote(response[response.length - 1].note);
       } else {
         setNote(null);
       }
 
-      if (response[112].cmeAnalyses[0].latitude) {
-        setLatitude(response[112].cmeAnalyses[0].latitude);
+      if (response[response.length - 1].cmeAnalyses[0].latitude) {
+        setLatitude(response[response.length - 1].cmeAnalyses[0].latitude);
       } else {
         setLatitude("");
       }
 
-      if (response[112].cmeAnalyses[0].longitude) {
-        setLongitude(response[112].cmeAnalyses[0].longitude);
+      if (response[response.length - 1].cmeAnalyses[0].longitude) {
+        setLongitude(response[response.length - 1].cmeAnalyses[0].longitude);
       } else {
         setLongitude("");
       }
 
-      if (response[112].cmeAnalyses[0].link) {
-        setCMEA(response[112].cmeAnalyses[0].link);
+      if (response[response.length - 1].cmeAnalyses[0].link) {
+        setCMEA(response[response.length - 1].cmeAnalyses[0].link);
       } else {
         setCMEA(null);
       }
 
-      if (response[112].instruments[0].displayName) {
-        setName1(response[112].instruments[0].displayName);
+      if (response[response.length - 1].instruments[0].displayName) {
+        setName1(response[response.length - 1].instruments[0].displayName);
       } else {
         setName1("");
       }
 
-      if (response[112].instruments[1].displayName) {
-        setName2(response[112].instruments[1].displayName);
+      if (response[response.length - 1].instruments[1].displayName) {
+        setName2(response[response.length - 1].instruments[1].displayName);
       } else {
         setName2("");
       }
 
-      if (response[112].instruments[2].displayName) {
-        setName3(response[112].instruments[2].displayName);
+      if (response[response.length - 1].instruments[2].displayName) {
+        setName3(response[response.length - 1].instruments[2].displayName);
       } else {
         setName3("");
       }
@@ -101,6 +99,10 @@ function Donki() {
 
           <div>
             <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+          </div>
+
+          <div>
+            <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
           </div>
         </div>
       </div>

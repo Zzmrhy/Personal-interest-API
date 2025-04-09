@@ -83,7 +83,7 @@ function Rovers() {
     <div>
       <div>{Search()}</div>
       <h1>Rover Picture Of Mars</h1>
-      <h1>Index Number: {index}</h1>
+      <h1>Index Number:{index}</h1>
       <h2>Picture Taken: {earth}</h2>
       <h2>Rover Status: {stat}</h2>
       <h2>Rover Name: {name}</h2>

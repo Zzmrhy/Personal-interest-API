@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { DONKIIPS } from "../services/api";
+import { DONKIIPS } from "../../services/api";
 import { Link } from "react-router-dom";
-import "../css/Donki.css";
-import DonkiGST from "./DonkiGST";
-import DonkiCME from "./DonkiCME";
+
 function DonkiIPS() {
   const [links, setLink] = useState(null);
   const [activity, setActivity] = useState("");
@@ -19,56 +17,62 @@ function DonkiIPS() {
       // You can await here
       const response = await DONKIIPS();
 
-      if (response[9].activityID) {
-        setActivity(response[9].activityID);
+      if (response[response.length - 1].activityID) {
+        setActivity(response[response.length - 1].activityID);
       } else {
         setActivity("");
       }
 
-      if (response[9].link) {
-        setLink(response[9].link);
+      if (response[response.length - 1].link) {
+        setLink(response[response.length - 1].link);
       } else {
         setLink(null);
       }
 
-      if (response[9].catalog) {
-        setCatalog(response[9].catalog);
+      if (response[response.length - 1].catalog) {
+        setCatalog(response[response.length - 1].catalog);
       } else {
         setCatalog("");
       }
 
-      if (response[9].eventTime) {
-        setEvent(response[9].eventTime);
+      if (response[response.length - 1].eventTime) {
+        setEvent(response[response.length - 1].eventTime);
       } else {
         setEvent("");
       }
 
-      if (response[9].instruments[0].displayName) {
-        setInstrument1(response[9].instruments[0].displayName);
+      if (response[response.length - 1].instruments[0].displayName) {
+        setInstrument1(
+          response[response.length - 1].instruments[0].displayName
+        );
       } else {
         setInstrument1("");
       }
 
-      if (response[9].instruments[1].displayName) {
-        setInstrument2(response[9].instruments[1].displayName);
+      if (response[response.length - 1].instruments[1].displayName) {
+        setInstrument2(
+          response[response.length - 1].instruments[1].displayName
+        );
       } else {
         setInstrument2("");
       }
 
-      if (response[9].instruments[2].displayName) {
-        setInstrument3(response[9].instruments[2].displayName);
+      if (response[response.length - 1].instruments[2].displayName) {
+        setInstrument3(
+          response[response.length - 1].instruments[2].displayName
+        );
       } else {
         setInstrument3("");
       }
 
-      if (response[9].location) {
-        setLocation(response[9].location);
+      if (response[response.length - 1].location) {
+        setLocation(response[response.length - 1].location);
       } else {
         setLocation("");
       }
 
-      if (response[9].submissionTime) {
-        setTime(response[9].submissionTime);
+      if (response[response.length - 1].submissionTime) {
+        setTime(response[response.length - 1].submissionTime);
       } else {
         setTime("");
       }
@@ -97,11 +101,19 @@ function DonkiIPS() {
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>
-            <Link to="/donki">Link For CME</Link>
+            <Link to="/donki">Link For DonkiCME Page</Link>
           </div>
 
           <div>
-            <Link to="/donkiGST">Link For GST</Link>
+            <Link to="/donkiGST">Link For DonkiGST Page</Link>
+          </div>
+
+          <div>
+            <Link to="/donkiFLR">Link For DonkiFLR Page</Link>
+          </div>
+
+          <div>
+            <Link to="/donkiSEP">Link For DonkiSEP Page</Link>
           </div>
         </div>
       </div>
