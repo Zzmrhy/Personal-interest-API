@@ -94,15 +94,51 @@ function Donki() {
         <div>
           <h1>Other DONKI Pages</h1>
           <div>
-            <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+            <h2>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+            <h2>
+              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
+            <h2>
+              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiMPC">Click Here To See The DonkiMPC Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
           </div>
         </div>
       </div>

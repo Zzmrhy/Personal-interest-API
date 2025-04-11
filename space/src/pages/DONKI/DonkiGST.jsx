@@ -88,6 +88,12 @@ function DonkiGST() {
           <div>
             <Link to="/donkiIPS">Click Here For DonkiIPS Page</Link>
           </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
         </div>
       </div>
     </div>

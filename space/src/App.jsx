@@ -8,7 +8,9 @@ import DonkiGST from "./pages/DONKI/DonkiGST";
 import DonkiIPS from "./pages/DONKI/DonkiIPS";
 import DonkiFLR from "./pages/DONKI/DonkiFLR";
 import DonkiSEP from "./pages/DONKI/DonkiSEP";
+import DonkiRBE from "./pages/DONKI/DonkiRBE";
 import Rovers from "./pages/Rovers";
+import DonkiWSA from "./pages/DONKI/DonkiWSA";
 function App() {
   return (
     <main>
@@ -20,6 +22,8 @@ function App() {
         <Route path="/donkiIPS" element={<DonkiIPS />} />
         <Route path="/donkiFLR" element={<DonkiFLR />} />
         <Route path="/donkiSEP" element={<DonkiSEP />} />
+        <Route path="/donkiRBE" element={<DonkiRBE />} />
+        <Route path="/donkiWSA" element={<DonkiWSA />} />
         <Route path="/rover" element={<Rovers />} />
       </Routes>
     </main>

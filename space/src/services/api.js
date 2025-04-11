@@ -61,7 +61,8 @@ export const DONKIMPC = async () => {
     `${BASE_URL}/DONKI/MPC?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKIRBE = async () => {
@@ -69,7 +70,8 @@ export const DONKIRBE = async () => {
     `${BASE_URL}/DONKI/RBE?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKIHSS = async () => {
@@ -77,7 +79,8 @@ export const DONKIHSS = async () => {
     `${BASE_URL}/DONKI/HSS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKIWSA = async () => {
@@ -85,7 +88,8 @@ export const DONKIWSA = async () => {
     `${BASE_URL}/DONKI/WSAEnlilSimulations?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const DONKINotifications = async () => {
@@ -93,7 +97,8 @@ export const DONKINotifications = async () => {
     `${BASE_URL}/DONKI/notifications?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  return data.results;
+  console.log(data);
+  return data;
 };
 
 export const Rover = async () => {
@@ -101,6 +106,6 @@ export const Rover = async () => {
     `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
