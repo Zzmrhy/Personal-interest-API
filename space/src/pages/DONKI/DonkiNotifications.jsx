@@ -1,0 +1,116 @@
+import { useEffect, useState } from "react";
+import { DONKINotifications } from "../../services/api";
+import { Link } from "react-router-dom";
+
+function DonkiNotification() {
+  const [links, setLink] = useState(null);
+  const [message, setMessage] = useState("");
+  const [messageID, setMessageID] = useState("");
+  const [issue, setIssue] = useState("");
+  const [type, setType] = useState("");
+
+  useEffect(() => {
+    async function fetchData() {
+      // You can await here
+      const response = await DONKINotifications();
+
+      if (response[response.length - 1].messageBody) {
+        setMessage(response[response.length - 1].messageBody);
+      } else {
+        setMessage("N/A");
+      }
+
+      if (response[response.length - 1].messageID) {
+        setMessageID(response[response.length - 1].messageID);
+      } else {
+        setMessageID("N/A");
+      }
+
+      if (response[response.length - 1].messageIssueTime) {
+        setIssue(response[response.length - 1].messageIssueTime);
+      } else {
+        setIssue("N/A");
+      }
+
+      if (response[response.length - 1].messageType) {
+        setType(response[response.length - 1].messageType);
+      } else {
+        setType("N/A");
+      }
+
+      if (response[response.length - 1].messageURL) {
+        setLink(response[response.length - 1].messageURL);
+      } else {
+        setLink(null);
+      }
+    }
+    fetchData();
+  });
+
+  return (
+    <div>
+      <div>
+        <h1>Most Recent Donki Notification</h1>
+        <h1>Message Type: {type}</h1>
+        <h1>Message Issue Time: {issue}</h1>
+        <h1>{message}</h1>
+        <h1>Message ID: {messageID}</h1>
+        <h1>
+          Click Here: <a href={links}>Click Here For Donki Notifications</a>
+        </h1>
+        <div>
+          <h1>Link For Other DONKI Pages</h1>
+          <div>
+            <h2>
+              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default DonkiNotification;

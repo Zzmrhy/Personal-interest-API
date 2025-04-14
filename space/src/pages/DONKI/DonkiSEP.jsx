@@ -5,107 +5,133 @@ import { Link } from "react-router-dom";
 function DonkiSEP() {
   const [links, setLink] = useState(null);
   const [event, setEvent] = useState("");
-  const [instrument, setInstrument] = useState("");
-  const [link1, setLink1] = useState("");
-  const [link2, setLink2] = useState("");
-  const [link3, setLink3] = useState("");
+  const [instrument, setInstrument] = useState(null);
+  const [link, setLinked] = useState(null);
   const [sep, setSEP] = useState("");
   const [submission, setSubmission] = useState("");
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await DONKISEP();
+      const focusRecord = response[response.length - 1];
 
-      if (response[response.length - 1].eventTime) {
-        setEvent(response[response.length - 1].eventTime);
+      if (focusRecord.linkedEvents) {
+        setImpactList(focusRecord.linkedEvents);
+      }
+
+      if (focusRecord.linkedEvents) {
+        setInstrument(focusRecord.linkedEvents);
+      }
+
+      if (focusRecord.eventTime) {
+        setEvent(focusRecord.eventTime);
       } else {
         setEvent("");
       }
 
-      if (response[response.length - 1].instruments[0].displayName) {
-        setInstrument(response[response.length - 1].instruments[0].displayName);
+      if (focusRecord.instruments[0].displayName) {
+        setInstrument(focusRecord.instruments[0].displayName);
       } else {
         setInstrument("");
       }
 
-      if (response[response.length - 1].link) {
-        setLink(response[response.length - 1].link);
+      if (focusRecord.link) {
+        setLink(focusRecord.link);
       } else {
         setLink(null);
       }
 
-      if (response[response.length - 1].linkedEvents[0].activityID) {
-        setLink1(response[response.length - 1].linkedEvents[0].activityID);
-      } else {
-        setLink1("");
-      }
-
-      if (response[response.length - 1].linkedEvents[1].activityID) {
-        setLink2(response[response.length - 1].linkedEvents[1].activityID);
-      } else {
-        setLink2("");
-      }
-
-      if (response[response.length - 1].linkedEvents[2].activityID) {
-        setLink3(response[response.length - 1].linkedEvents[2].activityID);
-      } else {
-        setLink3("");
-      }
-
-      if (response[response.length - 1].sepID) {
-        setSEP(response[response.length - 1].sepID);
+      if (focusRecord.sepID) {
+        setSEP(focusRecord.sepID);
       } else {
         setSEP("");
       }
 
-      if (response[response.length - 1].submissionTime) {
-        setSubmission(response[response.length - 1].submissionTime);
+      if (focusRecord.submissionTime) {
+        setSubmission(focusRecord.submissionTime);
       } else {
         setSubmission("");
       }
     }
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
       <div>
         <h1>Recent SEP Information:</h1>
         <h1>Event Time: {event}</h1>
-        <h2>Instruments Used:</h2>
-        <h3>{instrument}</h3>
-        <h2>Linked Event #1: {link1}</h2>
-        <h2>Linked Event #2: {link2}</h2>
-        <h2>Linked Event #3: {link3}</h2>
-        <h2>SEP ID: {sep}</h2>
-        <h2>Submission Time: {submission}</h2>
-        <h2>
+        <h1>SEP ID: {sep}</h1>
+        <h1>Submission Time: {submission}</h1>
+        <h1>---------------------------------------------------------</h1>
+        <h1>Instruments Used:</h1>
+        {instrument ? (
+          instrument.map((obj, idx) => (
+            <h1 key={idx}>
+              Instrument #{idx + 1}: {obj.displayName}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
+        <h1>---------------------------------------------------------</h1>
+        <h1>Linked Events To SEP:</h1>
+
+        <h1>---------------------------------------------------------</h1>
+
+        <h1>
           CLick Here: <a href={links}>Click For SEP Information</a>
-        </h2>
+        </h1>
 
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>
             <h2>
-              <Link to="/donki">Link For DonkiCME Page</Link>
+              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiGST">Link For DonkiGST Page</Link>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiFLR">Link For DonkiFLR Page</Link>
+              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiIPS">Link For DonkiIPS Page</Link>
+              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiNotifications">
+                Click Here To See The DonkiNotifications Page
+              </Link>
             </h2>
           </div>
         </div>

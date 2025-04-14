@@ -15,7 +15,7 @@ export const DONKICME = async () => {
     `${BASE_URL}/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 
@@ -24,7 +24,7 @@ export const DONKIGST = async () => {
     `${BASE_URL}/DONKI/GST?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 
@@ -33,7 +33,7 @@ export const DONKIIPS = async () => {
     `${BASE_URL}/DONKI/IPS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   // console.log(data[data.length - 1]);
   return data;
 };

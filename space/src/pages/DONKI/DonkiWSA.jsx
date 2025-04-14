@@ -15,8 +15,7 @@ function DonkiWSA() {
   const [estimated, setEstimated] = useState("");
   const [estimatedShock, setEstimatedShock] = useState("");
   const [blow, setBlow] = useState(true);
-  const [location, setLocation] = useState("");
-  const [arrival, setArrival] = useState("");
+  const [impactList, setImpactList] = useState(null);
   const [isEarth, setIsEarth] = useState(true);
   const [kp18, setKp18] = useState("");
   const [kp90, setKp90] = useState("");
@@ -28,67 +27,85 @@ function DonkiWSA() {
     async function fetchData() {
       // You can await here
       const response = await DONKIWSA();
+      const focusRecord = response[response.length - 1];
 
-      if (response[response.length - 1].au) {
-        setAU(response[response.length - 1].au);
+      if (focusRecord.impactList) {
+        setImpactList(focusRecord.impactList);
+      }
+
+      if (focusRecord.au) {
+        setAU(focusRecord.au);
       } else {
         setAU(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].cmeStartTime) {
-        setStart(response[response.length - 1].cmeInputs[0].cmeStartTime);
+      if (focusRecord.link) {
+        setLink(focusRecord.link);
+      } else {
+        setLink(null);
+      }
+
+      if (focusRecord.cmeInputs[0].cmeStartTime) {
+        setStart(focusRecord.cmeInputs[0].cmeStartTime);
       } else {
         setStart(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].latitude) {
-        setLatitude(response[response.length - 1].cmeInputs[0].latitude);
+      if (focusRecord.cmeInputs[0].latitude) {
+        setLatitude(focusRecord.cmeInputs[0].latitude);
       } else {
         setLatitude(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].longitude) {
-        setLongitude(response[response.length - 1].cmeInputs[0].longitude);
+      if (focusRecord.cmeInputs[0].longitude) {
+        setLongitude(focusRecord.cmeInputs[0].longitude);
       } else {
         setLongitude(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].speed) {
-        setSpeed(response[response.length - 1].cmeInputs[0].speed);
+      if (focusRecord.cmeInputs[0].speed) {
+        setSpeed(focusRecord.cmeInputs[0].speed);
       } else {
         setSpeed(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].halfAngle) {
-        setHalf(response[response.length - 1].cmeInputs[0].halfAngle);
+      if (focusRecord.cmeInputs[0].halfAngle) {
+        setHalf(focusRecord.cmeInputs[0].halfAngle);
       } else {
         setHalf(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].cmeid) {
-        setCMEID(response[response.length - 1].cmeInputs[0].cmeid);
+      if (focusRecord.cmeInputs[0].cmeid) {
+        setCMEID(focusRecord.cmeInputs[0].cmeid);
       } else {
         setCMEID(0);
       }
 
-      if (response[response.length - 1].cmeInputs[0].time21_5) {
-        setTime(response[response.length - 1].cmeInputs[0].time21_5);
+      if (focusRecord.cmeInputs[0].time21_5) {
+        setTime(focusRecord.cmeInputs[0].time21_5);
       } else {
         setTime(0);
       }
 
-      if (response[response.length - 1].impactList[0].location) {
-        setLocation(response[response.length - 1].impactList[0].location);
+      if (focusRecord.modelCompletionTime) {
+        setCompletion(focusRecord.modelCompletionTime);
       } else {
-        setLocation("");
+        setCompletion("N/A");
+      }
+
+      if (focusRecord.simulationID) {
+        setSimulation(focusRecord.simulationID);
+      } else {
+        setSimulation("N/A");
       }
     }
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
       <div>
+        <h1>Most Recent WSA Information</h1>
         <h1>AU: {au}</h1>
         <h1>CME Start Time: {cmeStart}</h1>
         <h1>Latitude: {latitude}</h1>
@@ -97,30 +114,85 @@ function DonkiWSA() {
         <h1>Half Angle: {half}</h1>
         <h1>CME ID: {cmeID}</h1>
         <h1>Time21_5: {time}</h1>
-        <h1>Location: {location}</h1>
+        <h1>Model Completion Time: {completion}</h1>
+        <h1>Simulation ID: {simulation}</h1>
+        <h1>---------------------------------------------------------</h1>
+        <div>
+          <h1>Location For WSA:</h1>
+          {impactList ? (
+            impactList.map((obj, idx) => (
+              <h1 key={idx}>
+                Location {idx + 1}: {obj.location}
+              </h1>
+            ))
+          ) : (
+            <h2>No values found</h2>
+          )}
+          <h1>---------------------------------------------------------</h1>
+          <h1>Arrival Time For WSA:</h1>
+          {impactList ? (
+            impactList.map((obj, idx) => (
+              <h1 key={idx}>
+                Arrival Time {idx + 1}: {obj.arrivalTime}
+              </h1>
+            ))
+          ) : (
+            <h2>No values found</h2>
+          )}
+        </div>
+        <h1>---------------------------------------------------------</h1>
+        <h1>
+          Click Here: <a href={links}>Click Here For WSA Information</a>
+        </h1>
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>
             <h2>
-              <Link to="/donki">Link For DonkiCME Page</Link>
+              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiGST">Link For DonkiGST Page</Link>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiFLR">Link For DonkiFLR Page</Link>
+              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiIPS">Link For DonkiIPS Page</Link>
+              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiNotifications">
+                Click Here To See The DonkiNotifications Page
+              </Link>
             </h2>
           </div>
         </div>

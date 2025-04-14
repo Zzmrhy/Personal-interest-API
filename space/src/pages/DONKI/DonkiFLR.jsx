@@ -108,35 +108,71 @@ function DonkiFLR() {
         <h1>FLR ID: {ID}</h1>
         <h1>Begin Time: {begin}</h1>
         <h1>End Time: {end}</h1>
-        <h2>Catalog: {catalog}</h2>
-        <h2>Class Type: {type}</h2>
-        <h2>Instruments Used:</h2>
-        <h3>{instument}</h3>
-        <h2>Linked Event: {linked}</h2>
-        <h2>Note: {note}</h2>
-        <h2>
+        <h1>Catalog: {catalog}</h1>
+        <h1>Class Type: {type}</h1>
+        <h1>Linked Event: {linked}</h1>
+        <h1>Peak Time: {peak}</h1>
+        <h1>---------------------------------------------------------</h1>
+        <h1>Instruments Used:</h1>
+        <h1>{instument}</h1>
+        <h1>---------------------------------------------------------</h1>
+        <h1>Source Location: {source}</h1>
+        <h1>Submission Time: {submission}</h1>
+        <h1>Note: {note}</h1>
+        <h1>
           Click For Website: <a href={links}>Link For FLR</a>
-        </h2>
-        <h2>Peak Time: {peak}</h2>
-        <h2>Source Location: {source}</h2>
-        <h2>Submission Time: {submission}</h2>
+        </h1>
 
         <div>
           <h1>Links For Other DONKI Pages</h1>
           <div>
-            <Link to="/donkiCME">Click To See DonkiCME Page</Link>
+            <h2>
+              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiGST">Click To See DonkiGST Page</Link>
+            <h2>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiIPS">Click To See DonkiIPS Page</Link>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiSEP">Click To See DonkiSEP Page</Link>
+            <h2>
+              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiNotifications">
+                Click Here To See The DonkiNotifications Page
+              </Link>
+            </h2>
           </div>
         </div>
       </div>

@@ -7,113 +7,135 @@ function DonkiIPS() {
   const [activity, setActivity] = useState("");
   const [catalog, setCatalog] = useState("");
   const [eventTime, setEvent] = useState("");
-  const [instrument1, setInstrument1] = useState("");
-  const [instrument2, setInstrument2] = useState("");
-  const [instrument3, setInstrument3] = useState("");
+  const [instruments, setInstruments] = useState(null);
   const [location, setLocation] = useState("");
   const [submission, setTime] = useState("");
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await DONKIIPS();
+      const focusRecord = response[response.length - 1];
 
-      if (response[response.length - 1].activityID) {
-        setActivity(response[response.length - 1].activityID);
+      if (focusRecord.instruments) {
+        setInstruments(focusRecord.instruments);
+      }
+
+      if (focusRecord.activityID) {
+        setActivity(focusRecord.activityID);
       } else {
         setActivity("");
       }
 
-      if (response[response.length - 1].link) {
-        setLink(response[response.length - 1].link);
+      if (focusRecord.link) {
+        setLink(focusRecord.link);
       } else {
         setLink(null);
       }
 
-      if (response[response.length - 1].catalog) {
-        setCatalog(response[response.length - 1].catalog);
+      if (focusRecord.catalog) {
+        setCatalog(focusRecord.catalog);
       } else {
         setCatalog("");
       }
 
-      if (response[response.length - 1].eventTime) {
-        setEvent(response[response.length - 1].eventTime);
+      if (focusRecord.eventTime) {
+        setEvent(focusRecord.eventTime);
       } else {
         setEvent("");
       }
 
-      if (response[response.length - 1].instruments[0].displayName) {
-        setInstrument1(
-          response[response.length - 1].instruments[0].displayName
-        );
-      } else {
-        setInstrument1("");
-      }
-
-      if (response[response.length - 1].instruments[1].displayName) {
-        setInstrument2(
-          response[response.length - 1].instruments[1].displayName
-        );
-      } else {
-        setInstrument2("");
-      }
-
-      if (response[response.length - 1].instruments[2].displayName) {
-        setInstrument3(
-          response[response.length - 1].instruments[2].displayName
-        );
-      } else {
-        setInstrument3("");
-      }
-
-      if (response[response.length - 1].location) {
-        setLocation(response[response.length - 1].location);
+      if (focusRecord.location) {
+        setLocation(focusRecord.location);
       } else {
         setLocation("");
       }
 
-      if (response[response.length - 1].submissionTime) {
-        setTime(response[response.length - 1].submissionTime);
+      if (focusRecord.submissionTime) {
+        setTime(focusRecord.submissionTime);
       } else {
         setTime("");
       }
     }
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
       <div>
         <h1>Recent IPS Information:</h1>
         <h1>{activity}</h1>
-        <h2>Catalog: {catalog}</h2>
-        <h2>Event Time: {eventTime}</h2>
-        <h2>Instruments Used: </h2>
-        <h3>{instrument1}</h3>
-        <h3>{instrument2}</h3>
-        <h3>{instrument3}</h3>
-        <h2>Location: {location}</h2>
-        <h2>Submission Time: {submission}</h2>
-        <h2>
+        <h1>Catalog: {catalog}</h1>
+        <h1>Event Time: {eventTime}</h1>
+        <h1>Location: {location}</h1>
+        <h1>Submission Time: {submission}</h1>
+        <h1>---------------------------------------------------------</h1>
+        <h1>Instruments Used: </h1>
+        {instruments ? (
+          instruments.map((obj, idx) => (
+            <h1 key={idx}>
+              Instrument {idx + 1}: {obj.displayName}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
+        <h1>---------------------------------------------------------</h1>
+
+        <h1>
           Click For Information On IPS:
           <a href={links}> Link For IPS</a>
-        </h2>
+        </h1>
 
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>
-            <Link to="/donki">Link For DonkiCME Page</Link>
+            <h2>
+              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiGST">Link For DonkiGST Page</Link>
+            <h2>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiFLR">Link For DonkiFLR Page</Link>
+            <h2>
+              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
+            </h2>
           </div>
 
           <div>
-            <Link to="/donkiSEP">Link For DonkiSEP Page</Link>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiNotifications">
+                Click Here To See The DonkiNotifications Page
+              </Link>
+            </h2>
           </div>
         </div>
       </div>

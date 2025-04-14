@@ -5,70 +5,57 @@ function DonkiHSS() {
   const [links, setLink] = useState(null);
   const [event, setEvent] = useState("");
   const [hss, setHSSID] = useState("");
-  const [instrument1, setInstrument1] = useState("");
-  const [instrument2, setInstrument2] = useState("");
-  const [linked, setLinked] = useState("");
+  const [linked, setLinked] = useState(null);
   const [submit, setSubmission] = useState("");
   const [version, setVersion] = useState(0);
+  const [impactList, setImpactList] = useState(null);
+  const [instruments, setInstruments] = useState(null);
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await DONKIHSS();
+      const focusRecord = response[response.length - 1];
 
-      if (response[response.length - 1].eventTime) {
-        setEvent(response[response.length - 1].eventTime);
+      if (focusRecord.instruments) {
+        setInstruments(focusRecord.instruments);
+      }
+
+      if (focusRecord.eventTime) {
+        setEvent(focusRecord.eventTime);
       } else {
         setEvent("N/A");
       }
 
-      if (response[response.length - 1].hssID) {
-        setHSSID(response[response.length - 1].hssID);
+      if (focusRecord.hssID) {
+        setHSSID(focusRecord.hssID);
       } else {
         setHSSID("N/A");
       }
 
-      if (response[response.length - 1].instruments[0].displayName) {
-        setInstrument1(
-          response[response.length - 1].instruments[0].displayName
-        );
-      } else {
-        setInstrument1("N/A");
-      }
-
-      if (response[response.length - 1].instruments[1].displayName) {
-        setInstrument2(
-          response[response.length - 1].instruments[1].displayName
-        );
-      } else {
-        setInstrument2("N/A");
-      }
-
-      if (response[response.length - 1].link) {
-        setLink(response[response.length - 1].link);
+      if (focusRecord.link) {
+        setLink(focusRecord.link);
       } else {
         setLink(null);
       }
 
-      if (response[response.length - 1].linkedEvents) {
-        setLinked(response[response.length - 1].linkedEvents);
-      } else {
-        setLinked("N/A");
+      if (focusRecord.linkedEvents) {
+        setLinked(focusRecord.linkedEvents);
       }
 
-      if (response[response.length - 1].submissionTime) {
-        setSubmission(response[response.length - 1].submissionTime);
+      if (focusRecord.submissionTime) {
+        setSubmission(focusRecord.submissionTime);
       } else {
         setSubmission("N/A");
       }
 
-      if (response[response.length - 1].versionId) {
-        setVersion(response[response.length - 1].versionId);
+      if (focusRecord.versionId) {
+        setVersion(focusRecord.versionId);
       } else {
         setVersion(0);
       }
     }
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
@@ -76,11 +63,29 @@ function DonkiHSS() {
         <h1>Event Time: {event}</h1>
         <h1>HSS ID: {hss}</h1>
         <h1>Submission TIme: {submit}</h1>
-        <h1>Linked Events: {linked}</h1>
+        <h1>---------------------------------------------------------</h1>
         <h1>Instruments Used:</h1>
-        <h2>{instrument1}</h2>
-        <h2>{instrument2}</h2>
-
+        {instruments ? (
+          instruments.map((obj, idx) => (
+            <h1 key={idx}>
+              Instrument {idx + 1}: {obj.displayName}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
+        <h1>---------------------------------------------------------</h1>
+        <h1>Linked Events For HSS:</h1>
+        {linked ? (
+          linked.map((obj, idx) => (
+            <h1 key={idx}>
+              Linked Event #{idx + 1}: {obj.activityID}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
+        <h1>---------------------------------------------------------</h1>
         <h1>
           Click Here: <a href={links}>Link For HSS</a>
         </h1>
@@ -88,36 +93,51 @@ function DonkiHSS() {
           <h1>Links For Other DONKI Pages</h1>
           <div>
             <h2>
-              <Link to="/donki">Click To See DonkiCME Page</Link>
+              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiGST">Click To See DonkiGST Page</Link>
+              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiIPS">Click To See DonkiIPS Page</Link>
+              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiSEP">Click To See DonkiSEP Page</Link>
-            </h2>
-          </div>
-          <div>
-            <h2>
-              <Link to="/donkiMPC">Click To See The DonkiMPC Page</Link>
+              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
-              <Link to="/donkiRBE">Click To See The DonkiRBE Page</Link>
+              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiNotifications">
+                Click Here To See The DonkiNotifications Page
+              </Link>
             </h2>
           </div>
         </div>

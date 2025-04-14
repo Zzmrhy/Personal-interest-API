@@ -11,6 +11,8 @@ import DonkiSEP from "./pages/DONKI/DonkiSEP";
 import DonkiRBE from "./pages/DONKI/DonkiRBE";
 import Rovers from "./pages/Rovers";
 import DonkiWSA from "./pages/DONKI/DonkiWSA";
+import DonkiNotification from "./pages/DONKI/DonkiNotifications";
+import DonkiHSS from "./pages/DONKI/DonkiHSS";
 function App() {
   return (
     <main>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/donkiSEP" element={<DonkiSEP />} />
         <Route path="/donkiRBE" element={<DonkiRBE />} />
         <Route path="/donkiWSA" element={<DonkiWSA />} />
+        <Route path="/donkiNotifications" element={<DonkiNotification />} />
+        <Route path="/donkiHSS" element={<DonkiHSS />} />
         <Route path="/rover" element={<Rovers />} />
       </Routes>
     </main>

@@ -11,66 +11,55 @@ function Donki() {
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   const [name3, setName3] = useState("");
+  const [instruments, setInstruments] = useState(null);
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await DONKICME();
-      if (response[response.length - 1].link) {
-        setLink(response[response.length - 1].link);
+      const focusRecord = response[response.length - 1];
+
+      if (focusRecord.instruments) {
+        setInstruments(focusRecord.instruments);
+      }
+
+      if (focusRecord.link) {
+        setLink(focusRecord.link);
       } else {
         setLink(null);
       }
 
-      if (response[response.length - 1].activityID) {
-        setActivity(response[response.length - 1].activityID);
+      if (focusRecord.activityID) {
+        setActivity(focusRecord.activityID);
       } else {
         setActivity(null);
       }
 
-      if (response[response.length - 1].note) {
-        setNote(response[response.length - 1].note);
+      if (focusRecord.note) {
+        setNote(focusRecord.note);
       } else {
         setNote(null);
       }
 
-      if (response[response.length - 1].cmeAnalyses[0].latitude) {
-        setLatitude(response[response.length - 1].cmeAnalyses[0].latitude);
+      if (focusRecord.cmeAnalyses[0].latitude) {
+        setLatitude(focusRecord.cmeAnalyses[0].latitude);
       } else {
         setLatitude("");
       }
 
-      if (response[response.length - 1].cmeAnalyses[0].longitude) {
-        setLongitude(response[response.length - 1].cmeAnalyses[0].longitude);
+      if (focusRecord.cmeAnalyses[0].longitude) {
+        setLongitude(focusRecord.cmeAnalyses[0].longitude);
       } else {
         setLongitude("");
       }
 
-      if (response[response.length - 1].cmeAnalyses[0].link) {
-        setCMEA(response[response.length - 1].cmeAnalyses[0].link);
+      if (focusRecord.cmeAnalyses[0].link) {
+        setCMEA(focusRecord.cmeAnalyses[0].link);
       } else {
         setCMEA(null);
       }
-
-      if (response[response.length - 1].instruments[0].displayName) {
-        setName1(response[response.length - 1].instruments[0].displayName);
-      } else {
-        setName1("");
-      }
-
-      if (response[response.length - 1].instruments[1].displayName) {
-        setName2(response[response.length - 1].instruments[1].displayName);
-      } else {
-        setName2("");
-      }
-
-      if (response[response.length - 1].instruments[2].displayName) {
-        setName3(response[response.length - 1].instruments[2].displayName);
-      } else {
-        setName3("");
-      }
     }
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
@@ -80,11 +69,20 @@ function Donki() {
         <h1>Activity ID: {activityID}</h1>
         <h1>Latitude: {latitude}</h1>
         <h1>Longitude: {longitude}</h1>
-        <h2>Name Of Instruments Used: </h2>
-        <h2>{name1}</h2>
-        <h2>{name2}</h2>
-        <h2>{name3}</h2>
-        <h2>Note: {note}</h2>
+        <h1>---------------------------------------------------------</h1>
+        <h1>Instruments Used:</h1>
+        {instruments ? (
+          instruments.map((obj, idx) => (
+            <h1 key={idx}>
+              Instrument {idx + 1}: {obj.displayName}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
+        <h1>---------------------------------------------------------</h1>
+        <h1>Note: {note}</h1>
+        <h1>---------------------------------------------------------</h1>
         <h2>
           CME Link: <a href={links}>Click Here For CME information</a>
         </h2>
@@ -113,19 +111,13 @@ function Donki() {
 
           <div>
             <h2>
-              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
             </h2>
           </div>
 
           <div>
             <h2>
               <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
-            </h2>
-          </div>
-
-          <div>
-            <h2>
-              <Link to="/donkiMPC">Click Here To See The DonkiMPC Page</Link>
             </h2>
           </div>
 
@@ -138,6 +130,14 @@ function Donki() {
           <div>
             <h2>
               <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              <Link to="/donkiNotifications">
+                Click Here To See The DonkiNotifications Page
+              </Link>
             </h2>
           </div>
         </div>
