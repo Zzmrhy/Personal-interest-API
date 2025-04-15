@@ -78,9 +78,9 @@ function DonkiRBE() {
           <h2>No values found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
-        <h2>
+        <h1>
           Click This: <a href={links}>Click This For RBE Information</a>
-        </h2>
+        </h1>
       </div>
 
       <div>

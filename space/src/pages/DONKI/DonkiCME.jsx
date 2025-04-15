@@ -83,12 +83,12 @@ function Donki() {
         <h1>---------------------------------------------------------</h1>
         <h1>Note: {note}</h1>
         <h1>---------------------------------------------------------</h1>
-        <h2>
+        <h1>
           CME Link: <a href={links}>Click Here For CME information</a>
-        </h2>
-        <h2>
+        </h1>
+        <h1>
           CME Analyses Link: <a href={cmeaLink}>Link For CMEA</a>
-        </h2>
+        </h1>
         <div>
           <h1>Other DONKI Pages</h1>
           <div>
