@@ -17,7 +17,7 @@ function DayImage() {
       if (response.copyright) {
         setCopy(response.copyright);
       } else {
-        setCopy("");
+        setCopy("N/A");
       }
 
       if (response.title) {
@@ -59,9 +59,9 @@ function DayImage() {
     <div>
       <h1>Today's Picture Of the Day: </h1>
       <h1>{title}</h1>
-      <h2>Copyright: {copy}</h2>
-      <h2>Date: {date}</h2>
-      <h2>Media Type: {media}</h2>
+      <h1>Copyright: {copy}</h1>
+      <h1>Date: {date}</h1>
+      <h1>Media Type: {media}</h1>
       {media == "image" ? (
         <img src={pic} alt="Some Picture" />
       ) : media == "video" && video.indexOf("youtube") > 0 ? (
@@ -84,7 +84,7 @@ function DayImage() {
         </p>
       )}
 
-      <h2>Explanation: {desc}</h2>
+      <h1>Explanation: {desc}</h1>
     </div>
   );
 }

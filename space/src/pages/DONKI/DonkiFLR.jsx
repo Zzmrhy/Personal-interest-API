@@ -9,7 +9,7 @@ function DonkiFLR() {
   const [type, setType] = useState("");
   const [begin, setBegin] = useState("");
   const [end, setEnd] = useState("");
-  const [instument, setInstrument] = useState("");
+  const [instrument, setInstrument] = useState(null);
   const [linked, setLinked] = useState("");
   const [note, setNote] = useState("");
   const [peak, setPeak] = useState("");
@@ -19,87 +19,86 @@ function DonkiFLR() {
     async function fetchData() {
       // You can await here
       const response = await DONKIFLR();
+      const focusRecord = response[response.length - 1];
 
-      if (response[response.length - 1].flrID) {
-        setID(response[response.length - 1].flrID);
+      if (focusRecord.instruments) {
+        setInstrument(focusRecord.instruments);
+      }
+
+      if (focusRecord.flrID) {
+        setID(focusRecord.flrID);
       } else {
         setID("");
       }
 
-      if (response[response.length - 1].activeRegionNum) {
-        setRegion(response[response.length - 1].activeRegionNum);
+      if (focusRecord.activeRegionNum) {
+        setRegion(focusRecord.activeRegionNum);
       } else {
         setRegion(0);
       }
 
-      if (response[response.length - 1].catalog) {
-        setCatalog(response[response.length - 1].catalog);
+      if (focusRecord.catalog) {
+        setCatalog(focusRecord.catalog);
       } else {
         setCatalog("");
       }
 
-      if (response[response.length - 1].classType) {
-        setType(response[response.length - 1].classType);
+      if (focusRecord.classType) {
+        setType(focusRecord.classType);
       } else {
         setType("");
       }
 
-      if (response[response.length - 1].beginTime) {
-        setBegin(response[response.length - 1].beginTime);
+      if (focusRecord.beginTime) {
+        setBegin(focusRecord.beginTime);
       } else {
         setBegin("");
       }
 
-      if (response[response.length - 1].endTime) {
-        setEnd(response[response.length - 1].endTime);
+      if (focusRecord.endTime) {
+        setEnd(focusRecord.endTime);
       } else {
         setEnd("");
       }
 
-      if (response[response.length - 1].instruments[0].displayName) {
-        setInstrument(response[response.length - 1].instruments[0].displayName);
-      } else {
-        setInstrument("");
-      }
-
-      if (response[response.length - 1].link) {
-        setLink(response[response.length - 1].link);
+      if (focusRecord.link) {
+        setLink(focusRecord.link);
       } else {
         setLink(null);
       }
 
-      if (response[response.length - 1].linkedEvents) {
-        setLinked(response[response.length - 1].linkedEvents);
+      if (focusRecord.linkedEvents) {
+        setLinked(focusRecord.linkedEvents);
       } else {
         setLinked("N/A");
       }
 
-      if (response[response.length - 1].note) {
-        setNote(response[response.length - 1].note);
+      if (focusRecord.note) {
+        setNote(focusRecord.note);
       } else {
         setNote("");
       }
 
-      if (response[response.length - 1].peakTime) {
-        setPeak(response[response.length - 1].peakTime);
+      if (focusRecord.peakTime) {
+        setPeak(focusRecord.peakTime);
       } else {
         setPeak("");
       }
 
-      if (response[response.length - 1].sourceLocation) {
-        setSource(response[response.length - 1].sourceLocation);
+      if (focusRecord.sourceLocation) {
+        setSource(focusRecord.sourceLocation);
       } else {
         setSource("");
       }
 
-      if (response[response.length - 1].submissionTime) {
-        setSubmission(response[response.length - 1].submissionTime);
+      if (focusRecord.submissionTime) {
+        setSubmission(focusRecord.submissionTime);
       } else {
         setSubmission("");
       }
     }
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
@@ -114,7 +113,15 @@ function DonkiFLR() {
         <h1>Peak Time: {peak}</h1>
         <h1>---------------------------------------------------------</h1>
         <h1>Instruments Used:</h1>
-        <h1>{instument}</h1>
+        {instrument ? (
+          instrument.map((obj, idx) => (
+            <h1 key={idx}>
+              Instrument #{idx + 1}: {obj.displayName}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
         <h1>---------------------------------------------------------</h1>
         <h1>Source Location: {source}</h1>
         <h1>Submission Time: {submission}</h1>

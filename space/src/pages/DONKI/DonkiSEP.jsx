@@ -16,23 +16,17 @@ function DonkiSEP() {
       const focusRecord = response[response.length - 1];
 
       if (focusRecord.linkedEvents) {
-        setImpactList(focusRecord.linkedEvents);
+        setLinked(focusRecord.linkedEvents);
       }
 
-      if (focusRecord.linkedEvents) {
-        setInstrument(focusRecord.linkedEvents);
+      if (focusRecord.instruments) {
+        setInstrument(focusRecord.instruments);
       }
 
       if (focusRecord.eventTime) {
         setEvent(focusRecord.eventTime);
       } else {
         setEvent("");
-      }
-
-      if (focusRecord.instruments[0].displayName) {
-        setInstrument(focusRecord.instruments[0].displayName);
-      } else {
-        setInstrument("");
       }
 
       if (focusRecord.link) {
@@ -68,7 +62,7 @@ function DonkiSEP() {
         {instrument ? (
           instrument.map((obj, idx) => (
             <h1 key={idx}>
-              Instrument #{idx + 1}: {obj.displayName}
+              Instrument {idx + 1}: {obj.displayName}
             </h1>
           ))
         ) : (
@@ -76,7 +70,15 @@ function DonkiSEP() {
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>Linked Events To SEP:</h1>
-
+        {link ? (
+          link.map((obj, idx) => (
+            <h1 key={idx}>
+              #{idx + 1}: {obj.activityID}
+            </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
         <h1>---------------------------------------------------------</h1>
 
         <h1>
