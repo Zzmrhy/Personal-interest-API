@@ -15,7 +15,7 @@ export const DONKICME = async () => {
     `${BASE_URL}/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -24,7 +24,7 @@ export const DONKIGST = async () => {
     `${BASE_URL}/DONKI/GST?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -33,7 +33,7 @@ export const DONKIIPS = async () => {
     `${BASE_URL}/DONKI/IPS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   // console.log(data[data.length - 1]);
   return data;
 };
@@ -43,7 +43,7 @@ export const DONKIFLR = async () => {
     `${BASE_URL}/DONKI/FLR?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -52,7 +52,7 @@ export const DONKISEP = async () => {
     `${BASE_URL}/DONKI/SEP?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -61,7 +61,7 @@ export const DONKIMPC = async () => {
     `${BASE_URL}/DONKI/MPC?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -70,7 +70,7 @@ export const DONKIRBE = async () => {
     `${BASE_URL}/DONKI/RBE?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -79,7 +79,7 @@ export const DONKIHSS = async () => {
     `${BASE_URL}/DONKI/HSS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -88,7 +88,7 @@ export const DONKIWSA = async () => {
     `${BASE_URL}/DONKI/WSAEnlilSimulations?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -97,7 +97,7 @@ export const DONKINotifications = async () => {
     `${BASE_URL}/DONKI/notifications?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
