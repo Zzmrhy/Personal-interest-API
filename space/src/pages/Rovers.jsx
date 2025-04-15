@@ -19,7 +19,7 @@ function Rovers() {
   useEffect(() => {
     async function fetchData() {
       const response = await Rover();
-      if (index < 0 || index > response.photos.length) {
+      if (index < 0 || index > response.photos.length - 1) {
         alert(
           "Index is out of bounds, automatically will be set to what information index 0 has"
         );
