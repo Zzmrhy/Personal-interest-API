@@ -64,7 +64,7 @@ function DonkiRBE() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Instrument Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>Linked Events For RBE:</h1>
@@ -75,7 +75,7 @@ function DonkiRBE() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Linked Event Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>

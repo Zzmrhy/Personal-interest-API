@@ -117,7 +117,7 @@ function DonkiFLR() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Instrument Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         {linked ? (
@@ -130,7 +130,7 @@ function DonkiFLR() {
             </div>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Linked Event Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>Source Location: {source}</h1>

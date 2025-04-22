@@ -66,7 +66,7 @@ function DonkiSEP() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Instrument Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>Linked Events To SEP:</h1>
@@ -77,7 +77,7 @@ function DonkiSEP() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Linked Event Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
 

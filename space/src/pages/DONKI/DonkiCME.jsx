@@ -78,7 +78,7 @@ function Donki() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Instrument Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>Note: {note}</h1>

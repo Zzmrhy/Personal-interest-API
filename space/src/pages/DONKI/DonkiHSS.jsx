@@ -72,7 +72,7 @@ function DonkiHSS() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No instrument Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>Linked Events For HSS:</h1>
@@ -83,7 +83,7 @@ function DonkiHSS() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Linked Event Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
         <h1>

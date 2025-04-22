@@ -77,7 +77,7 @@ function DonkiGST() {
             </h1>
           ))
         ) : (
-          <h2>No values found</h2>
+          <h2>No Linked Event Found</h2>
         )}
         <h1>---------------------------------------------------------</h1>
 

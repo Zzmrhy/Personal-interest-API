@@ -126,7 +126,7 @@ function DonkiWSA() {
               </h1>
             ))
           ) : (
-            <h2>No values found</h2>
+            <h2>No Location Found</h2>
           )}
           <h1>---------------------------------------------------------</h1>
           <h1>Arrival Time For WSA:</h1>
@@ -137,7 +137,7 @@ function DonkiWSA() {
               </h1>
             ))
           ) : (
-            <h2>No values found</h2>
+            <h2>No Arrival Time Found</h2>
           )}
         </div>
         <h1>---------------------------------------------------------</h1>
