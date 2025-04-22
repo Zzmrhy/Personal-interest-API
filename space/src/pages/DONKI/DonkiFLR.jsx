@@ -10,7 +10,7 @@ function DonkiFLR() {
   const [begin, setBegin] = useState("");
   const [end, setEnd] = useState("");
   const [instrument, setInstrument] = useState(null);
-  const [linked, setLinked] = useState("");
+  const [linked, setLinked] = useState(null);
   const [note, setNote] = useState("");
   const [peak, setPeak] = useState("");
   const [source, setSource] = useState("");
@@ -23,6 +23,10 @@ function DonkiFLR() {
 
       if (focusRecord.instruments) {
         setInstrument(focusRecord.instruments);
+      }
+
+      if (focusRecord.linkedEvents) {
+        setLinked(focusRecord.linkedEvents);
       }
 
       if (focusRecord.flrID) {
@@ -67,12 +71,6 @@ function DonkiFLR() {
         setLink(null);
       }
 
-      if (focusRecord.linkedEvents) {
-        setLinked(focusRecord.linkedEvents);
-      } else {
-        setLinked("N/A");
-      }
-
       if (focusRecord.note) {
         setNote(focusRecord.note);
       } else {
@@ -109,7 +107,6 @@ function DonkiFLR() {
         <h1>End Time: {end}</h1>
         <h1>Catalog: {catalog}</h1>
         <h1>Class Type: {type}</h1>
-        <h1>Linked Event: {linked}</h1>
         <h1>Peak Time: {peak}</h1>
         <h1>---------------------------------------------------------</h1>
         <h1>Instruments Used:</h1>
@@ -118,6 +115,19 @@ function DonkiFLR() {
             <h1 key={idx}>
               Instrument #{idx + 1}: {obj.displayName}
             </h1>
+          ))
+        ) : (
+          <h2>No values found</h2>
+        )}
+        <h1>---------------------------------------------------------</h1>
+        {linked ? (
+          linked.map((obj, idx) => (
+            <div>
+              <h1>Linked Event For FLR</h1>
+              <h1 key={idx}>
+                Linked Event #{idx + 1}: {obj.activityID}
+              </h1>
+            </div>
           ))
         ) : (
           <h2>No values found</h2>
