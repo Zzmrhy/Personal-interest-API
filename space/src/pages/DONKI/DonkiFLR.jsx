@@ -32,7 +32,7 @@ function DonkiFLR() {
       if (focusRecord.flrID) {
         setID(focusRecord.flrID);
       } else {
-        setID("");
+        setID("N/A");
       }
 
       if (focusRecord.activeRegionNum) {
@@ -44,25 +44,25 @@ function DonkiFLR() {
       if (focusRecord.catalog) {
         setCatalog(focusRecord.catalog);
       } else {
-        setCatalog("");
+        setCatalog("N/A");
       }
 
       if (focusRecord.classType) {
         setType(focusRecord.classType);
       } else {
-        setType("");
+        setType("N/A");
       }
 
       if (focusRecord.beginTime) {
         setBegin(focusRecord.beginTime);
       } else {
-        setBegin("");
+        setBegin("N/A");
       }
 
       if (focusRecord.endTime) {
         setEnd(focusRecord.endTime);
       } else {
-        setEnd("");
+        setEnd("N/A");
       }
 
       if (focusRecord.link) {
@@ -74,25 +74,25 @@ function DonkiFLR() {
       if (focusRecord.note) {
         setNote(focusRecord.note);
       } else {
-        setNote("");
+        setNote("N/A");
       }
 
       if (focusRecord.peakTime) {
         setPeak(focusRecord.peakTime);
       } else {
-        setPeak("");
+        setPeak("N/A");
       }
 
       if (focusRecord.sourceLocation) {
         setSource(focusRecord.sourceLocation);
       } else {
-        setSource("");
+        setSource("N/A");
       }
 
       if (focusRecord.submissionTime) {
         setSubmission(focusRecord.submissionTime);
       } else {
-        setSubmission("");
+        setSubmission("N/A");
       }
     }
     fetchData();

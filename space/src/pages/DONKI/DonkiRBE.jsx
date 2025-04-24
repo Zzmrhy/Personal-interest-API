@@ -25,19 +25,19 @@ function DonkiRBE() {
       if (focusRecord.eventTime) {
         setEvent(focusRecord.eventTime);
       } else {
-        setEvent("");
+        setEvent("N/A");
       }
 
       if (focusRecord.rbeID) {
         setRBEID(focusRecord.rbeID);
       } else {
-        setRBEID("");
+        setRBEID("N/A");
       }
 
       if (focusRecord.submissionTime) {
         setSubmission(focusRecord.submissionTime);
       } else {
-        setSubmission("");
+        setSubmission("N/A");
       }
 
       if (focusRecord.link) {

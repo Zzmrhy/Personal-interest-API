@@ -26,7 +26,7 @@ function DonkiSEP() {
       if (focusRecord.eventTime) {
         setEvent(focusRecord.eventTime);
       } else {
-        setEvent("");
+        setEvent("N/A");
       }
 
       if (focusRecord.link) {
@@ -38,13 +38,13 @@ function DonkiSEP() {
       if (focusRecord.sepID) {
         setSEP(focusRecord.sepID);
       } else {
-        setSEP("");
+        setSEP("N/A");
       }
 
       if (focusRecord.submissionTime) {
         setSubmission(focusRecord.submissionTime);
       } else {
-        setSubmission("");
+        setSubmission("N/A");
       }
     }
     fetchData();

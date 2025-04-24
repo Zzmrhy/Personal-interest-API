@@ -43,13 +43,13 @@ function Donki() {
       if (focusRecord.cmeAnalyses[0].latitude) {
         setLatitude(focusRecord.cmeAnalyses[0].latitude);
       } else {
-        setLatitude("");
+        setLatitude("N/A");
       }
 
       if (focusRecord.cmeAnalyses[0].longitude) {
         setLongitude(focusRecord.cmeAnalyses[0].longitude);
       } else {
-        setLongitude("");
+        setLongitude("N/A");
       }
 
       if (focusRecord.cmeAnalyses[0].link) {

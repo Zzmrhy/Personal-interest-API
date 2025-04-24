@@ -23,13 +23,13 @@ function DayImage() {
       if (response.title) {
         setTitle(response.title);
       } else {
-        setTitle("");
+        setTitle("N/A");
       }
 
       if (response.date) {
         setDate(response.date);
       } else {
-        setDate("");
+        setDate("N/A");
       }
 
       if (response.url) {
@@ -43,13 +43,13 @@ function DayImage() {
       if (response.explanation) {
         setDesc(response.explanation);
       } else {
-        setDesc("");
+        setDesc("N/A");
       }
 
       if (response.media_type) {
         setMedia(response.media_type);
       } else {
-        setMedia("");
+        setMedia("N/A");
       }
     }
     fetchData();

@@ -27,7 +27,7 @@ function DonkiGST() {
       if (focusRecord.gstID) {
         setID(focusRecord.gstID);
       } else {
-        setID("");
+        setID("N/A");
       }
 
       if (focusRecord.linkedEvents) {
@@ -37,13 +37,13 @@ function DonkiGST() {
       if (focusRecord.startTime) {
         setStart(focusRecord.startTime);
       } else {
-        setStart("");
+        setStart("N/A");
       }
 
       if (focusRecord.submissionTime) {
         setSubmit(focusRecord.submissionTime);
       } else {
-        setSubmit("");
+        setSubmit("N/A");
       }
     }
     fetchData();

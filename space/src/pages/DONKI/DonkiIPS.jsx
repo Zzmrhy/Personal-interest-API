@@ -23,7 +23,7 @@ function DonkiIPS() {
       if (focusRecord.activityID) {
         setActivity(focusRecord.activityID);
       } else {
-        setActivity("");
+        setActivity("N/A");
       }
 
       if (focusRecord.link) {
@@ -35,25 +35,25 @@ function DonkiIPS() {
       if (focusRecord.catalog) {
         setCatalog(focusRecord.catalog);
       } else {
-        setCatalog("");
+        setCatalog("N/A");
       }
 
       if (focusRecord.eventTime) {
         setEvent(focusRecord.eventTime);
       } else {
-        setEvent("");
+        setEvent("N/A");
       }
 
       if (focusRecord.location) {
         setLocation(focusRecord.location);
       } else {
-        setLocation("");
+        setLocation("N/A");
       }
 
       if (focusRecord.submissionTime) {
         setTime(focusRecord.submissionTime);
       } else {
-        setTime("");
+        setTime("N/A");
       }
     }
     fetchData();
