@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function DonkiNotification() {
   const [links, setLink] = useState(null);
+  const [available, setAvailable] = useState(null);
   const [message, setMessage] = useState("");
   const [messageID, setMessageID] = useState("");
   const [issue, setIssue] = useState("");
@@ -13,33 +14,38 @@ function DonkiNotification() {
     async function fetchData() {
       // You can await here
       const response = await DONKINotifications();
+      const focusRecord = [response.length - 1];
 
-      if (response[response.length - 1].messageBody) {
-        setMessage(response[response.length - 1].messageBody);
+      if (focusRecord.length === 0) {
+        setAvailable(null);
+      }
+
+      if (focusRecord.messageBody) {
+        setMessage(focusRecord.messageBody);
       } else {
         setMessage("N/A");
       }
 
-      if (response[response.length - 1].messageID) {
-        setMessageID(response[response.length - 1].messageID);
+      if (focusRecord.messageID) {
+        setMessageID(focusRecord.messageID);
       } else {
         setMessageID("N/A");
       }
 
-      if (response[response.length - 1].messageIssueTime) {
-        setIssue(response[response.length - 1].messageIssueTime);
+      if (focusRecord.messageIssueTime) {
+        setIssue(focusRecord.messageIssueTime);
       } else {
         setIssue("N/A");
       }
 
-      if (response[response.length - 1].messageType) {
-        setType(response[response.length - 1].messageType);
+      if (focusRecord.messageType) {
+        setType(focusRecord.messageType);
       } else {
         setType("N/A");
       }
 
-      if (response[response.length - 1].messageURL) {
-        setLink(response[response.length - 1].messageURL);
+      if (focusRecord.messageURL) {
+        setLink(focusRecord.messageURL);
       } else {
         setLink(null);
       }
@@ -50,14 +56,24 @@ function DonkiNotification() {
   return (
     <div>
       <div>
-        <h1>Most Recent Donki Notification</h1>
-        <h1>Message Type: {type}</h1>
-        <h1>Message Issue Time: {issue}</h1>
-        <h1>{message}</h1>
-        <h1>Message ID: {messageID}</h1>
-        <h1>
-          Click Here: <a href={links}>Click Here For Donki Notifications</a>
-        </h1>
+        {available ? (
+          <div>
+            <h1>Most Recent Donki Notification</h1>
+            <h1>Message Type: {type}</h1>
+            <h1>Message Issue Time: {issue}</h1>
+            <h1>{message}</h1>
+            <h1>Message ID: {messageID}</h1>
+            <h1>
+              Click Here: <a href={links}>Click Here For Donki Notifications</a>
+            </h1>
+          </div>
+        ) : (
+          <h1>
+            No Information Is Available, Click Links Below To See Other Pages
+            Instead.
+          </h1>
+        )}
+
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>

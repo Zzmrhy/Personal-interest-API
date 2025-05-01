@@ -8,6 +8,7 @@ function DonkiRBE() {
   const [submit, setSubmission] = useState("");
   const [instruments, setInstruments] = useState(null);
   const [linked, setLinked] = useState(null);
+  const [available, setAvailable] = useState(null);
   useEffect(() => {
     async function fetchData() {
       // You can await here
@@ -16,6 +17,10 @@ function DonkiRBE() {
 
       if (focusRecord.instruments) {
         setInstruments(focusRecord.instruments);
+      }
+
+      if (focusRecord.length === 0) {
+        setAvailable(null);
       }
 
       if (focusRecord.linkedEvents) {
@@ -51,37 +56,44 @@ function DonkiRBE() {
 
   return (
     <div>
-      <div>
-        <h1>Time Of Event: {event}</h1>
-        <h1>Submission Time: {submit}</h1>
+      {available ? (
+        <div>
+          <h1>Time Of Event: {event}</h1>
+          <h1>Submission Time: {submit}</h1>
 
-        <h1>RBE ID: {rbeID}</h1>
-        <h1>---------------------------------------------------------</h1>
-        {instruments ? (
-          instruments.map((obj, idx) => (
-            <h1 key={idx}>
-              Instrument {idx + 1}: {obj.displayName}
-            </h1>
-          ))
-        ) : (
-          <h2>No Instrument Found</h2>
-        )}
-        <h1>---------------------------------------------------------</h1>
-        <h1>Linked Events For RBE:</h1>
-        {linked ? (
-          linked.map((obj, idx) => (
-            <h1 key={idx}>
-              Linked Event {idx + 1}: {obj.activityID}
-            </h1>
-          ))
-        ) : (
-          <h2>No Linked Event Found</h2>
-        )}
-        <h1>---------------------------------------------------------</h1>
+          <h1>RBE ID: {rbeID}</h1>
+          <h1>---------------------------------------------------------</h1>
+          {instruments ? (
+            instruments.map((obj, idx) => (
+              <h1 key={idx}>
+                Instrument {idx + 1}: {obj.displayName}
+              </h1>
+            ))
+          ) : (
+            <h2>No Instrument Found</h2>
+          )}
+          <h1>---------------------------------------------------------</h1>
+          <h1>Linked Events For RBE:</h1>
+          {linked ? (
+            linked.map((obj, idx) => (
+              <h1 key={idx}>
+                Linked Event {idx + 1}: {obj.activityID}
+              </h1>
+            ))
+          ) : (
+            <h2>No Linked Event Found</h2>
+          )}
+          <h1>---------------------------------------------------------</h1>
+          <h1>
+            Click This: <a href={links}>Click This For RBE Information</a>
+          </h1>
+        </div>
+      ) : (
         <h1>
-          Click This: <a href={links}>Click This For RBE Information</a>
+          No Information Is Available, Click Links Below To See Other Pages
+          Instead.
         </h1>
-      </div>
+      )}
 
       <div>
         <h1>Link For Other DONKI Pages</h1>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function DonkiSEP() {
   const [links, setLink] = useState(null);
+  const [available, setAvailable] = useState(null);
   const [event, setEvent] = useState("");
   const [instrument, setInstrument] = useState(null);
   const [link, setLinked] = useState(null);
@@ -17,6 +18,10 @@ function DonkiSEP() {
 
       if (focusRecord.linkedEvents) {
         setLinked(focusRecord.linkedEvents);
+      }
+
+      if (focusRecord.length === 0) {
+        setAvailable(null);
       }
 
       if (focusRecord.instruments) {
@@ -53,37 +58,46 @@ function DonkiSEP() {
   return (
     <div>
       <div>
-        <h1>Recent SEP Information:</h1>
-        <h1>Event Time: {event}</h1>
-        <h1>SEP ID: {sep}</h1>
-        <h1>Submission Time: {submission}</h1>
-        <h1>---------------------------------------------------------</h1>
-        <h1>Instruments Used:</h1>
-        {instrument ? (
-          instrument.map((obj, idx) => (
-            <h1 key={idx}>
-              Instrument {idx + 1}: {obj.displayName}
+        {available ? (
+          <div>
+            {" "}
+            <h1>Recent SEP Information:</h1>
+            <h1>Event Time: {event}</h1>
+            <h1>SEP ID: {sep}</h1>
+            <h1>Submission Time: {submission}</h1>
+            <h1>---------------------------------------------------------</h1>
+            <h1>Instruments Used:</h1>
+            {instrument ? (
+              instrument.map((obj, idx) => (
+                <h1 key={idx}>
+                  Instrument {idx + 1}: {obj.displayName}
+                </h1>
+              ))
+            ) : (
+              <h2>No Instrument Found</h2>
+            )}
+            <h1>---------------------------------------------------------</h1>
+            <h1>Linked Events To SEP:</h1>
+            {link ? (
+              link.map((obj, idx) => (
+                <h1 key={idx}>
+                  #{idx + 1}: {obj.activityID}
+                </h1>
+              ))
+            ) : (
+              <h2>No Linked Event Found</h2>
+            )}
+            <h1>---------------------------------------------------------</h1>
+            <h1>
+              CLick Here: <a href={links}>Click For SEP Information</a>
             </h1>
-          ))
+          </div>
         ) : (
-          <h2>No Instrument Found</h2>
+          <h1>
+            No Information Is Available, Click Links Below To See Other Pages
+            Instead.
+          </h1>
         )}
-        <h1>---------------------------------------------------------</h1>
-        <h1>Linked Events To SEP:</h1>
-        {link ? (
-          link.map((obj, idx) => (
-            <h1 key={idx}>
-              #{idx + 1}: {obj.activityID}
-            </h1>
-          ))
-        ) : (
-          <h2>No Linked Event Found</h2>
-        )}
-        <h1>---------------------------------------------------------</h1>
-
-        <h1>
-          CLick Here: <a href={links}>Click For SEP Information</a>
-        </h1>
 
         <div>
           <h1>Link For Other DONKI Pages</h1>

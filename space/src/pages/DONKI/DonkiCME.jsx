@@ -12,6 +12,7 @@ function Donki() {
   const [name2, setName2] = useState("");
   const [name3, setName3] = useState("");
   const [instruments, setInstruments] = useState(null);
+  const [available, setAvailable] = useState(null);
   useEffect(() => {
     async function fetchData() {
       // You can await here
@@ -20,6 +21,10 @@ function Donki() {
 
       if (focusRecord.instruments) {
         setInstruments(focusRecord.instruments);
+      }
+
+      if (focusRecord.length === 0) {
+        setAvailable(null);
       }
 
       if (focusRecord.link) {
@@ -65,27 +70,37 @@ function Donki() {
     <div>
       <div>
         {/* <button className="btn">Choose DONKI</button> */}
-        <h1>Today's CME Information</h1>
-        <h1>Activity ID: {activityID}</h1>
-        <h1>Latitude: {latitude}</h1>
-        <h1>Longitude: {longitude}</h1>
-        <h1>---------------------------------------------------------</h1>
-        <h1>Instruments Used:</h1>
-        {instruments ? (
-          instruments.map((obj, idx) => (
-            <h1 key={idx}>
-              Instrument {idx + 1}: {obj.displayName}
+        {available ? (
+          <div>
+            <h1>Today's CME Information</h1>
+            <h1>Activity ID: {activityID}</h1>
+            <h1>Latitude: {latitude}</h1>
+            <h1>Longitude: {longitude}</h1>
+            <h1>---------------------------------------------------------</h1>
+            <h1>Instruments Used:</h1>
+            {instruments ? (
+              instruments.map((obj, idx) => (
+                <h1 key={idx}>
+                  Instrument {idx + 1}: {obj.displayName}
+                </h1>
+              ))
+            ) : (
+              <h2>No Instrument Found</h2>
+            )}
+            <h1>---------------------------------------------------------</h1>
+            <h1>Note: {note}</h1>
+            <h1>---------------------------------------------------------</h1>
+            <h1>
+              CME Link: <a href={links}>Click Here For CME information</a>
             </h1>
-          ))
+          </div>
         ) : (
-          <h2>No Instrument Found</h2>
+          <h1>
+            No Information Is Available, Click Links Below To See Other Pages
+            Instead.
+          </h1>
         )}
-        <h1>---------------------------------------------------------</h1>
-        <h1>Note: {note}</h1>
-        <h1>---------------------------------------------------------</h1>
-        <h1>
-          CME Link: <a href={links}>Click Here For CME information</a>
-        </h1>
+
         <h1>
           CME Analyses Link: <a href={cmeaLink}>Link For CMEA</a>
         </h1>

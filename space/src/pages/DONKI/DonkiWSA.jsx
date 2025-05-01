@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function DonkiWSA() {
   const [links, setLink] = useState(null);
   const [au, setAU] = useState(0);
+  const [available, setAvailable] = useState(null);
   const [cmeStart, setStart] = useState("");
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
@@ -31,6 +32,10 @@ function DonkiWSA() {
 
       if (focusRecord.impactList) {
         setImpactList(focusRecord.impactList);
+      }
+
+      if (focusRecord.length === 0) {
+        setAvailable(null);
       }
 
       if (focusRecord.au) {
@@ -105,45 +110,55 @@ function DonkiWSA() {
   return (
     <div>
       <div>
-        <h1>Most Recent WSA Information</h1>
-        <h1>AU: {au}</h1>
-        <h1>CME Start Time: {cmeStart}</h1>
-        <h1>Latitude: {latitude}</h1>
-        <h1>Longitude: {longitude}</h1>
-        <h1>Speed: {speed}</h1>
-        <h1>Half Angle: {half}</h1>
-        <h1>CME ID: {cmeID}</h1>
-        <h1>Time21_5: {time}</h1>
-        <h1>Model Completion Time: {completion}</h1>
-        <h1>Simulation ID: {simulation}</h1>
-        <h1>---------------------------------------------------------</h1>
-        <div>
-          <h1>Location For WSA:</h1>
-          {impactList ? (
-            impactList.map((obj, idx) => (
-              <h1 key={idx}>
-                Location {idx + 1}: {obj.location}
-              </h1>
-            ))
-          ) : (
-            <h2>No Location Found</h2>
-          )}
-          <h1>---------------------------------------------------------</h1>
-          <h1>Arrival Time For WSA:</h1>
-          {impactList ? (
-            impactList.map((obj, idx) => (
-              <h1 key={idx}>
-                Arrival Time {idx + 1}: {obj.arrivalTime}
-              </h1>
-            ))
-          ) : (
-            <h2>No Arrival Time Found</h2>
-          )}
-        </div>
-        <h1>---------------------------------------------------------</h1>
-        <h1>
-          Click Here: <a href={links}>Click Here For WSA Information</a>
-        </h1>
+        {available ? (
+          <div>
+            <h1>Most Recent WSA Information</h1>
+            <h1>AU: {au}</h1>
+            <h1>CME Start Time: {cmeStart}</h1>
+            <h1>Latitude: {latitude}</h1>
+            <h1>Longitude: {longitude}</h1>
+            <h1>Speed: {speed}</h1>
+            <h1>Half Angle: {half}</h1>
+            <h1>CME ID: {cmeID}</h1>
+            <h1>Time21_5: {time}</h1>
+            <h1>Model Completion Time: {completion}</h1>
+            <h1>Simulation ID: {simulation}</h1>
+            <h1>---------------------------------------------------------</h1>
+            <div>
+              <h1>Location For WSA:</h1>
+              {impactList ? (
+                impactList.map((obj, idx) => (
+                  <h1 key={idx}>
+                    Location {idx + 1}: {obj.location}
+                  </h1>
+                ))
+              ) : (
+                <h2>No Location Found</h2>
+              )}
+              <h1>---------------------------------------------------------</h1>
+              <h1>Arrival Time For WSA:</h1>
+              {impactList ? (
+                impactList.map((obj, idx) => (
+                  <h1 key={idx}>
+                    Arrival Time {idx + 1}: {obj.arrivalTime}
+                  </h1>
+                ))
+              ) : (
+                <h2>No Arrival Time Found</h2>
+              )}
+            </div>
+            <h1>---------------------------------------------------------</h1>
+            <h1>
+              Click Here: <a href={links}>Click Here For WSA Information</a>
+            </h1>
+          </div>
+        ) : (
+          <h1>
+            No Information Is Available, Click Links Below To See Other Pages
+            Instead.
+          </h1>
+        )}
+
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>

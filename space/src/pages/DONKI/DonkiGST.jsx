@@ -6,6 +6,7 @@ function DonkiGST() {
   const [ID, setID] = useState("");
   const [allKpIndex, setAllKpIndex] = useState(null);
   const [linked, setLinked] = useState(null);
+  const [available, setAvailable] = useState(null);
   const [start, setStart] = useState("");
   const [submit, setSubmit] = useState("");
   useEffect(() => {
@@ -16,6 +17,10 @@ function DonkiGST() {
 
       if (focusRecord.allKpIndex) {
         setAllKpIndex(focusRecord.allKpIndex);
+      }
+
+      if (focusRecord.length === 0) {
+        setAvailable(null);
       }
 
       if (focusRecord.link) {
@@ -51,39 +56,50 @@ function DonkiGST() {
   return (
     <div>
       <div>
-        <h1>Recent GST Information</h1>
-        <h1>GST ID: {ID}</h1>
-        <h1>Start Time: {start}</h1>
-        <h1>Submission Time: {submit}</h1>
-        <h1>---------------------------------------------------------</h1>
-        {allKpIndex ? (
-          allKpIndex.map((obj, idx) => (
-            <div>
-              <h1 key={"time-" + idx}>Observed Time: {obj.observedTime}</h1>
-              <h1 key={"kpidx-" + idx}>Kp Index: {obj.kpIndex}</h1>
-              <h1 key={"source-" + idx}>Source: {obj.source}</h1>
-              <h1>--------------------------------------------</h1>
-            </div>
-          ))
-        ) : (
-          <h2>No values found</h2>
-        )}
+        {available ? (
+          <div>
+            <h1>Recent GST Information</h1>
+            <h1>GST ID: {ID}</h1>
+            <h1>Start Time: {start}</h1>
+            <h1>Submission Time: {submit}</h1>
+            <h1>---------------------------------------------------------</h1>
+            {allKpIndex ? (
+              allKpIndex.map((obj, idx) => (
+                <div>
+                  <h1 key={"time-" + idx}>Observed Time: {obj.observedTime}</h1>
+                  <h1 key={"kpidx-" + idx}>Kp Index: {obj.kpIndex}</h1>
+                  <h1 key={"source-" + idx}>Source: {obj.source}</h1>
+                  <h1>--------------------------------------------</h1>
+                </div>
+              ))
+            ) : (
+              <h2>No values found</h2>
+            )}
 
-        <h1>Linked Events For GST</h1>
-        {linked ? (
-          linked.map((obj, idx) => (
-            <h1 key={idx}>
-              #{idx + 1}: {obj.activityID}
+            <h1>Linked Events For GST</h1>
+            {linked ? (
+              linked.map((obj, idx) => (
+                <h1 key={idx}>
+                  #{idx + 1}: {obj.activityID}
+                </h1>
+              ))
+            ) : (
+              <h2>No Linked Event Found</h2>
+            )}
+            <h1>---------------------------------------------------------</h1>
+
+            <h1>
+              Link For GST:{" "}
+              <a href={links}>Click Here For The GST Information</a>
             </h1>
-          ))
+          </div>
         ) : (
-          <h2>No Linked Event Found</h2>
+          <h1>
+            No Information Is Available, Click Links Below To See Other Pages
+            Instead.
+          </h1>
         )}
-        <h1>---------------------------------------------------------</h1>
 
-        <h1>
-          Link For GST: <a href={links}>Click Here For The GST Information</a>
-        </h1>
         <div>
           <h1>Link For Other DONKI Pages</h1>
           <div>
