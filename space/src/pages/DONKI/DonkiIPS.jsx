@@ -8,7 +8,7 @@ function DonkiIPS() {
   const [catalog, setCatalog] = useState("");
   const [eventTime, setEvent] = useState("");
   const [instruments, setInstruments] = useState(null);
-  const [available, setAvailable] = useState(null);
+  const [available, setAvailable] = useState(true);
   const [location, setLocation] = useState("");
   const [submission, setTime] = useState("");
   useEffect(() => {
@@ -17,12 +17,12 @@ function DonkiIPS() {
       const response = await DONKIIPS();
       const focusRecord = response[response.length - 1];
 
-      if (focusRecord.instruments) {
-        setInstruments(focusRecord.instruments);
+      if (!focusRecord) {
+        setAvailable(null);
       }
 
-      if (focusRecord.length === 0) {
-        setAvailable(null);
+      if (focusRecord.instruments) {
+        setInstruments(focusRecord.instruments);
       }
 
       if (focusRecord.activityID) {

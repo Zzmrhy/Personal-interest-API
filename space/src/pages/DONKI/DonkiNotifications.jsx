@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function DonkiNotification() {
   const [links, setLink] = useState(null);
-  const [available, setAvailable] = useState(null);
+  const [available, setAvailable] = useState(true);
   const [message, setMessage] = useState("");
   const [messageID, setMessageID] = useState("");
   const [issue, setIssue] = useState("");
@@ -14,9 +14,9 @@ function DonkiNotification() {
     async function fetchData() {
       // You can await here
       const response = await DONKINotifications();
-      const focusRecord = [response.length - 1];
+      const focusRecord = response[response.length - 1];
 
-      if (focusRecord.length === 0) {
+      if (!focusRecord) {
         setAvailable(null);
       }
 

@@ -6,7 +6,7 @@ function DonkiGST() {
   const [ID, setID] = useState("");
   const [allKpIndex, setAllKpIndex] = useState(null);
   const [linked, setLinked] = useState(null);
-  const [available, setAvailable] = useState(null);
+  const [available, setAvailable] = useState(true);
   const [start, setStart] = useState("");
   const [submit, setSubmit] = useState("");
   useEffect(() => {
@@ -15,12 +15,12 @@ function DonkiGST() {
       const response = await DONKIGST();
       const focusRecord = response[response.length - 1];
 
-      if (focusRecord.allKpIndex) {
-        setAllKpIndex(focusRecord.allKpIndex);
+      if (!focusRecord) {
+        setAvailable(null);
       }
 
-      if (focusRecord.length === 0) {
-        setAvailable(null);
+      if (focusRecord.allKpIndex) {
+        setAllKpIndex(focusRecord.allKpIndex);
       }
 
       if (focusRecord.link) {

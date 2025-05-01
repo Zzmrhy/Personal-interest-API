@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function DonkiWSA() {
   const [links, setLink] = useState(null);
   const [au, setAU] = useState(0);
-  const [available, setAvailable] = useState(null);
+  const [available, setAvailable] = useState(true);
   const [cmeStart, setStart] = useState("");
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
@@ -30,12 +30,12 @@ function DonkiWSA() {
       const response = await DONKIWSA();
       const focusRecord = response[response.length - 1];
 
-      if (focusRecord.impactList) {
-        setImpactList(focusRecord.impactList);
+      if (!focusRecord) {
+        setAvailable(null);
       }
 
-      if (focusRecord.length === 0) {
-        setAvailable(null);
+      if (focusRecord.impactList) {
+        setImpactList(focusRecord.impactList);
       }
 
       if (focusRecord.au) {

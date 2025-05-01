@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function DonkiSEP() {
   const [links, setLink] = useState(null);
-  const [available, setAvailable] = useState(null);
+  const [available, setAvailable] = useState(true);
   const [event, setEvent] = useState("");
   const [instrument, setInstrument] = useState(null);
   const [link, setLinked] = useState(null);
@@ -16,12 +16,12 @@ function DonkiSEP() {
       const response = await DONKISEP();
       const focusRecord = response[response.length - 1];
 
-      if (focusRecord.linkedEvents) {
-        setLinked(focusRecord.linkedEvents);
+      if (!focusRecord) {
+        setAvailable(null);
       }
 
-      if (focusRecord.length === 0) {
-        setAvailable(null);
+      if (focusRecord.linkedEvents) {
+        setLinked(focusRecord.linkedEvents);
       }
 
       if (focusRecord.instruments) {
@@ -60,7 +60,6 @@ function DonkiSEP() {
       <div>
         {available ? (
           <div>
-            {" "}
             <h1>Recent SEP Information:</h1>
             <h1>Event Time: {event}</h1>
             <h1>SEP ID: {sep}</h1>

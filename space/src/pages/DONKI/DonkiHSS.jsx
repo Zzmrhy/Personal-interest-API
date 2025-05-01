@@ -10,19 +10,19 @@ function DonkiHSS() {
   const [version, setVersion] = useState(0);
   const [impactList, setImpactList] = useState(null);
   const [instruments, setInstruments] = useState(null);
-  const [available, setAvailable] = useState(null);
+  const [available, setAvailable] = useState(true);
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await DONKIHSS();
       const focusRecord = response[response.length - 1];
 
-      if (focusRecord.instruments) {
-        setInstruments(focusRecord.instruments);
+      if (!focusRecord) {
+        setAvailable(null);
       }
 
-      if (focusRecord.length === 0) {
-        setAvailable(null);
+      if (focusRecord.instruments) {
+        setInstruments(focusRecord.instruments);
       }
 
       if (focusRecord.eventTime) {
