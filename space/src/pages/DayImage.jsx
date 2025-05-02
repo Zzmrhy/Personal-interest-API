@@ -4,6 +4,7 @@ import { getPictureOfTheDay } from "../services/api";
 function DayImage() {
   const [pic, setPic] = useState(null);
   const [video, setVideo] = useState(null);
+  const [available, setAvailable] = useState(true);
   const [desc, setDesc] = useState("");
   const [copy, setCopy] = useState("");
   const [title, setTitle] = useState("");
@@ -13,6 +14,10 @@ function DayImage() {
     async function fetchData() {
       // You can await here
       const response = await getPictureOfTheDay();
+
+      if (!response) {
+        setAvailable(null);
+      }
 
       if (response.copyright) {
         setCopy(response.copyright);
@@ -57,34 +62,40 @@ function DayImage() {
 
   return (
     <div>
-      <h1>Today's Picture Of the Day: </h1>
-      <h1>{title}</h1>
-      <h1>Copyright: {copy}</h1>
-      <h1>Date: {date}</h1>
-      <h1>Media Type: {media}</h1>
-      {media == "image" ? (
-        <img src={pic} alt="Some Picture" />
-      ) : media == "video" && video.indexOf("youtube") > 0 ? (
-        <iframe
-          width="560"
-          height="315"
-          src={video}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      ) : (
-        <p>
-          No content loaded. Check it out{" "}
-          <a href={video} target="_blank">
-            here
-          </a>{" "}
-        </p>
-      )}
+      {available ? (
+        <div>
+          <h1>Today's Picture Of the Day: </h1>
+          <h1>{title}</h1>
+          <h1>Copyright: {copy}</h1>
+          <h1>Date: {date}</h1>
+          <h1>Media Type: {media}</h1>
+          {media == "image" ? (
+            <img src={pic} alt="Some Picture" />
+          ) : media == "video" && video.indexOf("youtube") > 0 ? (
+            <iframe
+              width="560"
+              height="315"
+              src={video}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <p>
+              No content loaded. Check it out{" "}
+              <a href={video} target="_blank">
+                here
+              </a>{" "}
+            </p>
+          )}
 
-      <h1>Explanation: {desc}</h1>
+          <h1>Explanation: {desc}</h1>
+        </div>
+      ) : (
+        <h1>No Picture Of The Day Today</h1>
+      )}
     </div>
   );
 }

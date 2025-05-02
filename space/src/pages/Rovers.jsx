@@ -16,9 +16,15 @@ function Rovers() {
   const [launch, setLaunch] = useState("");
   const [full, setFullName] = useState("");
   const [camID, setCamID] = useState("");
+  const [available, setAvailable] = useState(true);
   useEffect(() => {
     async function fetchData() {
       const response = await Rover();
+
+      if (!response) {
+        setAvailable(null);
+      }
+
       if (index < 0 || index > response.photos.length - 1) {
         alert(
           "Index is out of bounds, automatically will be set to what information index 0 has"
@@ -86,18 +92,24 @@ function Rovers() {
 
   return (
     <div>
-      <div>{Search()}</div>
-      <h1>Rover Picture Of Mars</h1>
-      <h1>Index Number: {activeIdx}</h1>
-      <h1>Picture Taken: {earth}</h1>
-      <h1>Rover Status: {stat}</h1>
-      <h1>Rover Name: {name}</h1>
-      <h1>Rover Land Date: {land}</h1>
-      <h1>Rover Launch Date: {launch}</h1>
-      <h1>Camera Name: {camName}</h1>
-      <h1>Camera Full Name: {full}</h1>
-      <h1>Camera ID: {camID}</h1>
-      <img src={rover} alt="Picture" />
+      {available ? (
+        <div>
+          <div>{Search()}</div>
+          <h1>Rover Picture Of Mars</h1>
+          <h1>Index Number: {activeIdx}</h1>
+          <h1>Picture Taken: {earth}</h1>
+          <h1>Rover Status: {stat}</h1>
+          <h1>Rover Name: {name}</h1>
+          <h1>Rover Land Date: {land}</h1>
+          <h1>Rover Launch Date: {launch}</h1>
+          <h1>Camera Name: {camName}</h1>
+          <h1>Camera Full Name: {full}</h1>
+          <h1>Camera ID: {camID}</h1>
+          <img src={rover} alt="Picture" />
+        </div>
+      ) : (
+        <h1>Incorrect SOL chosen, try again</h1>
+      )}
     </div>
   );
 }

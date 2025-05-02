@@ -1,15 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Rover } from "../services/api";
 import "../css/SearchBar.css";
 
 function Search() {
+  const [limit, setLimit] = useState(0);
+  useEffect(() => {
+    async function fetchData() {
+      const response = await Rover();
+
+      if (response.photos.length - 1) {
+        setLimit(response.photos.length - 1);
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div>
       <form className="search-form" action={Rover.data}>
         <input
           name="index"
           type="text"
-          placeholder="Get Image By Index (min = 0, max = 855)"
+          placeholder={`Get Image By Index ${`(min = 0, max = ${limit})`}`}
           className="search-input"
         />
       </form>

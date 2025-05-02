@@ -103,7 +103,7 @@ export const DONKINotifications = async () => {
 
 export const Rover = async () => {
   const response = await fetch(
-    `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${API_KEY}`
+    `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=4500&api_key=${API_KEY}`
   );
   const data = await response.json();
   // console.log(data);
