@@ -151,12 +151,6 @@ function DonkiGST() {
               </Link>
             </h2>
           </div>
-
-          <div>
-            <h2>
-              <Link to="/donkiMPC">Click Here To See The DonkiMPC Page</Link>
-            </h2>
-          </div>
         </div>
       </div>
     </div>

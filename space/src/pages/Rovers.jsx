@@ -20,9 +20,10 @@ function Rovers() {
   const [full, setFullName] = useState("");
   const [camID, setCamID] = useState("");
   const [available, setAvailable] = useState(true);
+  const [roverNum, setRoverNum] = useState(sol);
   useEffect(() => {
     async function fetchData() {
-      const response = await Rover();
+      const response = await Rover(roverNum);
 
       if (!response) {
         setAvailable(null);
@@ -91,7 +92,7 @@ function Rovers() {
       }
     }
     fetchData();
-  }, []);
+  }, [roverNum]);
 
   return (
     <div>
@@ -116,6 +117,7 @@ function Rovers() {
       </h1>
       <h1>Search SOL Number To Change All Information</h1>
       <div>{SOLSearch()}</div>
+      <h1>Current SOL Number: {sol}</h1>
     </div>
   );
 }
