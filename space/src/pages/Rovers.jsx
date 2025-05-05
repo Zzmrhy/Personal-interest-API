@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { Rover } from "../services/api";
 import Search from "../components/SearchBar";
+import SOLSearch from "../components/SOLBar";
 import { useSearchParams } from "react-router-dom";
 
 function Rovers() {
   const [searchParams] = useSearchParams();
   let index = searchParams.get("index") ? searchParams.get("index") : 0;
+  const [SOLParams] = useSearchParams();
+  let sol = SOLParams.get("sol") ? SOLParams.get("sol") : 1000;
   const [activeIdx, setActiveIndex] = useState(index);
   const [rover, setPic] = useState(null);
   const [earth, setEarth] = useState("");
@@ -92,24 +95,27 @@ function Rovers() {
 
   return (
     <div>
-      {available ? (
-        <div>
-          <div>{Search()}</div>
-          <h1>Rover Picture Of Mars</h1>
-          <h1>Index Number: {activeIdx}</h1>
-          <h1>Picture Taken: {earth}</h1>
-          <h1>Rover Status: {stat}</h1>
-          <h1>Rover Name: {name}</h1>
-          <h1>Rover Land Date: {land}</h1>
-          <h1>Rover Launch Date: {launch}</h1>
-          <h1>Camera Name: {camName}</h1>
-          <h1>Camera Full Name: {full}</h1>
-          <h1>Camera ID: {camID}</h1>
-          <img src={rover} alt="Picture" />
-        </div>
-      ) : (
-        <h1>Incorrect SOL chosen, try again</h1>
-      )}
+      <h1>Search For Index</h1>
+      <div>{Search()}</div>
+      <h1>
+        ----------------------------------------------------------------------------------
+      </h1>
+      <h1>Rover Picture Of Mars</h1>
+      <h1>Index Number: {activeIdx}</h1>
+      <h1>Picture Taken: {earth}</h1>
+      <h1>Rover Status: {stat}</h1>
+      <h1>Rover Name: {name}</h1>
+      <h1>Rover Land Date: {land}</h1>
+      <h1>Rover Launch Date: {launch}</h1>
+      <h1>Camera Name: {camName}</h1>
+      <h1>Camera Full Name: {full}</h1>
+      <h1>Camera ID: {camID}</h1>
+      <img src={rover} alt="Picture" />
+      <h1>
+        ----------------------------------------------------------------------------------
+      </h1>
+      <h1>Search SOL Number To Change All Information</h1>
+      <div>{SOLSearch()}</div>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export const DONKICME = async () => {
     `${BASE_URL}/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 
@@ -58,10 +58,10 @@ export const DONKISEP = async () => {
 
 export const DONKIMPC = async () => {
   const response = await fetch(
-    `${BASE_URL}/DONKI/MPC?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=All&api_key=${API_KEY}`
+    `${BASE_URL}/DONKI/MPC?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 
@@ -106,6 +106,6 @@ export const Rover = async () => {
     `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=4500&api_key=${API_KEY}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };

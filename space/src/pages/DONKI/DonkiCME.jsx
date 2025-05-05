@@ -8,6 +8,7 @@ function Donki() {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [cmeaLink, setCMEA] = useState(null);
+  const [stuff, setStuff] = useState(null);
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   const [name3, setName3] = useState("");
@@ -24,6 +25,10 @@ function Donki() {
 
       if (focusRecord.instruments) {
         setInstruments(focusRecord.instruments);
+      }
+
+      if (focusRecord.cmeAnalyses) {
+        setStuff(focusRecord.cmeAnalyses);
       }
 
       if (focusRecord.link) {
@@ -71,8 +76,17 @@ function Donki() {
         <div>
           <h1>Today's CME Information</h1>
           <h1>Activity ID: {activityID}</h1>
-          <h1>Latitude: {latitude}</h1>
-          <h1>Longitude: {longitude}</h1>
+          {stuff ? (
+            <div>
+              <h1>Latitude: {latitude}</h1>
+              <h1>Longitude: {longitude}</h1>
+            </div>
+          ) : (
+            <div>
+              <h1>Latitude: N/A</h1>
+              <h1>Longitude: N/A</h1>
+            </div>
+          )}
           <h1>---------------------------------------------------------</h1>
           <h1>Instruments Used:</h1>
           {instruments ? (
@@ -90,10 +104,15 @@ function Donki() {
           <h1>
             CME Link: <a href={links}>Click Here For CME information</a>
           </h1>
-
-          <h1>
-            CME Analyses Link: <a href={cmeaLink}>Link For CMEA</a>
-          </h1>
+          {stuff ? (
+            <div>
+              <h1>
+                CME Analyses Link: <a href={cmeaLink}>Link For CMEA</a>
+              </h1>
+            </div>
+          ) : (
+            <h1>CME Analyses Link: Unavailable</h1>
+          )}
         </div>
       ) : (
         <h1>
