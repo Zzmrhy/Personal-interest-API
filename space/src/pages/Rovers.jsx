@@ -102,6 +102,7 @@ function Rovers() {
         ----------------------------------------------------------------------------------
       </h1>
       <h1>Rover Picture Of Mars</h1>
+      <h1>Current SOL Number: {sol}</h1>
       <h1>Index Number: {activeIdx}</h1>
       <h1>Picture Taken: {earth}</h1>
       <h1>Rover Status: {stat}</h1>
@@ -117,7 +118,6 @@ function Rovers() {
       </h1>
       <h1>Search SOL Number To Change All Information</h1>
       <div>{SOLSearch()}</div>
-      <h1>Current SOL Number: {sol}</h1>
     </div>
   );
 }

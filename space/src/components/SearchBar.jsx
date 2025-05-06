@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Rover } from "../services/api";
+import SOLSearch from "./SOLBar";
 import "../css/SearchBar.css";
 
 function Search() {
