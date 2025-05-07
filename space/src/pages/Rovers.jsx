@@ -40,7 +40,7 @@ function Rovers() {
       if (response.photos[index].earth_date) {
         setEarth(response.photos[index].earth_date);
       } else {
-        setEarth("");
+        setEarth("N/A");
       }
 
       if (response.photos[index].img_src) {
@@ -52,43 +52,43 @@ function Rovers() {
       if (response.photos[index].rover.status) {
         setStat(response.photos[index].rover.status);
       } else {
-        setStat("");
+        setStat("N/A");
       }
 
       if (response.photos[index].rover.name) {
         setName(response.photos[index].rover.name);
       } else {
-        setName("");
+        setName("N/A");
       }
 
       if (response.photos[index].rover.landing_date) {
         setLand(response.photos[index].rover.landing_date);
       } else {
-        setLand("");
+        setLand("N/A");
       }
 
       if (response.photos[index].rover.launch_date) {
         setLaunch(response.photos[index].rover.launch_date);
       } else {
-        setLaunch("");
+        setLaunch("N/A");
       }
 
       if (response.photos[index].camera.name) {
         setCamName(response.photos[index].camera.name);
       } else {
-        setCamName("");
+        setCamName("N/A");
       }
 
       if (response.photos[index].camera.full_name) {
         setFullName(response.photos[index].camera.full_name);
       } else {
-        setFullName("");
+        setFullName("N/A");
       }
 
       if (response.photos[index].camera.id) {
         setCamID(response.photos[index].camera.id);
       } else {
-        setCamID("");
+        setCamID("N/A");
       }
     }
     fetchData();
@@ -97,7 +97,7 @@ function Rovers() {
   return (
     <div>
       <h1>Search For Index</h1>
-      <div>{Search()}</div>
+      <div>{Search(sol)}</div>
       <h1>
         ----------------------------------------------------------------------------------
       </h1>
@@ -117,7 +117,7 @@ function Rovers() {
         ----------------------------------------------------------------------------------
       </h1>
       <h1>Search SOL Number To Change All Information</h1>
-      <div>{SOLSearch()}</div>
+      <div>{SOLSearch(index)}</div>
     </div>
   );
 }

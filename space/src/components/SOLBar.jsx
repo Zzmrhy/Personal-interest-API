@@ -3,7 +3,7 @@ import { Rover } from "../services/api";
 import Search from "./SearchBar";
 import "../css/SearchBar.css";
 
-function SOLSearch() {
+function SOLSearch(index = 0) {
   return (
     <div>
       <form className="search-form" action={Rover.data}>
@@ -13,6 +13,7 @@ function SOLSearch() {
           placeholder="Enter a number to change SOL (note: if you go out of bounds with SOL the page will change to index 0 a few times and will return nothing"
           className="search-input"
         />
+        <input type="hidden" value={index} name="index" />
       </form>
     </div>
   );

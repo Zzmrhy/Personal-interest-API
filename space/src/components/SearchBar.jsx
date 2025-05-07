@@ -3,7 +3,7 @@ import { Rover } from "../services/api";
 import SOLSearch from "./SOLBar";
 import "../css/SearchBar.css";
 
-function Search() {
+function Search(sol = 1000) {
   const [limit, setLimit] = useState(0);
   useEffect(() => {
     async function fetchData() {
@@ -25,6 +25,7 @@ function Search() {
           placeholder={`Get Image By Index ${`(min = 0, max = ${limit})`}`}
           className="search-input"
         />
+        <input type="hidden" value={sol} name="sol" />
       </form>
     </div>
   );
