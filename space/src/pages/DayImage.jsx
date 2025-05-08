@@ -1,7 +1,20 @@
 import { useState, useEffect } from "react";
 import { getPictureOfTheDay } from "../services/api";
+import { useSearchParams } from "react-router-dom";
+import DateSearch from "../components/DateSearch";
+
+function getFormattedDate(date) {
+  const yyyy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  const dd = String(date.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
 
 function DayImage() {
+  const [params] = useSearchParams();
+  let chosen = params.get("date")
+    ? params.get("date")
+    : getFormattedDate(new Date());
   const [pic, setPic] = useState(null);
   const [video, setVideo] = useState(null);
   const [available, setAvailable] = useState(true);
@@ -13,7 +26,7 @@ function DayImage() {
   useEffect(() => {
     async function fetchData() {
       // You can await here
-      const response = await getPictureOfTheDay();
+      const response = await getPictureOfTheDay(chosen);
 
       if (!response) {
         setAvailable(null);
@@ -64,10 +77,16 @@ function DayImage() {
     <div>
       {available ? (
         <div>
+          <h1>Put A Date To Change Information (YYYY-MM-DD format)</h1>
+          <div>{DateSearch()}</div>
+          <h1>Chosen Date: {chosen}</h1>
+          <h1>
+            ----------------------------------------------------------------------------
+          </h1>
           <h1>Today's Picture Of the Day: </h1>
           <h1>{title}</h1>
           <h1>Copyright: {copy}</h1>
-          <h1>Date: {date}</h1>
+          <h1>Today's Date: {chosen}</h1>
           <h1>Media Type: {media}</h1>
           {media == "image" ? (
             <img src={pic} alt="Some Picture" />
@@ -87,7 +106,7 @@ function DayImage() {
               No content loaded. Check it out{" "}
               <a href={video} target="_blank">
                 here
-              </a>{" "}
+              </a>
             </p>
           )}
 

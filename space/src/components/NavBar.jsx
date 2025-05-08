@@ -3,8 +3,13 @@ import "../css/NavBar.css";
 function NavBar() {
   return (
     <nav className="navbar">
-      <div className="navbar-brand, link">
+      <div className="navbar-brank, link">
         <Link to="/" className="nav-link">
+          Home Page
+        </Link>
+      </div>
+      <div className="navbar-brand, link">
+        <Link to="/picture" className="nav-link">
           Picture Of The Day
         </Link>
       </div>

@@ -1,9 +1,9 @@
 const API_KEY = import.meta.env.VITE_NASA_API_KEY;
 const BASE_URL = "https://api.nasa.gov";
 
-export const getPictureOfTheDay = async () => {
+export const getPictureOfTheDay = async (day) => {
   const response = await fetch(
-    `${BASE_URL}/planetary/apod?api_key=${API_KEY}` //&date=2025-04-21
+    `${BASE_URL}/planetary/apod?api_key=${API_KEY}&date=${day}`
   );
   const data = await response.json();
   // console.log(data);

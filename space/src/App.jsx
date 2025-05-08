@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./css/App.css";
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import DayImage from "./pages/DayImage";
 import NavBar from "./components/NavBar";
 import Donki from "./pages/DONKI/DonkiCME";
@@ -18,7 +19,8 @@ function App() {
     <main>
       <NavBar />
       <Routes>
-        <Route path="/" element={<DayImage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/picture" element={<DayImage />} />
         <Route path="/donki" element={<Donki />} />
         <Route path="/donkiGST" element={<DonkiGST />} />
         <Route path="/donkiIPS" element={<DonkiIPS />} />
