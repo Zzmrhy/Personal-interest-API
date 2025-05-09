@@ -9,8 +9,6 @@ function Rovers() {
   let index = searchParams.get("index") ? searchParams.get("index") : 0;
   const [SOLParams] = useSearchParams();
   let sol = SOLParams.get("sol") ? SOLParams.get("sol") : 1000;
-  const [NameParams] = useSearchParams();
-  let roverName = NameParams.get("name") ? NameParams.get("name") : "curiosity";
   const [activeIdx, setActiveIndex] = useState(index);
   const [rover, setPic] = useState(null);
   const [earth, setEarth] = useState("");

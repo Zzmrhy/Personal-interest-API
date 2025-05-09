@@ -112,10 +112,9 @@ export const Rover = async (num = 4498) => {
 
 export const Exoplanets = async () => {
   const response = await fetch(
-    "https://cors-anywhere.herokuapp.com/https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps+where+tran_flag=1+and+default_flag=1+order+by+pl_name&format=tsv"
+    "https://cors-anywhere.herokuapp.com/https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps+where+tran_flag=1+and+default_flag=1+order+by+pl_name&format=json"
   );
   const data = await response.json();
   console.log(data);
-  axios.get("http://localhost:5000/api");
   return data;
 };
