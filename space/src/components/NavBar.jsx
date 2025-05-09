@@ -23,6 +23,12 @@ function NavBar() {
           Rover
         </Link>
       </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/exoplanets" className="nav-link">
+          Exoplanets
+        </Link>
+      </div>
     </nav>
   );
 }

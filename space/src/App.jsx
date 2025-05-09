@@ -14,6 +14,7 @@ import Rovers from "./pages/Rovers";
 import DonkiWSA from "./pages/DONKI/DonkiWSA";
 import DonkiNotification from "./pages/DONKI/DonkiNotifications";
 import DonkiHSS from "./pages/DONKI/DonkiHSS";
+import Exoplanets from "./pages/Exoplanets";
 function App() {
   return (
     <main>
@@ -31,6 +32,7 @@ function App() {
         <Route path="/donkiNotifications" element={<DonkiNotification />} />
         <Route path="/donkiHSS" element={<DonkiHSS />} />
         <Route path="/rover" element={<Rovers />} />
+        <Route path="/exoplanets" element={<Exoplanets />} />
       </Routes>
     </main>
   );
