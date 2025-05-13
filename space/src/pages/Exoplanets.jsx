@@ -34,6 +34,7 @@ function Exoplanet() {
   const [tranmid, setTranmid] = useState("");
   const [letter, setLetter] = useState("");
   const [gaia, setGaia] = useState("");
+  const [hip, setHip] = useState("");
   useEffect(() => {
     async function fetchData() {
       const response = await Exoplanets();
@@ -201,6 +202,12 @@ function Exoplanet() {
       } else {
         setTranmid("N/A");
       }
+
+      if (response[index].hip_name) {
+        setHip(response[index].hip_name);
+      } else {
+        setHip("N/A");
+      }
     }
     fetchData();
   }, []);
@@ -229,8 +236,9 @@ function Exoplanet() {
       <h1>Planet Name: {name}</h1>
       <h1>Planet Letter: {letter}</h1>
       <h1>Planet Reference Name: {parse(ref)}</h1>
-      <h1>Host Star Name: {host}</h1>
+      <h1>Host Name: {host}</h1>
       <h1>Age: {parse(age)}</h1>
+      <h1>Hip Name: {hip}</h1>
       <h1>Discovery Telescope: {telescope}</h1>
       <h1>Discovery Year: {discYear}</h1>
       <h1>Discovery Method: {discovery}</h1>
