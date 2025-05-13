@@ -35,6 +35,9 @@ function Exoplanet() {
   const [letter, setLetter] = useState("");
   const [gaia, setGaia] = useState("");
   const [hip, setHip] = useState("");
+  const [mass, setMass] = useState(0);
+  const [bmass, setBMass] = useState("");
+  const [bmassj, setBMassJ] = useState("");
   useEffect(() => {
     async function fetchData() {
       const response = await Exoplanets();
@@ -208,6 +211,24 @@ function Exoplanet() {
       } else {
         setHip("N/A");
       }
+
+      if (response[index].pl_masse) {
+        setMass(response[index].pl_masse);
+      } else {
+        setMass(0);
+      }
+
+      if (response[index].pl_bmassprov) {
+        setBMass(response[index].pl_bmassprov);
+      } else {
+        setBMass("N/A");
+      }
+
+      if (response[index].pl_bmassjstr) {
+        setBMassJ(response[index].pl_bmassjstr);
+      } else {
+        setBMassJ("N/A");
+      }
     }
     fetchData();
   }, []);
@@ -234,6 +255,9 @@ function Exoplanet() {
       <h1>SOL Type: {type}</h1>
       <h1>Gaia ID: {gaia}</h1>
       <h1>Planet Name: {name}</h1>
+      <h1>Planet Mass: {mass}</h1>
+      <h1>Planet Total Mass: {bmassj}</h1>
+      <h1>Planet Total Mass Proof: {bmass}</h1>
       <h1>Planet Letter: {letter}</h1>
       <h1>Planet Reference Name: {parse(ref)}</h1>
       <h1>Host Name: {host}</h1>
