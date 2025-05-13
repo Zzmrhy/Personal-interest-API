@@ -2,6 +2,8 @@ import { Exoplanets } from "../services/api";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import ExoSearch from "../components/ExoplanetSearch";
+import parse from "html-react-parser";
+
 function Exoplanet() {
   const [searchIndex] = useSearchParams();
   let index = searchIndex.get("index") ? searchIndex.get("index") : 0;
@@ -18,9 +20,20 @@ function Exoplanet() {
   const [release, setReleased] = useState("");
   const [type, setType] = useState("");
   const [ref, setRef] = useState("");
-  const [age1, setAge1] = useState("");
-  const [age2, setAge2] = useState("");
-  const [age3, setAge3] = useState("");
+  const [age, setAge] = useState("");
+  const [discoveryRef, setDiscoveryRef] = useState("");
+  const [telescope, setTelescope] = useState("");
+  const [orb, setOrb] = useState("");
+  const [eqt, setEQT] = useState("");
+  const [imp, setImp] = useState("");
+  const [rad, setRad] = useState("");
+  const [radJ, setRadJ] = useState("");
+  const [ratd, setRatd] = useState("");
+  const [ratror, setRatror] = useState("");
+  const [trand, setTrand] = useState("");
+  const [tranmid, setTranmid] = useState("");
+  const [letter, setLetter] = useState("");
+  const [gaia, setGaia] = useState("");
   useEffect(() => {
     async function fetchData() {
       const response = await Exoplanets();
@@ -105,22 +118,88 @@ function Exoplanet() {
         setRef("N/A");
       }
 
-      if (response[index].st_age) {
-        setAge1(response[index].st_age);
+      if (response[index].st_agestr) {
+        setAge(response[index].st_agestr);
       } else {
-        setAge1("N/A");
+        setAge("N/A");
       }
 
-      if (response[index].st_ageerr1) {
-        setAge2(response[index].st_ageerr1);
+      if (response[index].disc_refname) {
+        setDiscoveryRef(response[index].disc_refname);
       } else {
-        setAge2("N/A");
+        setDiscoveryRef("N/A");
       }
 
-      if (response[index].st_ageerr2) {
-        setAge3(response[index].st_ageerr2);
+      if (response[index].disc_telescope) {
+        setTelescope(response[index].disc_telescope);
       } else {
-        setAge3("N/A");
+        setTelescope("N/A");
+      }
+
+      if (response[index].gaia_id) {
+        setGaia(response[index].gaia_id);
+      } else {
+        setGaia("N/A");
+      }
+
+      if (response[index].pl_eqtstr) {
+        setEQT(response[index].pl_eqtstr);
+      } else {
+        setEQT("N/A");
+      }
+
+      if (response[index].pl_impparstr) {
+        setImp(response[index].pl_impparstr);
+      } else {
+        setImp("N/A");
+      }
+
+      if (response[index].pl_letter) {
+        setLetter(response[index].pl_letter);
+      } else {
+        setLetter("N/A");
+      }
+
+      if (response[index].pl_orbperstr) {
+        setOrb(response[index].pl_orbperstr);
+      } else {
+        setOrb("N/A");
+      }
+
+      if (response[index].pl_radestr) {
+        setRad(response[index].pl_radestr);
+      } else {
+        setRad("N/A");
+      }
+
+      if (response[index].pl_radjstr) {
+        setRadJ(response[index].pl_radjstr);
+      } else {
+        setRadJ("N/A");
+      }
+
+      if (response[index].pl_ratdorstr) {
+        setRatd(response[index].pl_ratdorstr);
+      } else {
+        setRatd("N/A");
+      }
+
+      if (response[index].pl_ratrorstr) {
+        setRatror(response[index].pl_ratrorstr);
+      } else {
+        setRatror("N/A");
+      }
+
+      if (response[index].pl_trandurstr) {
+        setTrand(response[index].pl_trandurstr);
+      } else {
+        setTrand("N/A");
+      }
+
+      if (response[index].pl_tranmidstr) {
+        setTranmid(response[index].pl_tranmidstr);
+      } else {
+        setTranmid("N/A");
       }
     }
     fetchData();
@@ -146,17 +225,30 @@ function Exoplanet() {
       <h1>Index Chosen: {activeIdx}</h1>
       <h1>Release Date: {release}</h1>
       <h1>SOL Type: {type}</h1>
+      <h1>Gaia ID: {gaia}</h1>
       <h1>Planet Name: {name}</h1>
-      <h1>Planet Reference Name: {ref}</h1>
+      <h1>Planet Letter: {letter}</h1>
+      <h1>Planet Reference Name: {parse(ref)}</h1>
       <h1>Host Star Name: {host}</h1>
-      <h1>Age: {age1 + age2 + age3}</h1>
+      <h1>Age: {parse(age)}</h1>
+      <h1>Discovery Telescope: {telescope}</h1>
       <h1>Discovery Year: {discYear}</h1>
       <h1>Discovery Method: {discovery}</h1>
       <h1>Discovery Facility: {discfac}</h1>
       <h1>Discovery Locale: {discLoc}</h1>
       <h1>Discovery Instrument: {discIn}</h1>
       <h1>Discovery Published Date: {discPub}</h1>
+      <h1>Discovery Reference Name: {parse(discoveryRef)}</h1>
       <h1>Dec: {desc}</h1>
+      <h1>Planet EQT: {parse(eqt)}</h1>
+      <h1>Planet Imppar: {parse(imp)}</h1>
+      <h1>Planet Orbit: {parse(orb)}</h1>
+      <h1>Planet Radius: {parse(rad)}</h1>
+      <h1>Planet Radius J: {parse(radJ)}</h1>
+      <h1>Planet Ratdor: {parse(ratd)}</h1>
+      <h1>Planet Ratror: {parse(ratror)}</h1>
+      <h1>Planet Trandur: {parse(trand)}</h1>
+      <h1>Planet Tranmid: {parse(tranmid)}</h1>
     </div>
   );
 }

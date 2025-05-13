@@ -106,7 +106,7 @@ export const Rover = async (num = 4498) => {
     `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=${num}&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
