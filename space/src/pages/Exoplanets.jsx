@@ -38,6 +38,12 @@ function Exoplanet() {
   const [mass, setMass] = useState(0);
   const [bmass, setBMass] = useState("");
   const [bmassj, setBMassJ] = useState("");
+  const [orbin, setOrbin] = useState("");
+  const [dens, setDens] = useState("");
+  const [bmasse, setBmasse] = useState("");
+  const [masse, setMasse] = useState("");
+  const [rvamp, setRvamp] = useState("");
+  const [orbl, setOrbl] = useState("");
   useEffect(() => {
     async function fetchData() {
       const response = await Exoplanets();
@@ -229,6 +235,42 @@ function Exoplanet() {
       } else {
         setBMassJ("N/A");
       }
+
+      if (response[index].pl_orbinclstr) {
+        setOrbin(response[index].pl_orbinclstr);
+      } else {
+        setOrbin("N/A");
+      }
+
+      if (response[index].pl_bmassester) {
+        setBmasse(response[index].pl_bmassester);
+      } else {
+        setBmasse("N/A");
+      }
+
+      if (response[index].pl_bmassstr) {
+        setMasse(response[index].pl_bmassstr);
+      } else {
+        setMasse("N/A");
+      }
+
+      if (response[index].pl_orblperstr) {
+        setOrbl(response[index].pl_orblperstr);
+      } else {
+        setOrbl("N/A");
+      }
+
+      if (response[index].pl_rvampstr) {
+        setRvamp(response[index].pl_rvampstr);
+      } else {
+        setRvamp("N/A");
+      }
+
+      if (response[index].pl_densstr) {
+        setDens(response[index].pl_densstr);
+      } else {
+        setDens("N/A");
+      }
     }
     fetchData();
   }, []);
@@ -255,10 +297,10 @@ function Exoplanet() {
       <h1>SOL Type: {type}</h1>
       <h1>Gaia ID: {gaia}</h1>
       <h1>Planet Name: {name}</h1>
-      <h1>Planet Mass: {mass}</h1>
-      <h1>Planet Total Mass: {bmassj}</h1>
-      <h1>Planet Total Mass Proof: {bmass}</h1>
       <h1>Planet Letter: {letter}</h1>
+      <h1>Planet Mass: {mass}</h1>
+      <h1>Planet Total Mass: {parse(bmassj)}</h1>
+      <h1>Planet Total Mass Provided: {bmass}</h1>
       <h1>Planet Reference Name: {parse(ref)}</h1>
       <h1>Host Name: {host}</h1>
       <h1>Age: {parse(age)}</h1>
@@ -281,6 +323,12 @@ function Exoplanet() {
       <h1>Planet Ratror: {parse(ratror)}</h1>
       <h1>Planet Trandur: {parse(trand)}</h1>
       <h1>Planet Tranmid: {parse(tranmid)}</h1>
+      <h1>Planet BMasse: {parse(masse)}</h1>
+      <h1>Planet Orbin: {parse(orbin)}</h1>
+      <h1>Planet Density: {parse(dens)}</h1>
+      <h1>Planet BMass: {parse(bmasse)}</h1>
+      <h1>Planet Rvamp: {parse(rvamp)}</h1>
+      <h1>Planet Orbl: {parse(orbl)}</h1>
     </div>
   );
 }
