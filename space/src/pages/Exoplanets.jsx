@@ -287,6 +287,12 @@ function Exoplanet() {
         Page Is Also Slow To Load Information, You'll Have To Wait For A Bit To
         See Anything.)
       </h1>
+
+      <h1>
+        If You Want To See Any Kepler Exoplanets Put In The Search Bar A Number
+        Ranging From 908-3692, If You Want To See Kepler-22 b Enter 2313 In The
+        Search Bar
+      </h1>
       <h1>----------------------------------------------------</h1>
       <h1>Use This To Change Given Information</h1>
       <div>{ExoSearch()}</div>
