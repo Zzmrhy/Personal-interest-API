@@ -15,7 +15,7 @@ function NavBar() {
       </div>
       <div className="navbar-brand, link">
         <Link to="/donki" className="nav-link">
-          DONKICME
+          DONKI
         </Link>
       </div>
       <div className="navbar-brand, link">
@@ -27,6 +27,18 @@ function NavBar() {
       <div className="navbar-brand, link">
         <Link to="/exoplanets" className="nav-link">
           Exoplanets
+        </Link>
+      </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/hubble" className="nav-link">
+          Hubble
+        </Link>
+      </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/webb" className="nav-link">
+          Webb
         </Link>
       </div>
     </nav>
