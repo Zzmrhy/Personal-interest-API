@@ -17,6 +17,7 @@ import DonkiHSS from "./pages/DONKI/DonkiHSS";
 import Exoplanets from "./pages/Exoplanets";
 import Hubble from "./pages/Hubble";
 import Webb from "./pages/Webb";
+import AlaskyAPI from "./pages/Alasky";
 function App() {
   return (
     <main>
@@ -37,6 +38,7 @@ function App() {
         <Route path="/exoplanets" element={<Exoplanets />} />
         <Route path="/hubble" element={<Hubble />} />
         <Route path="/webb" element={<Webb />} />
+        <Route path="/alasky" element={<AlaskyAPI />} />
       </Routes>
     </main>
   );

@@ -41,6 +41,12 @@ function NavBar() {
           Webb
         </Link>
       </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/alasky" className="nav-link">
+          Alasky
+        </Link>
+      </div>
     </nav>
   );
 }
