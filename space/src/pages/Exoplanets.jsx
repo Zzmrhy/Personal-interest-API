@@ -290,8 +290,7 @@ function Exoplanet() {
 
       <h1>
         If You Want To See Any Kepler Exoplanets Put In The Search Bar A Number
-        Ranging From 908-3692, If You Want To See Kepler-22 b Enter 2313 In The
-        Search Bar
+        Ranging From 900-3630
       </h1>
       <h1>----------------------------------------------------</h1>
       <h1>Use This To Change Given Information</h1>
@@ -335,6 +334,13 @@ function Exoplanet() {
       <h1>Planet BMass: {parse(bmasse)}</h1>
       <h1>Planet Rvamp: {parse(rvamp)}</h1>
       <h1>Planet Orbl: {parse(orbl)}</h1>
+      <h1>
+        --------------------------------------------------------------------------------
+      </h1>
+      <h1>
+        You Can See Other Exoplanets That Have Been Discovered{" "}
+        <a href="https://science.nasa.gov/exoplanet-catalog/barnard-c/">Here</a>
+      </h1>
     </div>
   );
 }
