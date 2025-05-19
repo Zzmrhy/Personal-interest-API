@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+// import { useEffect, useState } from "react";
 // import { Alasky } from "../services/api";
+import { HiPS } from "../HIPS";
 
 function AlaskyAPI() {
   let vals = {
@@ -17,18 +18,16 @@ function AlaskyAPI() {
 
   return (
     <div>
-      <h1>something</h1>
-      <img id="someImg" src="" alt="" />
-      {/* <h1>
-        Dummy testing this for{" "}
-        <a href="https://aladin.cds.unistra.fr/AladinLite/?survey=CDS/P/MATLAS/color&target=18.81883066129+-1.62624558244&fov=0.05">
-          now
-        </a>
-      </h1> */}
-
-      {...(document.getElementById(
-        "someImg"
-      ).src = `${root}hips=${vals.hips}&width=${vals.width}&height=${vals.height}&fov=${vals.fov}&projection=${vals.projection}&coordsys=${vals.coordsys}&rotation_angle=${vals.rotation_angle}&object=${vals.object}&format=${vals.format}`)}
+      <h1>Image From Alasky Site</h1>
+      <img
+        id="someImg"
+        src={`${root}hips=${vals.hips}&width=${vals.width}&height=${vals.height}&fov=${vals.fov}&projection=${vals.projection}&coordsys=${vals.coordsys}&rotation_angle=${vals.rotation_angle}&object=${vals.object}&format=${vals.format}`}
+        alt=""
+      />
+      <h1>
+        ----------------------------------------------------------------------------------
+      </h1>
+      <h1>Aladin Lite</h1>
     </div>
   );
 }
