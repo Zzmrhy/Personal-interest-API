@@ -1,6 +1,7 @@
-import { useState } from "react";
-// import { Alasky } from "../services/api";
-import { HiPS } from "../HIPS";
+import { useState, useEffect } from "react";
+import { Alasky } from "../services/api";
+// import A from "../Javascript/A";
+// import { Aladin } from "../Aladin";
 
 function AlaskyAPI() {
   let vals = {
@@ -19,6 +20,29 @@ function AlaskyAPI() {
   const [link] = useState(
     "https://alasky.cds.unistra.fr/hips-image-services/hips2fits"
   );
+  // const [survey, setSurvey] = useState("");
+  // const [surveuURL, setSurveyURL] = useState("");
+  useEffect(() => {
+    async function fetchData() {
+      // You can await here
+      const response = await Alasky();
+
+      // if (response.survey) {
+      //   setSurvey(response.survey);
+      // } else {
+      //   setSurvey("N/A");
+      // }
+
+      // if (response.surveyUrl) {
+      //   setSurveyURL(response.surveyUrl);
+      // } else {
+      //   setSurveyURL("N/A");
+      // }
+    }
+    fetchData();
+  }, []);
+
+  let aladin;
 
   return (
     <div>
@@ -35,6 +59,20 @@ function AlaskyAPI() {
         ----------------------------------------------------------------------------------
       </h1>
       <h1>Aladin Lite</h1>
+      <div id="aladin-lite-div" style="width:400px;height:400px;"></div>
+      <script
+        type="text/javascript"
+        src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js"
+        charset="utf-8"
+      ></script>
+      <script type="text/javascript">
+        {A.init.then(() => {
+          aladin = A.aladin("#aladin-lite-div", {
+            survey: "P/DSS2/color",
+            fov: 60,
+          });
+        })}
+      </script>
     </div>
   );
 }
