@@ -1,4 +1,4 @@
-for README.md, # NASA API Project
+# NASA API Project
 
 This is a website made using NASA's open API for developers
 

@@ -1,4 +1,4 @@
-// import { useEffect, useState } from "react";
+import { useState } from "react";
 // import { Alasky } from "../services/api";
 import { HiPS } from "../HIPS";
 
@@ -16,14 +16,21 @@ function AlaskyAPI() {
   };
   let root = "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits?";
 
+  const [link] = useState(
+    "https://alasky.cds.unistra.fr/hips-image-services/hips2fits"
+  );
+
   return (
     <div>
-      <h1>Image From Alasky Site</h1>
+      <h1>Example Image From Alasky Site</h1>
       <img
         id="someImg"
         src={`${root}hips=${vals.hips}&width=${vals.width}&height=${vals.height}&fov=${vals.fov}&projection=${vals.projection}&coordsys=${vals.coordsys}&rotation_angle=${vals.rotation_angle}&object=${vals.object}&format=${vals.format}`}
         alt=""
       />
+      <h1>
+        Click <a href={link}>Here</a> For Alasky's Site{" "}
+      </h1>
       <h1>
         ----------------------------------------------------------------------------------
       </h1>

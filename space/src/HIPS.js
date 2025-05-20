@@ -1,3 +1,94 @@
+/**
+ * HiPS options
+ *
+ * @description Minimal user provided properties will prevent Aladin Lite from fetching the properties file describing the HiPS properties.
+ * These minimal informations needed by aladin lite are:
+ * <ul>
+ * <li>The max HEALPix order of the survey tiles</li>
+ * <li>A location url of the HiPS. If a CDS ID is given (i.e. one took from the {@link https://aladin.cds.unistra.fr/hips/list| CDS HiPS list aggregator}) e.g. CDS/P/2MASS/K) then the properties is retrieved to obtain a base url for fetching the tiles.</li>
+ * <li>The image format of the HiPS tiles ('jpeg', 'png', 'fits', 'webp' are supported)</li>
+ * <li>The size of one tile (typically 512x512)</li>
+ * <li>The coordinate frame of the HiPS</li>
+ * </ul>
+ *
+ * @typedef {Object} HiPSOptions
+ * @property {string} [name] - The name of the survey to be displayed in the UI
+ * @property {Function} [successCallback] - A callback executed when the HiPS has been loaded
+ * @property {Function} [errorCallback] - A callback executed when the HiPS could not be loaded
+ * @property {string} [imgFormat] - Formats accepted 'webp', 'png', 'jpeg' or 'fits'. Will raise an error if the HiPS does not contain tiles in this format
+ * @property {CooFrame} [cooFrame] - Coordinate frame of the survey tiles. If not given, the one from the parsed properties file will be retrieved.
+ * @property {number} [maxOrder] - The maximum HEALPix order of the HiPS, i.e the HEALPix order of the most refined tile images of the HiPS.
+ * @property {number} [numBitsPerPixel] - Useful if you want to display the FITS tiles of a HiPS. It specifies the number of bits per pixel. Possible values are:
+ * -64: double, -32: float, 8: unsigned byte, 16: short, 32: integer 32 bits, 64: integer 64 bits
+ * @property {number} [tileSize] - The width of the HEALPix tile images. Mostly 512 pixels but can be 256, 128, 64, 32
+ * @property {number} [minOrder] - If not given, retrieved from the properties of the survey.
+ * @property {boolean} [longitudeReversed] - Deprecated The longitudeReversed property is now deprecated since version 3.6.1. This property has been removed since version 3.7.0 and replaced with {@link Aladin#reverseLongitude} set directly on the {@link Aladin} view object and not at the HiPS level.
+ * @property {number} [opacity=1.0] - Opacity of the survey or image (value between 0 and 1).
+ * @property {string} [colormap="native"] - The colormap configuration for the survey or image.
+ * @property {string} [stretch="linear"] - The stretch configuration for the survey or image.
+ * @property {boolean} [reversed=false] - If true, the colormap is reversed; otherwise, it is not reversed.
+ * @property {number} [minCut] - The minimum cut value for the color configuration. If not given, 0.0 for JPEG/PNG surveys, the value of the property file for FITS surveys
+ * @property {number} [maxCut] - The maximum cut value for the color configuration. If not given, 1.0 for JPEG/PNG surveys, the value of the property file for FITS surveys
+ * @property {boolean} [additive=false] - If true, additive blending is applied; otherwise, it is not applied.
+ * @property {number} [gamma=1.0] - The gamma correction value for the color configuration.
+ * @property {number} [saturation=0.0] - The saturation value for the color configuration.
+ * @property {number} [brightness=0.0] - The brightness value for the color configuration.
+ * @property {number} [contrast=0.0] - The contrast value for the color configuration.
+ * @property {string} [requestMode='cors'] - Determines how the request will interact with cross-origin resources.
+ *  - 'cors' - allow cross-origin requests with proper CORS headers.
+ *  - 'no-cors' - send the request without CORS.
+ *  - 'same-origin' - only allow requests to the same origin.
+ * @property {string} [requestCredentials='omit'] - Specifies whether to send cookies and HTTP credentials with the request.
+ *  - 'omit' - never send credentials.
+ *  - 'same-origin' - send only for same-origin requests.
+ *  - 'include' - always send, even for cross-origin requests.
+ */
+/**
+ * Screen pixel prober type
+ *
+ * @typedef {Object} PixelProber
+ * @property {number} [x] - x screen coordinate. Default is set to the view center, i.e. half the width in pixels of the aladin lite div.
+ * @property {number} [y] - y screen coordinate. Default is set to the view center, i.e. half the height in pixels of the aladin lite div.
+ */
+/**
+ * Screen line prober type
+ *
+ * @typedef {Object} LineProber
+ * @property {number} [x1] - x start point screen coordinate
+ * @property {number} [y1] - y start point screen coordinate
+ * @property {number} [x2] - x end point screen coordinate
+ * @property {number} [y2] - y end point screen coordinate
+ */
+/**
+ * Sky great circle arc prober type
+ *
+ * @typedef {Object} GreatCircleArcProber
+ * @property {number} [ra1] - ra first point sky coordinate (in icrs) frame
+ * @property {number} [dec1] - dec first point sky coordinate (in icrs) frame
+ * @property {number} [ra2] - ra end point sky coordinate (in icrs) frame
+ * @property {number} [dec2] - dec end point sky coordinate (in icrs) frame
+ */
+/**
+ * Screen rectangular prober type
+ *
+ * @typedef {Object} RectProber
+ * @property {number} [top] - top screen pixel coordinate
+ * @property {number} [left] - left screen pixel coordinate
+ * @property {number} [w] - width in screen pixel
+ * @property {number} [h] - height in screen pixel
+ */
+/**
+ * JS {@link https://developer.mozilla.org/fr/docs/Web/API/FileList| FileList} API type
+ *
+ * @typedef {Object} FileList
+ */
+/**
+ * Tiles are accessed like so: HIPSLocalFiles[norder][ipix] = {@link File};<br/>
+ * The properties file is accessed with: HIPSLocalFiles["properties"]
+ * @typedef {Object} HiPSLocalFiles
+ * @property {File} properties - The local properties file of the HiPS
+ */
+
 export let HiPS = (function () {
   /**
    * The object describing an image survey
