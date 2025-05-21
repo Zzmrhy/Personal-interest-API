@@ -287,11 +287,6 @@ function Exoplanet() {
         Page Is Also Slow To Load Information, You'll Have To Wait For A Bit To
         See Anything.)
       </h1>
-
-      <h1>
-        If You Want To See Any Kepler Exoplanets Put In The Search Bar A Number
-        Ranging From 900-3630
-      </h1>
       <h1>----------------------------------------------------</h1>
       <h1>Use This To Change Given Information</h1>
       <div>{ExoSearch()}</div>
@@ -299,10 +294,10 @@ function Exoplanet() {
       <h1>Exoplanet Information: </h1>
       <h1>Index Chosen: {activeIdx}</h1>
       <h1>Release Date: {release}</h1>
-      <h1>SOL Type: {type}</h1>
-      <h1>Gaia ID: {gaia}</h1>
       <h1>Planet Name: {name}</h1>
       <h1>Planet Letter: {letter}</h1>
+      <h1>SOL Type: {type}</h1>
+      <h1>Gaia ID: {gaia}</h1>
       <h1>Planet Mass: {mass}</h1>
       <h1>Planet Total Mass: {parse(bmassj)}</h1>
       <h1>Planet Total Mass Provided: {bmass}</h1>
