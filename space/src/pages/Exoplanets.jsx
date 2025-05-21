@@ -334,7 +334,9 @@ function Exoplanet() {
       </h1>
       <h1>
         You Can See Other Exoplanets That Have Been Discovered{" "}
-        <a href="https://science.nasa.gov/exoplanet-catalog/barnard-c/">Here</a>
+        <a href="https://science.nasa.gov/exoplanets/exoplanet-catalog/">
+          Here
+        </a>
       </h1>
     </div>
   );
