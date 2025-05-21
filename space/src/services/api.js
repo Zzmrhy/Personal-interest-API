@@ -121,7 +121,7 @@ export const Exoplanets = async () => {
 
 export const Alasky = async () => {
   const response = await fetch(
-    "http://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
+    "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
   );
   const data = await response.json();
   console.log(data);

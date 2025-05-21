@@ -59,20 +59,20 @@ function AlaskyAPI() {
         ----------------------------------------------------------------------------------
       </h1>
       <h1>Aladin Lite</h1>
-      <div id="aladin-lite-div" style="width:400px;height:400px;"></div>
+      {/* <div id="aladin-lite-div" style="width:400px;height:400px;"></div>
       <script
         type="text/javascript"
         src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js"
         charset="utf-8"
-      ></script>
-      <script type="text/javascript">
+      ></script> */}
+      {/* <script type="text/javascript">
         {A.init.then(() => {
           aladin = A.aladin("#aladin-lite-div", {
             survey: "P/DSS2/color",
             fov: 60,
           });
         })}
-      </script>
+      </script> */}
     </div>
   );
 }
