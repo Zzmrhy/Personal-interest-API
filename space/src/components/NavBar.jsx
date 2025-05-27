@@ -47,6 +47,12 @@ function NavBar() {
           Alasky
         </Link>
       </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/black-hole" className="nav-link">
+          Black Hole
+        </Link>
+      </div>
     </nav>
   );
 }

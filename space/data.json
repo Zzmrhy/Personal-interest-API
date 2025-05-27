@@ -1,0 +1,4770 @@
+[
+  {
+    "id": 1,
+    "name": [
+      "1ES 2344+514",
+      "TeV J2347+517",
+      "2MASS J23470484+5142178",
+      "WISE J234704.83+514217.9",
+      "Gaia DR2 1945016660584494208"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Blazar",
+    "image": "https://www.swift.psu.edu/monitoring/data_new/1ES2344+514/pc_image.png",
+    "type": "Blazar",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Cassiopeia",
+    "rightAscension": "23h 47m 04.838s",
+    "declination": "+51 42 17.88",
+    "coordinates": "23h 47m 04.838s, +51 42 17.88",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=23%2047%2004.838%2B51%2042%2017.88&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.044,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1995,
+      "location": "Whipple Observatory",
+      "discoverer": "Whipple Collaboration"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.730365236e25,
+      "km": 4.730365236e22,
+      "ly": 5000000000,
+      "gpc": 1.53300676100695,
+      "gly": 5.0034246575340005
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/1ES_2344%2B514"
+  },
+  {
+    "id": 2,
+    "name": [
+      "TON 618",
+      "Tonantzintla 618",
+      "FBQS J122824.9+312837",
+      "B2 1225+31",
+      "QSO 1228+3128",
+      "7C 1225+3145",
+      "CSO 140",
+      "2E 2728",
+      "Gaia DR1 4015522739308729728"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Quasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/TON_618_SDSS9_version_2.jpg",
+    "type": "Quasar",
+    "age": {
+      "text": "10.8 billion",
+      "number": 10800000000
+    },
+    "constellation": "Canes Venatici",
+    "rightAscension": "12h 28m 24.9s",
+    "declination": "+31 28 38",
+    "coordinates": "12h 28m 24.97s, +31 28 37.7",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2028%2024.966%2B31%2028%2037.63&fov=0.03&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 2.219,
+    "apparentMagnitude": 15.9,
+    "absoluteMagnitude": -30.9,
+    "discovery": {
+      "year": 1957,
+      "location": "Bologna in Italy",
+      "discoverer": "Maarten Schmidt"
+    },
+    "solarmass": {
+      "text": "66 billion",
+      "number": 66000000000
+    },
+    "radius": "1949 * 10^14 meters",
+    "luminosity": "4 * 10^40 watts",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.7218529460097055e26,
+      "km": 1.7218529460097057e23,
+      "ly": 18200000000.0,
+      "gpc": 5.5801446100652985,
+      "gly": 18.21246575342376
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/TON_618"
+  },
+  {
+    "id": 3,
+    "name": [
+      "3C 371",
+      "UGC 11130",
+      "PGC 61417",
+      "2E 4023",
+      "7C 180717.90+694858.00",
+      "QSO B1807+698"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "BL Lacertae Object",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/3C-371-jet-O5GV07NEQ.gif",
+    "type": "BL Lac, FRI RG",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Draco",
+    "rightAscension": "18h 06m 50.681s",
+    "declination": "+69 49 28.11",
+    "coordinates": "18h 06m 50.681s, +69 49 28.11",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=18%2006%2050.681%2B69%2049%2028.11&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.051,
+    "apparentMagnitude": 14.4,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1975,
+      "location": null,
+      "discoverer": "Miller"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 6.906333244e24,
+      "km": 6.906333244e21,
+      "ly": 730000000,
+      "gpc": 0.2238189871070147,
+      "gly": 0.730499999999964
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/3C_371#:~:text=3C%20371%20is%20a%20BL%20Lac%20object%20located,among%20the%20nearest%20and%20brightest%20BL%20Lacs.%20"
+  },
+  {
+    "id": 4,
+    "name": [
+      "4C +37.11",
+      "GLXY J0405+380",
+      "B2 0402+37",
+      "2MASX J04054928+3803320",
+      "RX J0405.8+3803",
+      "PGC 2820486"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://i.ibb.co/KsVSk2Z/Aladin-Lite.png",
+    "type": "Sy",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Perseus",
+    "rightAscension": "04h 05m 49.2s",
+    "declination": "+38 03 32",
+    "coordinates": "04h 05m 49.2s, 38 03 32",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=04%2005%2049.200%2B38%2003%2032.00&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 16500.0,
+    "apparentMagnitude": 17.2,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2006,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "15 billion",
+      "number": 15000000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 7090691216616021e24,
+      "km": 7090691216616022e21,
+      "ly": 749486652.977415,
+      "gpc": 0.22979362125976938,
+      "gly": 0.7499999999999653
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/4C_%2B37.11#:~:text=4C%20%2B37.11%20or%20Galaxy%200402%2B379%20is%20a%20radio,parsecs%2C%20with%20an%20orbital%20period%20of%2030%2C000%20years."
+  },
+  {
+    "id": 5,
+    "name": ["AP Librae", "LEDA 54592", "PKS 1514-24", "QSO B1514-24"],
+    "list": "Supermassive Black Holes",
+    "kind": "BL Lacertae Object",
+    "image": "https://th.bing.com/th/id/OIP.3wqsIAWEp3SVVuspUWUkNwHaHH?pid=ImgDet&rs=1",
+    "type": "BL Lac",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Libra",
+    "rightAscension": "15h 17m 41.814s",
+    "declination": "-24 22 19.48",
+    "coordinates": "15h 17m 41.81s, -24 22 19.5",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=15%2017%2041.810-24%2022%2019.50&fov=0.03&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.049,
+    "apparentMagnitude": 14.0,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1942,
+      "location": null,
+      "discoverer": "Martha D. Ashbrook"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 6.634206799723959e24,
+      "km": 6.63420679972396e21,
+      "ly": 701236212.04,
+      "gpc": 0.21499997082404462,
+      "gly": 0.7017165108153353
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/AP_Librae"
+  },
+  {
+    "id": 6,
+    "name": ["S5 0014+81", "6C B0014+8120", "Q0014+813"],
+    "list": "Supermassive Black Holes",
+    "kind": "Quasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Black-hole-feeding-accreting-esa-nasa.jpg",
+    "type": "Quasar",
+    "age": {
+      "text": "1342 * 1099",
+      "number": 1474858
+    },
+    "constellation": "Cepheus",
+    "rightAscension": "00h 17m 08.5s",
+    "declination": "+81 35 08",
+    "coordinates": "00h 17m 08.5s, +81 35 08",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=00%2017%2008.500%2B81%2035%2008.00&fov=0.04&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 3.366,
+    "apparentMagnitude": 16.5,
+    "absoluteMagnitude": -31.5,
+    "discovery": {
+      "year": 2009,
+      "location": null,
+      "discoverer": "Team of astronomers"
+    },
+    "solarmass": {
+      "text": "40 billion",
+      "number": 40000000000
+    },
+    "radius": null,
+    "luminosity": "10^41 watts",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.14170086e26,
+      "km": 1.1417008600000001e23,
+      "ly": 12067787612.266182,
+      "gpc": 3.7,
+      "gly": 12.0760532202199
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/S5_0014%2B81"
+  },
+  {
+    "id": 7,
+    "name": [
+      "APM 08279+5255",
+      "IRAS F08279+5255",
+      "QSO B0827+5255",
+      "QSO J0831+5245"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Quasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Quasar_in_Water_Vapor_concept.jpg",
+    "type": "broad absorption line (BAL) quasar, hyperluminous infrared galaxy",
+    "age": {
+      "text": "2 - 3Gyr",
+      "number": null
+    },
+    "constellation": "Lynx",
+    "rightAscension": "08h 31m 41.70s",
+    "declination": "52 45 16.8",
+    "coordinates": "08h 31m 41.70s, +52 45 16.8",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=08%2031%2041.700%2B52%2045%2016.80&fov=0.05&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 3.911,
+    "apparentMagnitude": 15.2,
+    "absoluteMagnitude": 15.0,
+    "discovery": {
+      "year": 1998,
+      "location": null,
+      "discoverer": "Totten, Edward J"
+    },
+    "solarmass": {
+      "text": "23 billion",
+      "number": 23000000000
+    },
+    "radius": 0.468,
+    "luminosity": "5*10 15 L solar",
+    "temperature": {
+      "kelvin": 112.5,
+      "celsius": -160.65,
+      "fahrenheit": -257.17
+    },
+    "distance": {
+      "m": 2.221688159999995e26,
+      "km": 2.22168828385523e23,
+      "ly": 23483262380.626083,
+      "gpc": 7.2,
+      "gly": 23.6
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/APM_08279%2B5255"
+  },
+  {
+    "id": 8,
+    "name": ["Arp 220", "IC 1127", "IC 4553", "UGC 9913", "PGC 55497"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Arp_220_-_JWST%2C_HST.png",
+    "type": "S?",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Serpens",
+    "rightAscension": "15h 34m 57.1s",
+    "declination": "+23 30 11",
+    "coordinates": "15h 34m 57.1s, +23 30 11",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=15%2034%2057.100%2B23%2030%2011.00&fov=0.25&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 5434.0,
+    "apparentMagnitude": 13.9,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1980,
+      "location": "James Clerk Maxwell Telescope",
+      "discoverer": "IRAS"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": "1000000000000",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.365182618e24,
+      "km": 2.365182618e21,
+      "ly": 250000000,
+      "gpc": 0.0766503380503475,
+      "gly": 0.2501712328767
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Arp_220"
+  },
+  {
+    "id": 9,
+    "name": [
+      "Centaurus A",
+      "NGC 5128",
+      "Arp 153",
+      "PGC 46957",
+      "4U 1322–42",
+      "Caldwell 77"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/ESO_Centaurus_A_LABOCA.jpg",
+    "type": "S0 pec or Ep",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Centaurus",
+    "rightAscension": "13h 25m 27.6s",
+    "declination": "-43 01 09",
+    "coordinates": "13h 25m 27.6s, -43 01 09",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2025%2027.600-43%2001%2009.00&fov=2.48&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 547,
+    "apparentMagnitude": 6.84,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1826,
+      "location": "Parramatta, in New South Wales, Australia",
+      "discoverer": "James Dunlop"
+    },
+    "solarmass": {
+      "text": "55 million",
+      "number": 55000000
+    },
+    "radius": null,
+    "luminosity": "2.3 * 10 24 W Hz -1",
+    "temperature": {
+      "kelvin": 5790,
+      "celsius": 5516.85,
+      "fahrenheit": 9962.33
+    },
+    "distance": {
+      "m": 1.040680351983888e23,
+      "km": 104068035198388810000,
+      "ly": 11000000,
+      "gpc": 0.00337261487421529,
+      "gly": 0.0110075342465748
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Centaurus_A"
+  },
+  {
+    "id": 10,
+    "name": [
+      "Fornax A",
+      "NGC 1316",
+      "3FHL J0322.6-3712e",
+      "WMAP J0322-3711",
+      "AM 0320-372",
+      "GSC 07026-00055",
+      "WMAP J0322-3712",
+      "APG 154",
+      "IRAS 03208-3723",
+      "PKS 0320-374",
+      "[CAC2009] S0373 CTA 23",
+      "IRAS F03207-3723",
+      "PKS 0320-37",
+      "[CHM2007] HDC 234 J032241.78-3712295",
+      "DUGRS 357-001",
+      "1Jy 0320-374",
+      "PMN J0321-3658",
+      "[CHM2007] LDC 249 J032241.78-3712295",
+      "1E 0320.7-3722",
+      "1Jy 0320-373",
+      "PSCz Q03208-3723",
+      "[FWB89] Galaxy 479",
+      "2E 761",
+      "1Jy 0320-37",
+      "RR95 75a",
+      "[KFM98] 5",
+      "2E 0320.7-3723",
+      "LEDA 12651",
+      "RX J032242-37125",
+      "[LB2005] NGC 1316 X1",
+      "ESO 357-22",
+      "2MASX J03224178-3712295",
+      "RX J0322.7-3712",
+      "[VDD93] 28",
+      "ESO-LV 357-0220",
+      "MCG-06-08-005",
+      "1RXS J032241.8-371239",
+      "[WCO2009] J032152-370824",
+      "FCC 21",
+      "MOST 0320-373",
+      "SGC 032047-3723.2",
+      "2FGL J0322.4-3717",
+      "MRC 0320-373",
+      "VSOP J0322-3712",
+      "3FGL J0322.5-3721",
+      "MSH 03-3-01",
+      "WMAP 138"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Lenticular Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ngc1316_hst.jpg",
+    "type": "(R)SAB(s)00",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Fornax",
+    "rightAscension": "03h 22m 41.7s",
+    "declination": "-37 12 30",
+    "coordinates": "03h 22m 41.7s, -37 12 30",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=03%2022%2041.700-37%2012%2030.00&fov=0.50&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 1760.0,
+    "apparentMagnitude": 9.4,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1977,
+      "location": null,
+      "discoverer": "François Schweizer"
+    },
+    "solarmass": {
+      "text": "140 million",
+      "number": 140000000
+    },
+    "radius": 0.41,
+    "luminosity": "9.9 x 10^6^ L_sun_ (M_v_ = -12.7)",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.861638072402578e23,
+      "km": 586163807240257800000,
+      "ly": 61957563.31279964,
+      "gpc": 0.018996272690807604,
+      "gly": 0.061999999999997134
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1316"
+  },
+  {
+    "id": 11,
+    "name": [
+      "HE0450-2958",
+      "LEDA 75249",
+      "QSO B0450-2958",
+      "2MASSI J0452300-295335",
+      "6dFGS gJ045230.1-295335",
+      "2MASX J04523006-2953353",
+      "NVSS J045230-295336",
+      "IRAS F04505-2958",
+      "QSO B0450-299",
+      "IRAS 04505-2958",
+      "RBS 597",
+      "1RXS J045230.4-295329"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Quasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Quasar_HE0450-2958.jpg",
+    "type": "Sy1",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Caelum",
+    "rightAscension": "04h 52m 30.0s",
+    "declination": "-29 53 35",
+    "coordinates": "04h 52m 30.0s, -29 53 35",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=04%2052%2030.000-29%2053%2035.00&fov=0.06&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.286041,
+    "apparentMagnitude": 16.0,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2005,
+      "location": "University of Liège, Belgium",
+      "discoverer": "Pierre Magain"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": "Under-luminous",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.83821914177424e25,
+      "km": 2.83821914177424e22,
+      "ly": 3000000000,
+      "gpc": 0.91980405660417,
+      "gly": 3.0020547945204
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/HE0450-2958"
+  },
+  {
+    "id": 12,
+    "name": [
+      "IC 1459",
+      "IC 5265",
+      "ESO 406- G030",
+      "AM 2254-364",
+      "MCG -06-50-016",
+      "PKS 2254-367",
+      "PGC 070090"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/IC_1459_U2BM0104T.jpg",
+    "type": "E3",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Grus",
+    "rightAscension": "22h 57m 10.6s",
+    "declination": "-36 27 44",
+    "coordinates": "22h 57m 10.6s,-36 27 44",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=22%2057%2010.600-36%2027%2044.00&fov=0.37&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.006011,
+    "apparentMagnitude": 10.0,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1892,
+      "location": null,
+      "discoverer": "Edward Emerson Barnard"
+    },
+    "solarmass": {
+      "text": "3 billion",
+      "number": 3000000000
+    },
+    "radius": "30 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 8.036116712164825e23,
+      "km": 803611671216482500000,
+      "ly": 84941820.6707737,
+      "gpc": 0.026043277076107197,
+      "gly": 0.08499999999999606
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/IC_1459"
+  },
+  {
+    "id": 13,
+    "name": [
+      "Andromeda Galaxy",
+      "Messier 31",
+      "M 31",
+      "NGC 224",
+      "UGC 454",
+      "PGC 2557",
+      "2C 56 (Core)",
+      "CGCG 535-17",
+      "MCG +07-02-016",
+      "IRAS 00400+4059",
+      "2MASX J00424433+4116074",
+      "GC 116",
+      "h 50",
+      "Bode 3",
+      "Flamsteed 58",
+      "Hevelius 32",
+      "Ha 3.3",
+      "IRC +40013"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/M31_09-01-2011_%28cropped%29.jpg",
+    "type": "SA(s)b",
+    "age": {
+      "text": "10 billion",
+      "number": 10000000000
+    },
+    "constellation": "Andromeda",
+    "rightAscension": "00h 42m 44.3s",
+    "declination": "+41 16 9",
+    "coordinates": "00h 42m 44.3s, +41 16 9",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=00%2042%2044.300%2B41%2016%2009.00&fov=4.55&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": -0.001004,
+    "apparentMagnitude": 3.44,
+    "absoluteMagnitude": -21.5,
+    "discovery": {
+      "year": 2005,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "150 million",
+      "number": 150000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.3605433497149864e22,
+      "km": 23605433497149866000,
+      "ly": 2495096.2894,
+      "gpc": 0.0007649998962027107,
+      "gly": 0.00249680525946111
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+  },
+  {
+    "id": 14,
+    "name": [
+      "Messier 32",
+      "M 32",
+      "NGC 221",
+      "UGC 452",
+      "PGC 2555",
+      "Arp 168",
+      "LEDA 2555"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/M32_Francione_inverted.jpg",
+    "type": "cE2",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Andromeda",
+    "rightAscension": "00h 42m 41.8s",
+    "declination": "+40 51 55",
+    "coordinates": "00h 42m 41.8s, 40 51 55",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2029%2052.698%2B47%2011%2042.93&fov=0.73&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": -200.0,
+    "apparentMagnitude": 8.08,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1749,
+      "location": null,
+      "discoverer": "Guillaume Le Gentil"
+    },
+    "solarmass": {
+      "text": "3 billion",
+      "number": 3000000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.3698003817674056e22,
+      "km": 23698003817674060000,
+      "ly": 2504880.98,
+      "gpc": 0.0007679998955715429,
+      "gly": 0.002506596651903986
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_32"
+  },
+  {
+    "id": 15,
+    "name": ["Messier 60", "M 60", "NGC 4649", "PGC 42831", "UGC 7898"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Messier_60_-_Hubble_%282013-9-24%29.jpg",
+    "type": "E1.5 or S0",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 43m 40.008s",
+    "declination": "+11 33 09.40",
+    "coordinates": "12h 43m 39.6s, +11 33 09",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2043%2040.008%2B11%2033%2009.40&fov=0.24&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.003726,
+    "apparentMagnitude": 8.8,
+    "absoluteMagnitude": -22.3,
+    "discovery": {
+      "year": 1779,
+      "location": null,
+      "discoverer": "Johann Gottfried Koehler"
+    },
+    "solarmass": {
+      "text": "6.5 billion",
+      "number": 6500000000
+    },
+    "radius": null,
+    "luminosity": "60 billion suns",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.3605625597617126e23,
+      "km": 536056255976171300000,
+      "ly": 56661190.96509258,
+      "gpc": 0.017372397767238566,
+      "gly": 0.05669999999999738
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_60"
+  },
+  {
+    "id": 16,
+    "name": [
+      "Whirlpool Galaxy",
+      "Messier 51",
+      "Messier 51a",
+      "Question Mark Galaxy",
+      "Rosses Galaxy",
+      "M 51",
+      "M 51a",
+      "NGC 5194",
+      "UGC 8493",
+      "PGC 47404",
+      "VV 001a",
+      "VV 403",
+      "Arp 85",
+      "GC 3572"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Messier51_sRGB.jpg",
+    "type": "SA(s)bc pec",
+    "age": {
+      "text": "400 Million",
+      "number": 400000000
+    },
+    "constellation": "Canes Venatici",
+    "rightAscension": "13h 29m 52.7s",
+    "declination": "+47 11 43",
+    "coordinates": "13h 29m 52.7s, +47 11 43",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2029%2052.700%2B47%2011%2043.00&fov=0.59&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.001544,
+    "apparentMagnitude": 8.4,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1773,
+      "location": null,
+      "discoverer": "Charles Messier"
+    },
+    "solarmass": {
+      "text": "160 billion",
+      "number": 160000000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.175968008693584e23,
+      "km": 217596800869358400000,
+      "ly": 23000000,
+      "gpc": 0.00705183110063197,
+      "gly": 0.0230157534246564
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Whirlpool_Galaxy"
+  },
+  {
+    "id": 17,
+    "name": [
+      "Messier 77",
+      "Cetus A",
+      "M 77",
+      "NGC 1068",
+      "3C 71",
+      "4C -00.13",
+      "Arp 37",
+      "UGC 2188",
+      "PGC 10266"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Messier_77_spiral_galaxy_by_HST.jpg",
+    "type": "(R)SA(rs)b",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Cetus",
+    "rightAscension": "02h 42m 40.771s",
+    "declination": "-00 00 47.84",
+    "coordinates": "02h 42m 40.7s, -00 00 48",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=02%2042%2040.700-00%2000%2047.84&fov=0.60&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 1137.0,
+    "apparentMagnitude": 8.9,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1780,
+      "location": null,
+      "discoverer": "Pierre Méchain"
+    },
+    "solarmass": {
+      "text": "1 billion",
+      "number": 1000000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.25732871266136e23,
+      "km": 425732871266136000000,
+      "ly": 45000000,
+      "gpc": 0.013797060849062551,
+      "gly": 0.045030821917806
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_77"
+  },
+  {
+    "id": 18,
+    "name": [
+      "Messier 81",
+      "M 81",
+      "NGC 3031",
+      "UGC 5318",
+      "MCG+12-10-010",
+      "PGC 28630",
+      "Bodes Galaxy"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Messier_81_HST.jpg",
+    "type": "SA(s)ab, LINER",
+    "age": {
+      "text": "600 million",
+      "number": 600000000
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "09h 55m 33.2s",
+    "declination": "+69 3 55",
+    "coordinates": "09h 55m 33.2s, +69 03 55",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=09%2055%2033.200%2B69%2003%2055.00&fov=0.97&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": -0.000113,
+    "apparentMagnitude": 6.94,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1774,
+      "location": null,
+      "discoverer": "Johann Elert Bode"
+    },
+    "solarmass": {
+      "text": "70 million",
+      "number": 70000000
+    },
+    "radius": "29.44 kiloparsecs",
+    "luminosity": 6.9,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.1163661957645343e23,
+      "km": 111636619576453450000,
+      "ly": 11800000,
+      "gpc": 0.003617895955976402,
+      "gly": 0.01180808219178024
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_81"
+  },
+  {
+    "id": 19,
+    "name": [
+      "Messier 84",
+      "M 84",
+      "NGC 4374",
+      "PGC 40455",
+      "UGC 7494",
+      "VCC 763"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/A_fascinating_core.jpg",
+    "type": "E1",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 25m 03.74333s",
+    "declination": "+12 53 13.1393",
+    "coordinates": "12h 25m 03.7s, +12 53 13",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2025%2003.743%2B12%2053%2013.14&fov=0.22&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 1060.0,
+    "apparentMagnitude": 9.1,
+    "absoluteMagnitude": -22.41,
+    "discovery": {
+      "year": 1781,
+      "location": null,
+      "discoverer": "Charles Messier"
+    },
+    "solarmass": {
+      "text": "1 Billion 500 Million",
+      "number": 1500000000
+    },
+    "radius": 72.5,
+    "luminosity": 76400000000,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.235160584434443e23,
+      "km": 523516058443444400000,
+      "ly": 55335691.04,
+      "gpc": 0.01696599769786234,
+      "gly": 0.055373592198243844
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_84"
+  },
+  {
+    "id": 20,
+    "name": [
+      "Messier 87",
+      "Virgo A",
+      "M 87",
+      "Virgo X-1",
+      "NGC 4486",
+      "UGC 7654",
+      "PGC 41361",
+      "VCC 1316",
+      "Arp 152",
+      "3C 274",
+      "3U 1228+12"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg",
+    "type": "E+0-1 pec, NLRG Sy",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 30m 49.42338s",
+    "declination": "+12 23 28.0439",
+    "coordinates": "12h 30m 49.4s, +12 23 28",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2030%2049.423%2B12%2023%2028.04&fov=0.33&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.00428,
+    "apparentMagnitude": 8.6,
+    "absoluteMagnitude": -22.0,
+    "discovery": {
+      "year": 1781,
+      "location": null,
+      "discoverer": "Charles Messier"
+    },
+    "solarmass": {
+      "text": "5 billion",
+      "number": 5000000000
+    },
+    "radius": "130000 light-years",
+    "luminosity": -22,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.170669922927158e23,
+      "km": 517066992292715800000,
+      "ly": 54654024.21,
+      "gpc": 0.016756997726033507,
+      "gly": 0.05469145847315484
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_87#Supermassive_black_hole_M87*"
+  },
+  {
+    "id": 21,
+    "name": [
+      "Sombrero Galaxy",
+      "Messier Object 104",
+      "M 104",
+      "NGC 4594",
+      "UGC 293",
+      "PGC 42407"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Sombrero_Galaxy_in_infrared_%28Ssc2005-11a3%29.jpg",
+    "type": "SA(s)a or E",
+    "age": {
+      "text": "10-13 billion",
+      "number": 11500000000
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 39m 59.4s",
+    "declination": "-11 37 23",
+    "coordinates": "12h 39m 59.4s, -11 37 23",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2039%2059.400-11%2037%2023.00&fov=0.60&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.003416,
+    "apparentMagnitude": 8.0,
+    "absoluteMagnitude": -21.8,
+    "discovery": {
+      "year": 1990,
+      "location": null,
+      "discoverer": "John Kormendy"
+    },
+    "solarmass": {
+      "text": "1 billion",
+      "number": 1000000000
+    },
+    "radius": "25,000 light years",
+    "luminosity": "2.41011L⊙",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.9468221080000237e23,
+      "km": 294682210800002400000,
+      "ly": 31147934.258782007,
+      "gpc": 0.009549998762022564,
+      "gly": 0.03116926846032758
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Sombrero_Galaxy#Central_supermassive_black_hole"
+  },
+  {
+    "id": 22,
+    "name": ["Messier 105", "M 105", "NGC 3379", "PGC 32256", "UGC 5902"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Messier105_-_HST_-_Potw1901a.jpg",
+    "type": "E1",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Leo",
+    "rightAscension": "10h 47m 49.600s",
+    "declination": "+12 34 53.87",
+    "coordinates": "10h 47m 49.6s, +12 34 54",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=10%2047%2049.600%2B12%2034%2053.87&fov=0.21&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 9.3,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1781,
+      "location": null,
+      "discoverer": "Pierre Méchain"
+    },
+    "solarmass": {
+      "text": "200 million",
+      "number": 200000000
+    },
+    "radius": "650,000 light years",
+    "luminosity": 10.2,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.414610811854806e23,
+      "km": 341461081185480700000,
+      "ly": 36092464.76,
+      "gpc": 0.011065998499697017,
+      "gly": 0.03611718562627219
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_105"
+  },
+  {
+    "id": 23,
+    "name": ["Messier 106", "M 106", "NGC 4258", "UGC 7353", "PGC 39600"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Messier_106_visible_and_infrared_composite.jpg",
+    "type": "SAB(s)bc",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Canes Venatici",
+    "rightAscension": "12h 18m 57.5s",
+    "declination": "+47 18 14",
+    "coordinates": "12h 18m 57.5s, +47 18 14",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2018%2057.500%2B47%2018%2014.00&fov=0.59&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 448.0,
+    "apparentMagnitude": 8.4,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1781,
+      "location": null,
+      "discoverer": "Pierre Méchain"
+    },
+    "solarmass": {
+      "text": "40 million",
+      "number": 40000000
+    },
+    "radius": "135,000 light years",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.2406584244506627e23,
+      "km": 224065842445066270000,
+      "ly": 23683778.234086312,
+      "gpc": 0.007261478431808712,
+      "gly": 0.023699999999998903
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_106"
+  },
+  {
+    "id": 24,
+    "name": [
+      "Markarian 421",
+      "Mrk 421",
+      "Mkn 421",
+      "B2 1101+38",
+      "UGC 6132",
+      "PGC 33452",
+      "2E 2393",
+      "QSO B1101+384",
+      "Mark 421"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Blazar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/SDSS_Mrk_421.jpg",
+    "type": "BL LAC",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "11h 04m 27.314s",
+    "declination": "+38 12 31.80",
+    "coordinates": "11h 04m 27s, +38 12 32",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=11%2004%2027.314%2B38%2012%2031.80&fov=0.05&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.030021,
+    "apparentMagnitude": 12.9,
+    "absoluteMagnitude": 13.3,
+    "discovery": {
+      "year": 1992,
+      "location": "Whipple Observatory",
+      "discoverer": "M. Punch"
+    },
+    "solarmass": {
+      "text": "550 million",
+      "number": 550000000
+    },
+    "radius": null,
+    "luminosity": 13.3,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.7559099976145774e24,
+      "km": 3.755909997614578e21,
+      "ly": 397000000,
+      "gpc": 0.12172073682395183,
+      "gly": 0.3972719178081996
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Markarian_421"
+  },
+  {
+    "id": 25,
+    "name": ["Markarian 501", "Mrk 501", "4C39.49", "PGC 59214", "UGC 10599"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SDSS_Mrk_501.jpg",
+    "type": "S0",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Hercules",
+    "rightAscension": "16h 53m 52.21s",
+    "declination": "39 45 37.6",
+    "coordinates": "16h 53m 52s, 39 45 38",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=16%2053%2052.210%2B39%2045%2037.60&fov=0.06&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.03364,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "2 billion 150 million",
+      "number": 2150000000
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.3111402597025414e24,
+      "km": 4.3111402597025416e21,
+      "ly": 455687885.01026833,
+      "gpc": 0.1397145217259398,
+      "gly": 0.4559999999999789
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Markarian_501"
+  },
+  {
+    "id": 26,
+    "name": ["NGC 821", "UGC 1631", "MCG +02-06-034", "PGC 8160"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/NGC_821_PanS.jpg",
+    "type": "E6",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Aries",
+    "rightAscension": "02h 08m 21.150s",
+    "declination": "+10 59 41.53",
+    "coordinates": "02h 08m 21s, +10 59 41",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=02%2008%2021.150%2B10%2059%2041.53&fov=0.06&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.005814,
+    "apparentMagnitude": 11.31,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1786,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "75 million",
+      "number": 75000000
+    },
+    "radius": "55000 light years",
+    "luminosity": "~ 1.1 × 10 46 erg s -1",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 7.166325256259925e23,
+      "km": 716632525625992700000,
+      "ly": 75748117.72758408,
+      "gpc": 0.023224475321987362,
+      "gly": 0.0757999999999965
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_821"
+  },
+  {
+    "id": 27,
+    "name": ["NGC 1023", "UGC 2154", "PGC 10123", "MCG+06-06-073", "Arp 135"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/NGC1023_JeffJohnson.jpg",
+    "type": "SB0",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Perseus",
+    "rightAscension": "02h 40m 24.0s",
+    "declination": "+39 03 48",
+    "coordinates": "02h 40m 24s, +39 03 48",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=02%2040%2024.000%2B39%2003%2048.00&fov=0.30&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.002125,
+    "apparentMagnitude": 10.35,
+    "absoluteMagnitude": -21.2,
+    "discovery": {
+      "year": 1786,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "40 million",
+      "number": 44000000
+    },
+    "radius": null,
+    "luminosity": 19,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.5926168830854514e23,
+      "km": 359261688308545160000,
+      "ly": 37973990.41752236,
+      "gpc": 0.011642876810494984,
+      "gly": 0.037999999999998244
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1023"
+  },
+  {
+    "id": 28,
+    "name": [
+      "NGC 1097",
+      "ESO 416- G 20",
+      "PGC 10488",
+      "UGCA 041 Arp 77 Caldwell 67"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/NGC1097_-_ESO_-_eso0438d.jpg",
+    "type": "(R_1:)SB(rl)bSy1",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Fornax",
+    "rightAscension": "02h 46m 19.0s",
+    "declination": "-30 16 30",
+    "coordinates": "02h 46m 19.0s, -30 16 30",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=02%2046%2019.000-30%2016%2030.00&fov=0.39&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 1271.0,
+    "apparentMagnitude": 10.2,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1790,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "140 million",
+      "number": 140000000
+    },
+    "radius": "5000 light-years",
+    "luminosity": "10 to the 11th solar luminosities",
+    "temperature": {
+      "kelvin": 33,
+      "celsius": -240.15,
+      "fahrenheit": -400.27
+    },
+    "distance": {
+      "m": 4.25732871266136e23,
+      "km": 425732871266136000000,
+      "ly": 45000000,
+      "gpc": 0.013797060849062551,
+      "gly": 0.045030821917806
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1097"
+  },
+  {
+    "id": 29,
+    "name": ["NGC 1271", "CGCG 540-96", "PGC 12367"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/SDSS_NGC_1271.jpg",
+    "type": "E/SO",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Perseus",
+    "rightAscension": "03h 19m 11.3s",
+    "declination": "41 21 12",
+    "coordinates": "03h 19m 11.3s, 41 21 12",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=03%2019%2011.300%2B41%2021%2012.00&fov=0.04&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.019183,
+    "apparentMagnitude": 15.1,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1884,
+      "location": null,
+      "discoverer": "Guillaume Bigourdan"
+    },
+    "solarmass": {
+      "text": "3 billion",
+      "number": 3000000000
+    },
+    "radius": null,
+    "luminosity": "8.9× {10} 10 {L} ⊙",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.354109483916519e24,
+      "km": 2.3541094839165193e21,
+      "ly": 248829568.78850177,
+      "gpc": 0.07629148225824343,
+      "gly": 0.24899999999998848
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1271"
+  },
+  {
+    "id": 30,
+    "name": ["NGC 1277", "PGC 12434", "LGG 088"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/NGC_1277_viewed_by_Hubble.jpg",
+    "type": "S0^+, pec",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Perseus",
+    "rightAscension": "03h 19m 51.5s",
+    "declination": "41 34 25",
+    "coordinates": "03h 19m 52s,41 34 25",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=03%2019%2051.500%2B41%2034%2025.00&fov=0.05&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.016898,
+    "apparentMagnitude": 14.66,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1875,
+      "location": null,
+      "discoverer": "Lawrence Parsons, 4th Earl of Rosse"
+    },
+    "solarmass": {
+      "text": "17 billion",
+      "number": 17000000000
+    },
+    "radius": "6 kpc",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.269021189317127e24,
+      "km": 2.269021189317127e21,
+      "ly": 239835728.9527728,
+      "gpc": 0.0735339588031262,
+      "gly": 0.2399999999999889
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1277"
+  },
+  {
+    "id": 31,
+    "name": ["NGC 1332", "MCG -04-09-011", "PGC 12838"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/NGC1332-hst-R814GB555.jpg",
+    "type": "E",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Eridanus",
+    "rightAscension": "03h 26m 17s",
+    "declination": "-21 20 4.34",
+    "coordinates": "03h 26m 17s, -21 20 4.34",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=03%2026%2017.000-21%2020%2004.43&fov=0.27&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 10.3,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1784,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "660 million",
+      "number": 660000000
+    },
+    "radius": "4.5 x 1.4",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 6.627432723797108e23,
+      "km": 662743272379710800000,
+      "ly": 70052019.16495572,
+      "gpc": 0.021478043800413113,
+      "gly": 0.07009999999999676
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1332"
+  },
+  {
+    "id": 32,
+    "name": ["NGC 1566", "PGC 14897"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Potw1422a.jpg",
+    "type": "SAB(rs)bc",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Dorado",
+    "rightAscension": "04h 20m 00.40200s",
+    "declination": "-54 56 16.5781",
+    "coordinates": "04h 20m 00.4s, -54 56 16",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=04%2020%2000.402-54%2056%2016.58&fov=0.39&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.005017,
+    "apparentMagnitude": 9.73,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1826,
+      "location": null,
+      "discoverer": "James Dunlop"
+    },
+    "solarmass": {
+      "text": "13 million",
+      "number": 13000000
+    },
+    "radius": null,
+    "luminosity": "3.7×1010 L☉",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 6.52343591928674e23,
+      "km": 652343591928674100000,
+      "ly": 68952772.07392219,
+      "gpc": 0.021141013155898787,
+      "gly": 0.06899999999999681
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_1566"
+  },
+  {
+    "id": 33,
+    "name": ["NGC 2787", "PGC 26341", "UGC 4914"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/NGC_2787.jpg",
+    "type": "SB(r)0+",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "09h 19m 18.60430s",
+    "declination": "+69 12 11.6429",
+    "coordinates": "09 19 18.396, +69 12 12.10",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=09%2019%2018.396%2B69%2012%2012.10&fov=0.15&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 11.79,
+    "absoluteMagnitude": -18.84,
+    "discovery": {
+      "year": 1788,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "41 million",
+      "number": 41000000
+    },
+    "radius": "10.3 kpc",
+    "luminosity": "11.8",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.2850934227414566e23,
+      "km": 228509342274145680000,
+      "ly": 24153456.53661883,
+      "gpc": 0.007405482434464835,
+      "gly": 0.024169999999998883
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_2787"
+  },
+  {
+    "id": 34,
+    "name": ["NGC 3079", "UGC 5387", "4C 55.19", "PGC 29050"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/NGC_3079.jpg",
+    "type": "SB(s)c",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "10h 01m 57.8s",
+    "declination": "+55 40 47",
+    "coordinates": "10 01 57.800, +55 40 47.00",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=10%2001%2057.800%2B55%2040%2047.00&fov=0.26&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 1116.0,
+    "apparentMagnitude": 11.5,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2001,
+      "location": null,
+      "discoverer": "LOTOSS"
+    },
+    "solarmass": {
+      "text": "2 million 400 thousand",
+      "number": 2400000
+    },
+    "radius": "300 pc",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.7271274777440146e23,
+      "km": 472712747774401500000,
+      "ly": 49965776.865161,
+      "gpc": 0.015319574750651294,
+      "gly": 0.04999999999999769
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_3079"
+  },
+  {
+    "id": 35,
+    "name": [
+      "NGC 3115",
+      "Spindle Galaxy",
+      "UGCA 199",
+      "PGC 29265",
+      "Caldwell 53"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/NGC_3115.jpg",
+    "type": "S0-",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Sextans",
+    "rightAscension": "10h 05m 14.0s",
+    "declination": "-7 43 07",
+    "coordinates": "10h 05m 14.0s, -07 43 07",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=10%2005%2014.000-07%2043%2007.00&fov=0.39&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 663.0,
+    "apparentMagnitude": 9.9,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "1 billion",
+      "number": 1000000000
+    },
+    "radius": "30 arcsec",
+    "luminosity": "∼10 {sup 36} erg s",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.987544565934217e23,
+      "km": 298754456593421760000,
+      "ly": 31578370.978781752,
+      "gpc": 0.009681971242411616,
+      "gly": 0.03159999999999854
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_3115#Black_hole"
+  },
+  {
+    "id": 36,
+    "name": ["NGC 3377", "UGC 5899", "PGC 32249"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/NGC_3377_Hubble_WikiSky.jpg",
+    "type": "E5",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Leo",
+    "rightAscension": "10h 47m 42.4s",
+    "declination": "+13 59 08",
+    "coordinates": "10h 47m 42.4s, +13 59 08",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=10%2047%2042.400%2B13%2059%2008.00&fov=0.10&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.002218,
+    "apparentMagnitude": 10.2,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "80 million",
+      "number": 80000000
+    },
+    "radius": "40000 ly",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.4559588910550754e23,
+      "km": 345595889105507600000,
+      "ly": 36529514.302,
+      "gpc": 0.011199998480253215,
+      "gly": 0.03655453451727354
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_3377"
+  },
+  {
+    "id": 37,
+    "name": ["NGC 3384", "NGC 3371", "UGC 5911", "PGC 32292"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Settling_into_old_age_NGC_3384.jpg",
+    "type": "E7",
+    "age": {
+      "text": "1 billion",
+      "number": 1000000000
+    },
+    "constellation": "Leo",
+    "rightAscension": "10h 48m 16.9s",
+    "declination": "+12 37 46",
+    "coordinates": "10h 48m 16.9s, +12 37 46",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=10%2048%2016.900%2B12%2037%2046.00&fov=0.18&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 704.0,
+    "apparentMagnitude": 10.9,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1784,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "16 million",
+      "number": 16000000
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.318443489376298e23,
+      "km": 331844348937629860000,
+      "ly": 35075975.35934302,
+      "gpc": 0.010754341474957208,
+      "gly": 0.035099999999998376
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_3384"
+  },
+  {
+    "id": 38,
+    "name": ["NGC 3998", "UGC 6946", " MCG +09-20-046", "PGC 37642"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/NGC3998_-_SDSS_DR14.jpg",
+    "type": "SA00(r):",
+    "age": {
+      "text": "10 million",
+      "number": 10000000
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "11h 57m 56.1333s",
+    "declination": "+55 27 12.922",
+    "coordinates": "11h 57m 56.1333s, +55 27 12.922",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=11%2057%2056.133%2B55%2027%2012.92&fov=0.15&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.0035,
+    "apparentMagnitude": 12.1,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1789,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "810 million",
+      "number": 810000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.254414729969613e23,
+      "km": 425441472996961350000,
+      "ly": 44969199.1786449,
+      "gpc": 0.013787617275586164,
+      "gly": 0.044999999999997924
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_3998"
+  },
+  {
+    "id": 39,
+    "name": ["NGC 4151", "UGC 7166", "PGC 38739"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/NGC4151_Galaxy_from_the_Mount_Lemmon_SkyCenter_Schulman_Telescope_courtesy_Adam_Block.jpg",
+    "type": "(R)SAB(rs)ab, Sy1",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Canes Venatici",
+    "rightAscension": "12h 10m 32.6s",
+    "declination": "+39 24 21",
+    "coordinates": "12 10 32.557 +39 24 21.00",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2010%2032.551%2B39%2024%2021.00&fov=0.23&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.003262,
+    "apparentMagnitude": 11.5,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1787,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "10 million",
+      "number": 10000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": 1285,
+      "celsius": 1011.85,
+      "fahrenheit": 1853.33
+    },
+    "distance": {
+      "m": 4.875370578449317e23,
+      "km": 487537057844931700000,
+      "ly": 51532707.676,
+      "gpc": 0.01579999785606055,
+      "gly": 0.051568004051118006
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4151"
+  },
+  {
+    "id": 40,
+    "name": ["NGC 4261", "NGC 4261", "UGC 7360", "PGC 39659"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/NGC_4261_X-ray.png",
+    "type": "E2",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 19m 23.21606s",
+    "declination": "+05 49 29.7000",
+    "coordinates": "12 19 23.216, +05 49 29.70",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2019%2023.216%2B05%2049%2029.70&fov=0.10&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.007465,
+    "apparentMagnitude": 12.87,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1784,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "490 million",
+      "number": 490000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": 9863846.2552,
+      "celsius": 9863573.1052,
+      "fahrenheit": 17754463.58936
+    },
+    "distance": {
+      "m": 4.875370578449317e23,
+      "km": 906663050231302200000,
+      "ly": 95834360.02737881,
+      "gpc": 0.029382944371749185,
+      "gly": 0.09589999999999557
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4261"
+  },
+  {
+    "id": 41,
+    "name": [
+      "Eyes Galaxies",
+      "NGC 4435-8",
+      "Arp 120",
+      "VV 188 VCC 1030",
+      "VCC 1043"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/NGC4438-NGC4435-eso1131a.jpg",
+    "type": "SB0/SA(s)O/a pec",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 27m 45.6s",
+    "declination": "+13 00 31",
+    "coordinates": "12h 27m 45.6s, +13 00 31",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2027%2045.600%2B13%2000%2031.00&fov=0.44&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.002638,
+    "apparentMagnitude": 10.0,
+    "absoluteMagnitude": 12.0,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.916212576853775e23,
+      "km": 491621257685377550000,
+      "ly": 51964407.93976744,
+      "gpc": 0.015932357740677344,
+      "gly": 0.0519999999999976
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Eyes_Galaxies"
+  },
+  {
+    "id": 42,
+    "name": [
+      "NGC 4459",
+      "CGCG 70-116",
+      "IRAS 12264+1415",
+      "MCG 2-32-83",
+      "PGC 41104",
+      "UGC 7614",
+      "VCC 1154"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/NGC_4459_wikisky.jpg",
+    "type": "SA0^+(r), LINER",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Coma Berenices",
+    "rightAscension": "12h 29m 00.0s",
+    "declination": "13 58 42",
+    "coordinates": "12h 29m 00.0s, 13 58 42",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2028%2060.000%2B13%2058%2042.00&fov=0.12&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.003976,
+    "apparentMagnitude": 11.32,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1787,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "70 million",
+      "number": 70000000
+    },
+    "radius": "2.87 astronomical units",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.96688349810492e23,
+      "km": 496688349810492050000,
+      "ly": 52500000,
+      "gpc": 0.016096570990572975,
+      "gly": 0.052535958904107
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4459#Super_massive_black_hole"
+  },
+  {
+    "id": 43,
+    "name": [
+      "NGC 4473",
+      "CGCG 70-125",
+      "MCG 2-32-93",
+      "PGC 41228",
+      "UGC 7631",
+      "VCC 1231"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/SDSS_NGC_4473.jpg",
+    "type": "E5",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Coma Berenices",
+    "rightAscension": "12h 29m 48.9s",
+    "declination": "13 25 46",
+    "coordinates": "12h 29m 48.9s, 13 25 46",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2029%2048.900%2B13%2025%2046.00&fov=0.15&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.007485,
+    "apparentMagnitude": 11.16,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1784,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "100 million",
+      "number": 100000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 498958925123911400,
+      "km": 498958925123911.44,
+      "ly": 52703901.43737183,
+      "gpc": 1.617015531510131e-8,
+      "gly": 5.277612328766863e-8
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4473#Supermassive_black_hole"
+  },
+  {
+    "id": 44,
+    "name": ["NGC 4486B"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Messier_87_Hubble_WikiSky.jpg",
+    "type": "E+0-1 pec, NLRG Sy",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 30m 49.42338s",
+    "declination": "+12 23 28.0439",
+    "coordinates": "12h 30m 49.4s, +12 23 28",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2030%2049.423%2B12%2023%2028.04&fov=0.33&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.00428,
+    "apparentMagnitude": 8.6,
+    "absoluteMagnitude": -22.0,
+    "discovery": {
+      "year": 1880,
+      "location": null,
+      "discoverer": "John Dreyer"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": "5 arcsec",
+    "luminosity": -22,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.170669922927158e23,
+      "km": 517066992292715800000,
+      "ly": 54654024.21,
+      "gpc": 0.016756997726033507,
+      "gly": 0.05469145847315484
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_87#Supermassive_black_hole_M87*"
+  },
+  {
+    "id": 45,
+    "name": [
+      "NGC 4564",
+      "CGCG 70-186",
+      "MCG 2-32-150",
+      "PGC 42051",
+      "UGC 7773",
+      "VCC 1664"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/SDSS_NGC_4564.jpeg",
+    "type": "E6",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 36m 27.0s",
+    "declination": "11 26 21",
+    "coordinates": "12h 36m 27.0s, 11 26 21",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2036%2027.000%2B11%2026%2021.00&fov=0.20&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.003809,
+    "apparentMagnitude": 12.05,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1784,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "56 million",
+      "number": 56000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.407833834539153e23,
+      "km": 540783383453915350000,
+      "ly": 57160848.73374419,
+      "gpc": 0.01752559351474508,
+      "gly": 0.05719999999999736
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4564"
+  },
+  {
+    "id": 46,
+    "name": [
+      "Messier 58",
+      "NGC 4579",
+      "UGC 7796",
+      "PGC 42168",
+      "VCC 1727",
+      "GC 3121"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/M58s_%28visible%29.jpg",
+    "type": "SAB(rs)b;",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 37m 43.5s",
+    "declination": "+11 49 05",
+    "coordinates": "12h 37m 43.5s, +11 49 05",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2037%2043.500%2B11%2049%2005.00&fov=0.15&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.00506,
+    "apparentMagnitude": 9.7,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1779,
+      "location": null,
+      "discoverer": "Charles Messier"
+    },
+    "solarmass": {
+      "text": "70 million",
+      "number": 70000000
+    },
+    "radius": null,
+    "luminosity": 9.8,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.861638072402578e23,
+      "km": 586163807240257800000,
+      "ly": 61957563.31279964,
+      "gpc": 0.018996272690807604,
+      "gly": 0.061999999999997134
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_58"
+  },
+  {
+    "id": 47,
+    "name": [
+      "NGC 4596",
+      "CGCG 70-206",
+      "MCG 2-32-170",
+      "PGC 42401",
+      "UGC 7828",
+      "VCC 1813"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/SDSS_NGC_4596.jpg",
+    "type": "SB0^+(r)",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 39m 55.9s",
+    "declination": "10 10 34",
+    "coordinates": "12h 39m 55.9s, 10 10 34",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2039%2055.900%2B10%2010%2034.00&fov=0.27&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.006311,
+    "apparentMagnitude": 11.35,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1784,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "78 million",
+      "number": 78000000
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.1998402255184156e23,
+      "km": 519984022551841600000,
+      "ly": 54962354.5516771,
+      "gpc": 0.01685153222571642,
+      "gly": 0.054999999999997454
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4596#Supermassive_black_hole"
+  },
+  {
+    "id": 48,
+    "name": [
+      "NGC 4697",
+      "Caldwell 52",
+      "UGCA 300",
+      "MCG -01-33-010",
+      "PGC 043276"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/NGC_4697_HST_10003_R850_B475.png",
+    "type": "E6",
+    "age": {
+      "text": "6.8 billion",
+      "number": 6800000000
+    },
+    "constellation": "Virgo",
+    "rightAscension": "12h 48m 35.9s",
+    "declination": "-05 48 03",
+    "coordinates": "12h 48m 35.9s, -05 48 03",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=12%2048%2035.900-05%2048%2003.00&fov=0.23&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 1241.0,
+    "apparentMagnitude": 10.97,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "130 million",
+      "number": 130000000
+    },
+    "radius": "35 light years",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.5926168830854514e23,
+      "km": 359261688308545160000,
+      "ly": 37973990.41752236,
+      "gpc": 0.011642876810494984,
+      "gly": 0.037999999999998244
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4697"
+  },
+  {
+    "id": 49,
+    "name": [
+      "NGC 4889",
+      "ZWG 160.241",
+      "DRCG 27-148",
+      "Caldwell 35",
+      "NGC 4884",
+      "UGC 8110",
+      "MCG +5-31-77",
+      "PGC 44715"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Caldwell_35.jpg",
+    "type": "cD; E4; Dd",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Coma Berenices",
+    "rightAscension": "13h 00m 08.1s",
+    "declination": "+27 58 37",
+    "coordinates": "13h 00m 08.1s, +27 58 37",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2000%2008.100%2B27%2058%2037.00&fov=0.13&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.021,
+    "apparentMagnitude": 12.9,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1785,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "21 billion",
+      "number": 21000000000
+    },
+    "radius": null,
+    "luminosity": 12.9,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.9119105262903126e24,
+      "km": 2.911910526290313e21,
+      "ly": 307789185.48939174,
+      "gpc": 0.09436858046401196,
+      "gly": 0.30799999999998573
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4889#Supermassive_black_hole"
+  },
+  {
+    "id": 50,
+    "name": ["NGC 4945", "PGC 45279", "Caldwell 83"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Spiral_Galaxy_NGC_4945.jpg/520px-Spiral_Galaxy_NGC_4945.jpg",
+    "type": "SB(s)cd",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Centaurus",
+    "rightAscension": "13h 05m 27.5s",
+    "declination": "-49 28 06",
+    "coordinates": "13h 05m 27.5s, -49 28 06",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2005%2027.500-49%2028%2006.00&fov=0.99&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 563.0,
+    "apparentMagnitude": 9.3,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1880,
+      "location": null,
+      "discoverer": "James Dunlop"
+    },
+    "solarmass": {
+      "text": "140 billion",
+      "number": 140000000000
+    },
+    "radius": "30 arcsec",
+    "luminosity": "20 tredecillion erg/s",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.1156020847475873e23,
+      "km": 111560208474758740000,
+      "ly": 11791923.340177996,
+      "gpc": 0.003615419641153705,
+      "gly": 0.011799999999999455
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_4945"
+  },
+  {
+    "id": 51,
+    "name": ["NGC 5033", "UGC 8307", "PGC 45948"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/A_galaxy_with_a_bright_heart_NGC_5033.tif/lossy-page1-682px-A_galaxy_with_a_bright_heart_NGC_5033.tif.jpg",
+    "type": "SA(s)c",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Canes Venatici",
+    "rightAscension": "13h 13m 27.5s",
+    "declination": "+36 35 38",
+    "coordinates": "13h 13m 27.5s, +36 35 38",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2013%2027.500%2B36%2035%2038.00&fov=0.39&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 875.0,
+    "apparentMagnitude": 10.8,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": "30 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.08149384097356e23,
+      "km": 508149384097356100000,
+      "ly": 53711432.28,
+      "gpc": 0.016467997765721387,
+      "gly": 0.05374822093224393
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_5033"
+  },
+  {
+    "id": 52,
+    "name": [
+      "NGC 6251",
+      "UGC 10501",
+      "LEDA 58472",
+      "6C 1636+8239",
+      "QSO B1637+826"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/NGC_6251_R814B547.png",
+    "type": "E",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Minor",
+    "rightAscension": "16h 32m 31.9700s",
+    "declination": "+82 32 16.400",
+    "coordinates": "16 32 31.970, +82 32 16.40",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=16%2032%2031.970%2B82%2032%2016.40&fov=0.05&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.02471,
+    "apparentMagnitude": 14.3,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1977,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "590 million",
+      "number": 590000000
+    },
+    "radius": "5 arcsec",
+    "luminosity": 0.54,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.216648360677472e24,
+      "km": 3.216648360677472e21,
+      "ly": 340000000,
+      "gpc": 0.1042444597484726,
+      "gly": 0.340232876712312
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_6251"
+  },
+  {
+    "id": 53,
+    "name": ["NGC 7052", "UGC 11718", "PGC 66537"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Ngc7052a.jpg",
+    "type": "E",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Vulpecula",
+    "rightAscension": "21h 18m 33s",
+    "declination": "+26 26 49",
+    "coordinates": "21h 18m 33s, +26 26 49",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=21%2018%2033.000%2B26%2026%2049.00&fov=0.07&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 4672.0,
+    "apparentMagnitude": 13.4,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": "William Herschel"
+    },
+    "solarmass": {
+      "text": "425 million",
+      "number": 425000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.5906667931359881e24,
+      "km": 1.5906667931359883e21,
+      "ly": 168133612.7,
+      "gpc": 0.05154999300432479,
+      "gly": 0.16824877270869032
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_7052"
+  },
+  {
+    "id": 54,
+    "name": ["NGC 7314", "Arp 14", "PGC 69253"],
+    "list": "Supermassive Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/NGC7314-HST-R814GB450.jpg",
+    "type": "SAB(rs)bc",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1834,
+      "location": null,
+      "discoverer": "John Herschel"
+    },
+    "solarmass": {
+      "text": "870 thousand",
+      "number": 870000
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.1620232056964635e23,
+      "km": 516202320569646400000,
+      "ly": 54562628.33675581,
+      "gpc": 0.016728975627711213,
+      "gly": 0.05459999999999748
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/NGC_7314"
+  },
+  {
+    "id": 55,
+    "name": ["PKS 0521-365", "QSO B0521-365", "IRAS F05212-3630"],
+    "list": "Supermassive Black Holes",
+    "kind": "BL Lacertae Object",
+    "image": "https://alchetron.com/cdn/pks-0521-365-ae425900-3cce-4122-bfe1-61574370b2a-resize-750.jpg",
+    "type": "BL Lac",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Columba",
+    "rightAscension": "05h 22m 57.9839686440s",
+    "declination": "-36 27 30.847737786",
+    "coordinates": "05 22 57.891, -36 27 30.14",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=05%2022%2057.891-36%2027%2030.14&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.055,
+    "apparentMagnitude": 14.62,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": "8 arcsec",
+    "luminosity": "8 × 1035W",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/PKS_0521-365"
+  },
+  {
+    "id": 56,
+    "name": [
+      "Q0906+6930",
+      "QSO B0901+6942",
+      "CLASS B0901+697",
+      "GB6 J0906+6930",
+      "QSO J0906+6930",
+      "BWE 0901+6942",
+      "GB6 B0901+6942",
+      "87GB 090153.2+694215"
+    ],
+    "list": "Supermassive Black Holes",
+    "kind": "Blazar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Q0906p6930Location.png",
+    "type": "Blazar",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "09h 06m 30.75s",
+    "declination": "+69 30 30.8",
+    "coordinates": "09h 06m 30.75s, +69 30 30.8",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=09%2006%2030.750%2B69%2030%2030.80&fov=0.17&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 5.47,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2004,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "2 billion",
+      "number": 2000000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.1636698481274384e26,
+      "km": 1.1636698481274385e23,
+      "ly": 12300000000,
+      "gpc": 3.771196632077097,
+      "gly": 12.30842465753364
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Q0906%2B6930"
+  },
+  {
+    "id": 57,
+    "name": ["RX J1131-1231", "QSO J1131-1231", "2MASX J11315154-1231587"],
+    "list": "Supermassive Black Holes",
+    "kind": "Quasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/RX_J1131.jpg",
+    "type": "Quasar",
+    "age": {
+      "text": "7.7 billion",
+      "number": 7700000000
+    },
+    "constellation": "Crater",
+    "rightAscension": "11h 31m 51.60s",
+    "declination": "-12 31 57.00",
+    "coordinates": "11h 31m 51.60s, -12 31 57.00",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=11%2031%2051.474-12%2031%2058.05&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.658,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.7198242480705215e25,
+      "km": 5.719824248070522e22,
+      "ly": 6045859000.68476,
+      "gpc": 1.8536685448288919,
+      "gly": 6.05
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/RX_J1131-1231"
+  },
+  {
+    "id": 58,
+    "name": ["Sagittarius A*"],
+    "list": "Supermassive Black Holes",
+    "kind": "Supermassive Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/EHT_Saggitarius_A_black_hole.tif/lossy-page1-600px-EHT_Saggitarius_A_black_hole.tif.jpg",
+    "type": "Supermassive Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Sagittarius",
+    "rightAscension": "17h 45m 40.0409s",
+    "declination": "-29 0 28.118",
+    "coordinates": "17h 45m 40.0409s, -29 0 28.118",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2045%2040.041-29%2000%2028.12&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1974,
+      "location": "National Radio Astronomy Observatory",
+      "discoverer": "Robert Hanbury Brown"
+    },
+    "solarmass": {
+      "text": "4.3 million",
+      "number": 4300000000
+    },
+    "radius": "120 AU",
+    "luminosity": "2.61E36 erg/s",
+    "temperature": {
+      "kelvin": 20000273.15,
+      "celsius": 20000000,
+      "fahrenheit": 36000032
+    },
+    "distance": {
+      "m": 252346063895147680000,
+      "km": 252346063895147700,
+      "ly": 26673,
+      "gpc": 0.000008177977867267676,
+      "gly": 0.000026691269178080876
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Sagittarius_A*"
+  },
+  {
+    "id": 59,
+    "name": ["Phoenix A"],
+    "list": "Supermassive Black Holes",
+    "kind": "Supermassive Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Phoenix_Cluster_center%2C_artist%27s_depiction.jpg",
+    "type": "Supermassive Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Phoenix",
+    "rightAscension": "23h 44m 40.9s",
+    "declination": "-42 41 54",
+    "coordinates": "23h 44m 40.9s, -42 41 54",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=23%2044%2040.900-42%2041%2054.00&fov=0.00&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.597,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2010,
+      "location": null,
+      "discoverer": "Michael McDonald"
+    },
+    "solarmass": {
+      "text": "100 billion",
+      "number": 100000000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5.392616369371056e25,
+      "km": 5.3926163693710564e22,
+      "ly": 5700000000,
+      "gpc": 1.747627707547923,
+      "gly": 5.70390410958876
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Phoenix_Cluster#Supermassive_black_hole"
+  },
+  {
+    "id": 60,
+    "name": [
+      "Messier 82",
+      "NGC 3034",
+      "UGC 5322",
+      "Arp 337",
+      "Cigar Galaxy",
+      "PGC 28655",
+      "3C 231"
+    ],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/M82_HST_ACS_2006-14-a-large_web.jpg/600px-M82_HST_ACS_2006-14-a-large_web.jpg",
+    "type": "I0",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "09h 55m 52.2s",
+    "declination": "+69 40 47",
+    "coordinates": "09h 55m 52.2s, +69 40 47",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=09%2055%2052.200%2B69%2040%2047.00&fov=0.22&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 203.0,
+    "apparentMagnitude": 8.41,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1774,
+      "location": null,
+      "discoverer": "Johann Elert Bode"
+    },
+    "solarmass": {
+      "text": "30 million",
+      "number": 30000000
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.1250563397030753e23,
+      "km": 112505633970307550000,
+      "ly": 11891854.893908318,
+      "gpc": 0.003646058790655008,
+      "gly": 0.01189999999999945
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_82"
+  },
+  {
+    "id": 61,
+    "name": ["GCIRS 13E", "WR 101f"],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Radio Object",
+    "image": "https://jumk.de/astronomie/img/irs-13e.jpg",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Sagittarius",
+    "rightAscension": "17h 45m 39.73s",
+    "declination": "-29 00 29.7",
+    "coordinates": "17h 45m 39.73s, -29 00 29.7",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2045%2039.730-30%2039%2029.70&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 245978992287100800000,
+      "km": 245978992287100830,
+      "ly": 26000,
+      "gpc": 0.00000797163515723614,
+      "gly": 0.0000260178082191768
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GCIRS_13E"
+  },
+  {
+    "id": 62,
+    "name": ["HLX-1"],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Intermediate-mass Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/ESO_243-49_%28HST%29.jpg",
+    "type": "Intermediate-mass Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Phoenix",
+    "rightAscension": "01h 10m 28.2s",
+    "declination": "-46 04 22.2",
+    "coordinates": "01h 10m 28.2s, -46 04 22.2",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=01%2010%2028.200-46%2004%2022.20&fov=0.11&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2008,
+      "location": "Institut de Recherche en Astrophysique et Planétologie in Toulouse, France",
+      "discoverer": "Natalie Webb"
+    },
+    "solarmass": {
+      "text": "100 thousand",
+      "number": 100000
+    },
+    "radius": null,
+    "luminosity": "~1 x 10 42 erg s -1",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.743611837048432e24,
+      "km": 2.7436118370484324e21,
+      "ly": 290000000,
+      "gpc": 0.0889143921384031,
+      "0.290198630136972": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/HLX-1"
+  },
+  {
+    "id": 63,
+    "name": ["M82 X-1"],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Intermediate-mass Black Hole",
+    "image": "http://blackholes.stardate.org/images/sig06-010_Med.jpg",
+    "type": "Intermediate-mass Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "09h 55m 50.01s",
+    "declination": "69 40 46.0",
+    "coordinates": "09h 55m 50.01s, 69 40 46.0",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=09%2055%2050.010%2B69%2040%2046.00&fov=0.33&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "5.5 hundreds",
+      "number": 550
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 5676438283548480000,
+      "km": 5676438283548480,
+      "ly": 600,
+      "gpc": 1.83960811320834e-7,
+      "gly": 6.0041095890408e-7
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/M82_X-1"
+  },
+  {
+    "id": 64,
+    "name": ["Messier 15", "M 15", "NGC 7078", "GCl 120"],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Cluster",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/M15_Globular_Cluster_from_the_Mount_Lemmon_SkyCenter_Schulman_Telescope_courtesy_Adam_Block.jpg",
+    "type": "IV",
+    "age": {
+      "text": "12 billion",
+      "number": 12000000000
+    },
+    "constellation": "Pegasus",
+    "rightAscension": "21h 29m 58.33s",
+    "declination": "+12 10 01.2",
+    "coordinates": "21h 29m 58.33s, +12 10 01.2",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=21%2029%2058.273%2B12%2010%2003.69&fov=0.30&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 6.2,
+    "absoluteMagnitude": -9.2,
+    "discovery": {
+      "year": 1746,
+      "location": null,
+      "discoverer": "Jean-Dominique Maraldi"
+    },
+    "solarmass": {
+      "text": "560 thousand",
+      "number": 560000
+    },
+    "radius": "~88 ly",
+    "luminosity": "360000 times that of the Sun",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 337653470566408800000,
+      "km": 337653470566408770,
+      "ly": 35690,
+      "gpc": 0.000010942602260067609,
+      "gly": 0.00003571444520547769
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_15"
+  },
+  {
+    "id": 65,
+    "name": [
+      "Messier 110",
+      "IRAS 00376+4124",
+      "LEDA 2429",
+      "M 110",
+      "MCG +07-02-014",
+      "NGC 0205",
+      "PGC 002429"
+    ],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Not_So_Dead_After_All_%2848763200193%29.jpg",
+    "type": "E5 pec",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Andromeda",
+    "rightAscension": "00h 40m 22.05446s",
+    "declination": "+41 41 07.4963",
+    "coordinates": "00h 40m 22.1s, +41 41 07",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=00%2040%2022.054%2B41%2041%2007.50&fov=0.30&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": -0.000804,
+    "apparentMagnitude": 8.5,
+    "absoluteMagnitude": -16.5,
+    "discovery": {
+      "year": 1783,
+      "location": null,
+      "discoverer": "Caroline Herschel"
+    },
+    "solarmass": {
+      "text": "5.5 hundreds",
+      "number": 550
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": 20,
+      "celsius": -253.15,
+      "fahrenheit": -423.67
+    },
+    "distance": {
+      "m": 2.5449364971242354e22,
+      "km": 25449364971242353000,
+      "ly": 2690000,
+      "gpc": 0.0008247576374217392,
+      "gly": 0.002691842465753292
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Messier_110"
+  },
+  {
+    "id": 66,
+    "name": [
+      "Sculptor Galaxy",
+      "Silver Coin Galaxy",
+      "Silver Dollar Galaxy",
+      "NGC 253",
+      "UGCA 13",
+      "PGC 2789",
+      "Caldwell 65"
+    ],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NGC_253_Galaxy.jpg/560px-NGC_253_Galaxy.jpg",
+    "type": "SAB(s)c",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Sculptor",
+    "rightAscension": "00h 47m 33s",
+    "declination": "-25 17 18",
+    "coordinates": "00h 47m 33s, -25 17 18",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=00%2047%2033.000-25%2017%2018.00&fov=0.60&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.000811,
+    "apparentMagnitude": 8.0,
+    "absoluteMagnitude": -15,
+    "discovery": {
+      "year": 1783,
+      "location": null,
+      "discoverer": "Caroline Herschel"
+    },
+    "solarmass": {
+      "text": "5 million",
+      "number": 5000000
+    },
+    "radius": null,
+    "luminosity": "25–26 mag/arcsec 2",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 1.0777850649256352e23,
+      "km": 107778506492563540000,
+      "ly": 11392197.125256708,
+      "gpc": 0.0034928630431484945,
+      "gly": 0.011399999999999473
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Sculptor_Galaxy#Central_black_hole"
+  },
+  {
+    "id": 67,
+    "name": [
+      "Triangulum Galaxy",
+      "NGC 0598",
+      "MCG+05-04-069",
+      "UGC 1117",
+      "PGC 5818"
+    ],
+    "list": "Intermediate-mass Black Holes",
+    "kind": "Galaxy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/VST_snaps_a_very_detailed_view_of_the_Triangulum_Galaxy.jpg/1000px-VST_snaps_a_very_detailed_view_of_the_Triangulum_Galaxy.jpg",
+    "type": "SA(s)cd",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Triangulum",
+    "rightAscension": "01h 33m 50.02s",
+    "declination": "+30 39 36.7",
+    "coordinates": "01h 33m 50.9s, 30 39 36",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=01%2033%2050.020%2B30%2039%2036.70&fov=0.99&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": -0.000607,
+    "apparentMagnitude": 5.72,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": "William Parsons, 3rd Earl of Rosse"
+    },
+    "solarmass": {
+      "text": "1.5 thousand",
+      "number": 1500
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.0253615857561693e22,
+      "km": 30253615857561694000,
+      "ly": 3197809.719370304,
+      "gpc": 0.0009804527840416829,
+      "gly": 0.0031999999999998523
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Triangulum_Galaxy"
+  },
+  {
+    "id": 68,
+    "name": ["Great Annihilator"],
+    "list": "Stellar Black Holes",
+    "kind": "Microquasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Ss433_art_big.gif",
+    "type": "Microquasar",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ophiuchus",
+    "rightAscension": "17h 43m 54.83s",
+    "declination": "-29 44 42.6",
+    "coordinates": "17h 43m 54.83s, -29 44 42.6",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2043%2054.830-29%2044%2042.60&fov=0.03&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": "10337 km",
+    "luminosity": "VI",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 151371687561292800000,
+      "km": 151371687561292800,
+      "ly": 16000,
+      "gpc": 0.00000490562163522224,
+      "gly": 0.0000160109589041088
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Great_Annihilator"
+  },
+  {
+    "id": 69,
+    "name": [
+      "4U 1543-475",
+      "4U 1543-47",
+      "IL Lup",
+      "TIC 254732447",
+      "2MASS J15470829-4740103"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "X-ray Transient",
+    "image": "http://maxi.riken.jp/star_data/J1547-476/J1547-476_g_img_1m.gif",
+    "type": "X-ray transient",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Lupus",
+    "rightAscension": "15h 47m 08.27687s",
+    "declination": "-47 40 10.2846",
+    "coordinates": "15h 47m 08.27687s, -47 40 10.2846",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=15%2047%2008.277-47%2040%2010.28&fov=0.03&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 11.96,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1984,
+      "location": null,
+      "discoverer": "S. Kiamoto"
+    },
+    "solarmass": {
+      "text": "9.4",
+      "number": 9.4
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": 9000,
+      "celsius": 8726.85,
+      "fahrenheit": 15740.33
+    },
+    "distance": {
+      "m": 160832418033873600000,
+      "km": 160832418033873600,
+      "ly": 17000,
+      "gpc": 0.00000521222298742363,
+      "gly": 0.0000170116438356156
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/4U_1543-475"
+  },
+  {
+    "id": 70,
+    "name": [
+      "A0620-00",
+      "1A 0620-00",
+      "INTREF 297",
+      "Nova Mon 1917",
+      "Nova Mon 1975",
+      "Mon X-1",
+      "V616 Mon"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Binary Star",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/V616mon_sdss_ugiz_1_besk.jpg",
+    "type": "K",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Monoceros",
+    "rightAscension": "06h 22m 44.542s",
+    "declination": "-00 20 44.29",
+    "coordinates": "06h 22m 44.542s, -00 20 44.29",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=06%2022%2044.542-00%2020%2044.29&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 11.2,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1975,
+      "location": null,
+      "discoverer": "McClintock & Remillard"
+    },
+    "solarmass": {
+      "text": "5.86",
+      "number": 5.86
+    },
+    "radius": null,
+    "luminosity": "51 +/- 7 uJy",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 44465433221129760000,
+      "km": 44465433221129760,
+      "ly": 4700,
+      "gpc": 0.000001441026355346533,
+      "gly": 0.00000470321917808196
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/A0620-00"
+  },
+  {
+    "id": 71,
+    "name": [
+      "Cygnus X-1",
+      "Cyg X-1",
+      "AG (or AGK2)+35 1910",
+      "BD+34 3815",
+      "HD 226868",
+      "HDE 226868",
+      "HIP 98298",
+      "SAO 69181",
+      "V1357 Cyg"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Microquasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Chandra_image_of_Cygnus_X-1.jpg",
+    "type": "Microquasar",
+    "age": {
+      "text": "5 million",
+      "number": 5000000
+    },
+    "constellation": "Cygnus",
+    "rightAscension": "19h 58m 21.67574s",
+    "declination": "+35 12 05.7845",
+    "coordinates": "19h 58m 21.6756s, +35 12 05.775",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=19%2058%2021.676%2B35%2012%2005.78&fov=0.06&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 8.95,
+    "absoluteMagnitude": -6.5,
+    "discovery": {
+      "year": 1964,
+      "location": "Royal Greenwich Observatory",
+      "discoverer": "Louise Webster and Paul Murdin"
+    },
+    "solarmass": {
+      "text": "21.2",
+      "number": 21.2
+    },
+    "radius": 14609700,
+    "luminosity": "3-4*105 L☉",
+    "temperature": {
+      "kelvin": 31000.0,
+      "celsius": 30726.85,
+      "fahrenheit": 55340.33
+    },
+    "distance": {
+      "m": 57425407418350120000,
+      "km": 57425407418350120,
+      "ly": 6070,
+      "gpc": 0.0000018610702078624374,
+      "gly": 0.000006074157534246276
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Cygnus_X-1"
+  },
+  {
+    "id": 72,
+    "name": [
+      "Cygnus X-3",
+      "X Cyg X-3",
+      "V1521 Cyg",
+      "18P 57",
+      "WR 145a",
+      "RX J2032.3+4057",
+      "INTEGRAL1 118",
+      "2U 2030+40",
+      "3U 2030+40",
+      "4U 2030+40"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Microquasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cygnus_X3.jpg",
+    "type": "Microquasar",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Cygnus",
+    "rightAscension": "20h 32m 25.78s",
+    "declination": "+40 57 27.9",
+    "coordinates": "20h 32m 25.78s, +40 57 27.9",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=20%2032%2025.780%2B40%2057%2027.90&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 13.192,
+    "absoluteMagnitude": -4.5,
+    "discovery": {
+      "year": 1967,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "8-14",
+      "number": "8-14"
+    },
+    "radius": 1391400,
+    "luminosity": "209,000+93,000-64,000 L☉",
+    "temperature": {
+      "kelvin": 80000.0,
+      "celsius": 79726.85,
+      "fahrenheit": 143540.33
+    },
+    "distance": {
+      "m": 227052681720000480000,
+      "km": 227052681720000480,
+      "ly": 24000,
+      "gpc": 0.00000735843245283336,
+      "gly": 0.0000240164383561632
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/Cygnus_X-3"
+  },
+  {
+    "id": 73,
+    "name": [
+      "GRO J0422+32",
+      "V518 Per",
+      "GRO J0422+33",
+      "RLC2006 XB2",
+      "Granat 0417+335",
+      "Nova Persei 1992",
+      "Nova Persei 1993",
+      "ZGH2005 OS00676-097731 GRO J0422+32",
+      "ZGH2005 XS00676B3-003"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://th.bing.com/th/id/R.bda2f17be3da67d824561b02bc49f388?rik=xwKZNOBdj1wkQA&riu=http%3a%2f%2fblackholes.stardate.org%2fimages%2fGRO_J0422_32_artist-impression.jpg&ehk=N8IO4Sz%2fKLEV7V1Ag4MeqeSnZtNCfXSyPiAGPfqjEZ8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+    "type": "Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Perseus",
+    "rightAscension": "04h 21m 42.77s",
+    "declination": "+32 54 26.7",
+    "coordinates": "04h 21m 42.77s, +32 54 26.7",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=04%2021%2042.770%2B32%2054%2026.70&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 13.2,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1992,
+      "location": null,
+      "discoverer": "BATSE instrument"
+    },
+    "solarmass": {
+      "text": "4.3",
+      "number": 4.3
+    },
+    "radius": "0.5 deg",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 73793697686130250000,
+      "km": 73793697686130240,
+      "ly": 7800,
+      "gpc": 0.000002391490547170842,
+      "gly": 0.00000780534246575304
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GRO_J0422%2B32"
+  },
+  {
+    "id": 74,
+    "name": ["GRO J1655-40", "V1033 Sco", "GRO J1655-40"],
+    "list": "Stellar Black Holes",
+    "kind": "Binary Star",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/GRO_J1655-40.jpg/300px-GRO_J1655-40.jpg",
+    "type": "Binary Star",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Scorpius",
+    "rightAscension": "16h 54m 00.14s",
+    "declination": "-39 50 44.9",
+    "coordinates": "16h 54m 00.14s, -39 50 44.9",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=16%2054%2000.140-39%2050%2044.90&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 17.0,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1994,
+      "location": null,
+      "discoverer": "Zhang et al"
+    },
+    "solarmass": {
+      "text": "7",
+      "number": 7
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": 7000,
+      "celsius": 6726.85,
+      "fahrenheit": 12140.33
+    },
+    "distance": {
+      "m": 78051026398791600000,
+      "km": 78051026398791600,
+      "ly": 8250,
+      "gpc": 0.0000025294611556614674,
+      "gly": 0.0000082556506849311
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GRO_J1655%E2%88%9240"
+  },
+  {
+    "id": 75,
+    "name": ["GRS 1124-683"],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://dic.academic.ru/pictures/wiki/files/51/300px-Black_hole.jpg",
+    "type": "Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Musca",
+    "rightAscension": "11h 26m 26.60s",
+    "declination": "-68 40 32.3",
+    "coordinates": "11h 26m 26.60s, -68 40 32.3",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=11%2026%2026.600-68%2040%2032.30&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 13.3,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1991,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "7",
+      "number": 7
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GRS_1124-683"
+  },
+  {
+    "id": 76,
+    "name": [
+      "GRS 1915+105",
+      "V1487 Aquilae",
+      "Granat 1915+105",
+      "Nova Aquilae 1992",
+      "Granat 1915+10",
+      "INTEGRAL1 112"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Microquasar",
+    "image": "https://chandra.harvard.edu/photo/2009/g1915/g1915_xray.jpg",
+    "type": "Microquasar",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Aquila",
+    "rightAscension": "19h 15m 11.6s",
+    "declination": "+10 56 44",
+    "coordinates": "19h 15m 11.6s, +10 56 44",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=19%2015%2011.600%2B10%2056%2044.00&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1992,
+      "location": null,
+      "discoverer": "WATCH all-sky monitor aboard Granat"
+    },
+    "solarmass": {
+      "text": "12.4",
+      "number": 12.4
+    },
+    "radius": null,
+    "luminosity": "10-100%",
+    "temperature": {
+      "kelvin": 650,
+      "celsius": 376.85,
+      "fahrenheit": 710.33
+    },
+    "distance": {
+      "m": 264900453232262400000,
+      "km": 264900453232262430,
+      "ly": 28000,
+      "gpc": 0.00000858483786163892,
+      "gly": 0.0000280191780821904
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GRS_1915%2B105"
+  },
+  {
+    "id": 77,
+    "name": ["GS 2000+25", "Nova Vul 1988", "INTREF 1007", "QZ Vul"],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/QZVulLightCurve.png",
+    "type": "K3-6 V",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Vulpecula",
+    "rightAscension": "20h 02m 49.58s",
+    "declination": "+25 14 11.3",
+    "coordinates": "20h 02m 49.58s, +25 14 11.3",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=20%2002%2049.580%2B25%2014%2011.30&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 18.2,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "5",
+      "number": 5
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 83254428158711040000,
+      "km": 83254428158711040,
+      "ly": 8800,
+      "gpc": 0.000002698091899372232,
+      "gly": 0.00000880602739725984
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GS_2000%2B25"
+  },
+  {
+    "id": 78,
+    "name": [
+      "GX 339-4",
+      "V821 Ara",
+      "4U 1658-48",
+      "3A 1659-487",
+      "1RXS J170248.5-484719",
+      "2MASS 17024936-4847228"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Flaring_Black_Hole.jpg",
+    "type": "LMXB",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ara",
+    "rightAscension": "17 02 49.5",
+    "declination": "-48 47 23",
+    "coordinates": "17 02 49.5, -48 47 23",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2002%2049.500-48%2047%2023.00&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 15.5,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1973,
+      "location": null,
+      "discoverer": "Markert et al"
+    },
+    "solarmass": {
+      "text": "5.8",
+      "number": 5.8
+    },
+    "radius": "255.706 degs",
+    "luminosity": "20 keV",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GX_339-4"
+  },
+  {
+    "id": 79,
+    "name": [
+      "IGR J17091-3624",
+      "SWIFT J1709.8-3627B",
+      "INTEGRAL1 44",
+      "CXOU J170907.6-362425"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Stellar Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/IGR_J17091-3624.jpg",
+    "type": "Stellar Black Hole",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Scorpius",
+    "rightAscension": "17h 09m 08.0s",
+    "declination": "-36 24 24",
+    "coordinates": "17h 09m 07.92s, -36 24 25.20",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2009%2008.000-36%2024%2024.00&fov=0.03&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2003,
+      "location": null,
+      "discoverer": "INTEGRAL satellite"
+    },
+    "solarmass": {
+      "text": "6.5",
+      "number": 6.5
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 264900453232262400000,
+      "km": 264900453232262430,
+      "ly": 28000,
+      "gpc": 0.00000858483786163892,
+      "gly": 0.0000280191780821904
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/IGR_J17091-3624"
+  },
+  {
+    "id": 80,
+    "name": ["LB-1"],
+    "list": "Stellar Black Holes",
+    "kind": "Binary Star",
+    "image": "https://images.firstpost.com/optimize/Lg2e6g4KH-RJVDE8KN6hJVUFnsk=/images.firstpost.com/wp-content/uploads/2019/11/LB-1-Black-Hole-1.jpg",
+    "type": "Binary Star",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Gemini",
+    "rightAscension": "06h 11m 49.0763s",
+    "declination": "+22 49 32.686",
+    "coordinates": "06h 11m 49.076s, +22 49 32.686",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=06%2011%2049.076%2B22%2049%2032.69&fov=0.08&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 11.51,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2003,
+      "location": null,
+      "discoverer": "Wahyu Saptomo"
+    },
+    "solarmass": {
+      "text": "7",
+      "number": 7
+    },
+    "radius": null,
+    "luminosity": 1260,
+    "temperature": {
+      "kelvin": 18000,
+      "celsius": 17726.85,
+      "fahrenheit": 31940.33
+    },
+    "distance": {
+      "m": 66225113308065600000,
+      "km": 66225113308065610,
+      "ly": 7000,
+      "gpc": 0.00000214620946540973,
+      "gly": 0.0000070047945205476
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/LB-1"
+  },
+  {
+    "id": 81,
+    "name": [
+      "M33 X-7",
+      "2E 408",
+      "2E 0130.7+3016",
+      "RX J0133.5+3032",
+      "CXOU J013334.1+303210"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/M33_X-7.jpg",
+    "type": "O7-8III",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Triangulum",
+    "rightAscension": "01h 33m 34.13s",
+    "declination": "+30 32 11.3",
+    "coordinates": "01h 33m 34.13s, +30 32 11.3",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=01%2033%2034.130%2B30%2032%2011.30&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 18.7,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2007,
+      "location": null,
+      "discoverer": "Wolfgang Pietsch"
+    },
+    "solarmass": {
+      "text": "15.65",
+      "number": 15.65
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 2.554397227596816e22,
+      "km": 25543972275968164000,
+      "ly": 2700000,
+      "gpc": 0.000827823650943753,
+      "gly": 0.00270184931506836
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/M33_X-7"
+  },
+  {
+    "id": 82,
+    "name": ["OGLE-2011-BLG-0462", "MOA-2011-BLG-191"],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Rogue_black_hole_OGLE-2011-BLG-0462.gif",
+    "type": "Black Hole",
+    "age": {
+      "text": "100 million",
+      "number": 100000000
+    },
+    "constellation": "Sagittarius",
+    "rightAscension": "17 51 40.19",
+    "declination": "-29 53 26.3",
+    "coordinates": "17 51 40.19, -29 53 26.3",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2051%2040.190-29%2053%2026.30&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "3",
+      "number": 3
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 189214609451616000000,
+      "km": 189214609451616000,
+      "ly": 20000,
+      "gpc": 0.0000061320270440278,
+      "gly": 0.000020013698630136
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/OGLE-2011-BLG-0462"
+  },
+  {
+    "id": 83,
+    "name": ["SN 1997D"],
+    "list": "Stellar Black Holes",
+    "kind": "Supernova",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/N3147v.gif",
+    "type": "SN.IIPec ",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1997,
+      "location": null,
+      "discoverer": "Duília de Mello"
+    },
+    "solarmass": {
+      "text": "10",
+      "number": 10
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 4.1419078008958745e23,
+      "km": 414190780089587470000,
+      "ly": 43780000,
+      "gpc": 0.013423007199376854,
+      "gly": 0.043809986301367704
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/SN_1997D"
+  },
+  {
+    "id": 84,
+    "name": [
+      "SS 433",
+      "V1343 Aql",
+      "GAL 039.7-02.0",
+      "2MASS J19114957+0458578",
+      "USNO 659",
+      "1A 1909+04",
+      "87GB 190920.8+045332",
+      "NEK 40.1-02.1",
+      "3A 1909+048",
+      "GPS 1909+049",
+      "RGB J1911+049",
+      "BWE 1909+0453",
+      "GRS 039.60 -01.80",
+      "RX J1911.7+0459",
+      "4C 04.66",
+      "1H 1908+047",
+      "1RXS J191149.7+045857",
+      "2E 1909.3+0453",
+      "HBHA 204-02",
+      "AAVSO 1906+04",
+      "2E 4204",
+      "INTEGRAL1 110",
+      "TXS 1909+048",
+      "1ES 1909+04.8",
+      "INTREF 969",
+      "4U 1908+05"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Star System",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/W50_medium.jpg",
+    "type": "A7Ib",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Aquila",
+    "rightAscension": "19h 11m 49.56s",
+    "declination": "+04 58 57.8",
+    "coordinates": "19h 11m 49.56s, +04 58 57.6",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=19%2011%2049.560%2B04%2058%2057.60&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 15.15,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1977,
+      "location": null,
+      "discoverer": "K16"
+    },
+    "solarmass": {
+      "text": "8",
+      "number": 8
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 170293148506454400000,
+      "km": 170293148506454400,
+      "ly": 18000,
+      "gpc": 0.00000551882433962502,
+      "gly": 0.0000180123287671224
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/SS_433"
+  },
+  {
+    "id": 85,
+    "name": [
+      "V404 Cygni",
+      "V404 Cyg",
+      "Nova Cygni 1938",
+      "Nova Cygni 1989",
+      "GS 2023+338",
+      "AAVSO 2020+33"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Microquasar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/V404Cyg_XRT_halo_fullsize.jpg",
+    "type": "K3 III",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Cygnus",
+    "rightAscension": "20h 24m 03.82s",
+    "declination": "+33 52 02.0",
+    "coordinates": "20h 24m 03.82s, +33 52 02.0",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=20%2024%2003.820%2B33%2052%2002.00&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 15,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2015,
+      "location": null,
+      "discoverer": "Sebastian Heinz"
+    },
+    "solarmass": {
+      "text": "0.7",
+      "number": 0.7
+    },
+    "radius": 6.0,
+    "luminosity": 10.2,
+    "temperature": {
+      "kelvin": 4800,
+      "celsius": 4526.85,
+      "fahrenheit": 8180.33
+    },
+    "distance": {
+      "m": 73747694191596700000,
+      "km": 73747694191596700,
+      "ly": 7795.1374267910005,
+      "gpc": 0.0000023899996756497846,
+      "gly": 0.000007800476562014445
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/V404_Cygni"
+  },
+  {
+    "id": 86,
+    "name": [
+      "V Puppis",
+      "CD-483349",
+      "CCDM J07582-4915A",
+      "GC 10802",
+      "GSC 08143-03239",
+      "HIP 38957",
+      "HR 3129",
+      "HD 65818",
+      "SAO 219226",
+      "WDS J07582-4915A"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Star System",
+    "image": "https://i.ibb.co/VJPsNPX/aladin-cds-unistra-fr-Aladin-Lite-5.png",
+    "type": "B1Vp + B3IV:",
+    "age": {
+      "text": "5 billion",
+      "number": 5000000000
+    },
+    "constellation": "Puppis",
+    "rightAscension": "07h 58m 14.43920s",
+    "declination": "-49 14 41.6803",
+    "coordinates": "07h 58m 14.43920s, -49 14 41.6803",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=07%2058%2014.439-49%2014%2041.68&fov=0.45&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 4.41,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "7.3",
+      "number": 7.3
+    },
+    "radius": 4.59,
+    "luminosity": 65000,
+    "temperature": {
+      "kelvin": 24000,
+      "celsius": 23726.85,
+      "fahrenheit": 42740.33
+    },
+    "distance": {
+      "m": 9082301253677568000,
+      "km": 9082301253677568,
+      "ly": 960,
+      "gpc": 2.943372981133344e-7,
+      "gly": 9.60657534246528e-7
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/V_Puppis"
+  },
+  {
+    "id": 87,
+    "name": [
+      "XTE J1118+480",
+      "KV Ursae Majoris",
+      "2MASS J11181079+4802126",
+      "AAVSO 1112+48"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Xtej1118_xray.jpg",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ursa Major",
+    "rightAscension": "11h 18m 10.80s",
+    "declination": "48 02 12.3",
+    "coordinates": "11h 18m 10.80s, 48 02 12.3",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=11%2018%2010.800%2B48%2002%2012.30&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 12.25,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2000,
+      "location": null,
+      "discoverer": "All Sky Monitor (ASM)"
+    },
+    "solarmass": {
+      "text": "7.24",
+      "number": 7.24
+    },
+    "radius": "5 arcsec",
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/XTE_J1118%2B480"
+  },
+  {
+    "id": 88,
+    "name": ["XTE J1550–564", "V381 Normae"],
+    "list": "Stellar Black Holes",
+    "kind": "X-ray Binary",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/V381NorLightCurve.png",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Norma",
+    "rightAscension": "15h 50m 58.78s",
+    "declination": "-56 28 35.0",
+    "coordinates": "15h 50m 58.78s, -56 28 35.0",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=15%2050%2058.780-56%2028%2035.00&fov=0.01&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 16.6,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "10",
+      "number": 10
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/XTE_J1550%E2%80%93564"
+  },
+  {
+    "id": 89,
+    "name": ["XTE J1650-500"],
+    "list": "Stellar Black Holes",
+    "kind": "Stellar Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/XTE_J1650-500.jpg",
+    "type": "K2V",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ara",
+    "rightAscension": "16h 50m 00.98s",
+    "declination": "-49 57 43.6",
+    "coordinates": "16h 50m 00.98s, -49 57 43.6",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=16%2050%2000.980-49%2057%2043.60&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2001,
+      "location": null,
+      "discoverer": "All-Sky Monitor"
+    },
+    "solarmass": {
+      "text": "9.7",
+      "number": 9.7
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 101827360180865730000,
+      "km": 101827360180865740,
+      "ly": 10763.16046377,
+      "gpc": 0.000003299999552152422,
+      "gly": 0.00001077053249148438
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/XTE_J1650%E2%88%92500"
+  },
+  {
+    "id": 90,
+    "name": [
+      "V4641 Sagittarii",
+      "V4641 Sgr",
+      "GSC 06848-03786",
+      "2MASS J18192163-2524258"
+    ],
+    "list": "Stellar Black Holes",
+    "kind": "X-ray Binary",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/V4641SgrLightCurve.png",
+    "type": "B9III",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Sagittarius",
+    "rightAscension": "18h 19m 21.63427s",
+    "declination": "-25 24 25.8493",
+    "coordinates": "18h 19m 21.636s, -25 24 25.6",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=18%2019%2021.634-25%2024%2025.85&fov=0.03&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 11.5,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1999,
+      "location": null,
+      "discoverer": "Ron Stubbings"
+    },
+    "solarmass": {
+      "text": "6.4",
+      "number": 6.4
+    },
+    "radius": 5.3,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": 10250,
+      "celsius": 9976.85,
+      "fahrenheit": 17990.33
+    },
+    "distance": {
+      "m": 191106755546132150000,
+      "km": 191106755546132160,
+      "ly": 20200,
+      "gpc": 0.000006193347314468078,
+      "gly": 0.00002021383561643736
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/V4641_Sagittarii"
+  },
+  {
+    "id": 91,
+    "name": ["Gaia BH1", "Gaia DR3", "4373465352415301632"],
+    "list": "Stellar Black Holes",
+    "kind": "Stellar Black Hole",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Artist%27s_impression_of_the_closest_black_hole_to_Earth_and_its_Sun-like_companion_star.jpg",
+    "type": "G",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Ophiuchus",
+    "rightAscension": "17h 28m 41.09661s",
+    "declination": "-00 34 51.5234",
+    "coordinates": "17h 28m 41.09661s, -00 34 51.5234",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=17%2028%2041.097-00%2034%2051.52&fov=0.09&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": null,
+    "apparentMagnitude": 13.77,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 2022,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "9.62",
+      "number": 9.62
+    },
+    "radius": "0.99±0.05 R☉",
+    "luminosity": "1.06±0.04 L☉",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 14758739537226047000,
+      "km": 14758739537226048,
+      "ly": 1560,
+      "gpc": 4.782981094341684e-7,
+      "gly": 0.000001561068493150608
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/EGSD2_J142033.66_525917.5"
+  },
+  {
+    "id": 91,
+    "name": ["EGSD2 J142033.66 525917.5"],
+    "list": "Binary Black Holes",
+    "kind": null,
+    "image": "https://th.bing.com/th/id/R.644459a22c91fc1b31aee8df1e8aebe9?rik=DPzxHNPq6EmWgQ&riu=http%3a%2f%2fscimonitors.com%2fwp-content%2fuploads%2f2021%2f07%2f5-blackhole.jpg&ehk=gX6Jnx2ufRojIMABbYOZ6kgHn8T5dwKO1FrHL8UJpzo%3d&risl=&pid=ImgRaw&r=0",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/EGSD2_J142033.66_525917.5"
+  },
+  {
+    "id": 92,
+    "name": ["OJ 287", "EGO 0851+202", "3EG J0853+1941", "RGB J0854+201"],
+    "list": "Binary Black Holes",
+    "kind": "BL Lacertae Object",
+    "image": "https://i.ytimg.com/vi/v_Mg0nBqxCY/maxresdefault.jpg",
+    "type": "BL Lac",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Cancer",
+    "rightAscension": "08h 54m 48.9s",
+    "declination": "+20 06 31",
+    "coordinates": "08h 54m 48.9s, +20 06 31",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=08%2054%2048.900%2B20%2006%2031.00&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.306,
+    "apparentMagnitude": 15.43,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": 1967,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": "18.35 billion",
+      "number": 18350000000
+    },
+    "radius": "~1.97 AU",
+    "luminosity": "M_R = -22.5",
+    "temperature": {
+      "kelvin": 5361,
+      "celsius": 5087.85,
+      "fahrenheit": 9190.13
+    },
+    "distance": {
+      "m": 3.3089892344209634e25,
+      "km": 3.3089892344209634e22,
+      "ly": 3497604380.561432,
+      "gpc": 1.0723702325456401,
+      "gly": 3.5
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/OJ_287"
+  },
+  {
+    "id": 93,
+    "name": [
+      "PKS 1302-102",
+      "PG 1302-102",
+      "PG 1302-103",
+      "ICRF J130533.0-103319",
+      "PKS 1302-102",
+      "PKS 1302-103",
+      "PKS J1305-1033",
+      "PKS B1302-102",
+      "QSO J1305-1033",
+      "QSO B1302-1017"
+    ],
+    "list": "Binary Black Holes",
+    "kind": "Quasar",
+    "image": "https://miro.medium.com/v2/resize:fit:640/format:webp/1*H9Lxg7cdwk3OHS0Clj5APg.png",
+    "type": "FSRS, FSRQ, FSQ, QSO, E4",
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": "Virgo",
+    "rightAscension": "13h 05m 33.01498s",
+    "declination": "-10 33 19.4266",
+    "coordinates": "13h 05m 33.01498s, -10 33 19.4266",
+    "map": "https://aladin.cds.unistra.fr/AladinLite/?target=13%2005%2032.955-10%2033%2018.98&fov=0.02&survey=CDS%2FP%2FDSS2%2Fcolor",
+    "redshift": 0.2784,
+    "apparentMagnitude": 14.9,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": "Graham"
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": "14.9 mag",
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": 3.31125566540328e25,
+      "km": 3.31125566540328e22,
+      "ly": 3500000000,
+      "gpc": 1.073104732704865,
+      "gly": 3.5023972602738
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/PKS_1302-102"
+  },
+  {
+    "id": 94,
+    "name": ["SDSS J120136.02+300305.5"],
+    "list": "Binary Black Holes",
+    "kind": null,
+    "image": "https://news.pku.edu.cn/xwzh/attachement/jpg/site2/20140802/a41731fa3e5e154747d601.jpg",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/SDSS_J120136.02%2B300305.5"
+  },
+  {
+    "id": 95,
+    "name": ["SDSS J150243.09+111557.3"],
+    "list": "Trinary Black Holes",
+    "kind": null,
+    "image": "https://th.bing.com/th/id/OIP.Ahdosozq6IlkTrsxcxcf6gHaHG?pid=ImgDet&rs=1",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/SDSS_J150243.09%2B111557.3"
+  },
+  {
+    "id": 96,
+    "name": ["GOODS J123652.77+621354.7"],
+    "list": "Trinary Black Holes",
+    "kind": null,
+    "image": "https://th.bing.com/th/id/OIP.j-27rNmfGc6OCLmKdLd4-QHaEK?pid=ImgDet&rs=1",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/GOODS_J123652.77%2B621354.7"
+  },
+  {
+    "id": 97,
+    "name": ["2MASX J10270057+1749001"],
+    "list": "Trinary Black Holes",
+    "kind": null,
+    "image": "https://th.bing.com/th/id/R.3d71676772bfb2f433c0b322c3adfe79?rik=YxYHl3H7%2faXv4g&riu=http%3a%2f%2fzap.aeiou.pt%2fwp-content%2fuploads%2f2015%2f04%2f460c1cb621ab420585018b5abac3edf01-783x450.jpg&ehk=TgjBxrPoE8sxaLUXpDVootr%2bXS1rwQsDKvHj4TCmyMk%3d&risl=&pid=ImgRaw&r=0",
+    "type": null,
+    "age": {
+      "text": null,
+      "number": null
+    },
+    "constellation": null,
+    "rightAscension": null,
+    "declination": null,
+    "coordinates": null,
+    "map": null,
+    "redshift": null,
+    "apparentMagnitude": null,
+    "absoluteMagnitude": null,
+    "discovery": {
+      "year": null,
+      "location": null,
+      "discoverer": null
+    },
+    "solarmass": {
+      "text": null,
+      "number": null
+    },
+    "radius": null,
+    "luminosity": null,
+    "temperature": {
+      "kelvin": null,
+      "celsius": null,
+      "fahrenheit": null
+    },
+    "distance": {
+      "m": null,
+      "km": null,
+      "ly": null,
+      "gpc": null,
+      "gly": null
+    },
+    "wikipedia": "https://en.wikipedia.org/wiki/2MASX_J10270057%2B1749001"
+  }
+]
