@@ -13,14 +13,6 @@ app.get("/exoplanets", async (req, res) => {
   res.json(data);
 });
 
-// app.get("/alasky", async (req, res) => {
-//   const response = await fetch(
-//     "https://aladin.cds.unistra.fr/AladinLite/?survey=CDS/P/MATLAS/color&target=18.81883066129+-1.62624558244&fov=0.05"
-//   );
-//   const data = await response.json();
-//   res.json(data);
-// });
-
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
@@ -29,8 +21,3 @@ axios
   .get("http://localhost:5173/exoplanets")
   .then((response) => console.log(response.data))
   .catch((error) => console.error(error));
-
-// axios
-//   .get("http://localhost:5173/alasky")
-//   .then((response) => console.log(response.data))
-//   .catch((error) => console.error(error));
