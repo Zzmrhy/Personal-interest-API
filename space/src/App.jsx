@@ -45,10 +45,10 @@ function App() {
         <Route path="/black-hole" element={<BlackHole />} />
       </Routes>
 
-      <Routes>
+      {/* <Routes>
         <Route path="/quantum" element={<Quantum />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

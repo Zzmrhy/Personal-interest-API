@@ -40,7 +40,7 @@ function BlackHole() {
   useEffect(() => {
     async function fetchData() {
       // You can await here
-      console.log(data);
+      // console.log(data);
       //console.log(data[0].name[0])
 
       if (index < 0 || index > data.length - 1) {
@@ -264,7 +264,7 @@ function BlackHole() {
       <h1>ID: {id}</h1>
       {data[index].name.map((n) => (
         // console.log(n);
-        <h1>Names: {n}</h1>
+        <h1>Name: {n}</h1>
       ))}
       <h1>Constellation: {constellation}</h1>
       <h1>Kind: {kind}</h1>

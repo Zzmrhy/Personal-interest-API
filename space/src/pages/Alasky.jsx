@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Alasky } from "../services/api";
+// import { Alasky } from "../services/api";
 
 function AlaskyAPI() {
   let vals = {

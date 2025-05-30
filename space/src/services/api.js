@@ -119,11 +119,11 @@ export const Exoplanets = async () => {
   return data;
 };
 
-export const Alasky = async () => {
-  const response = await fetch(
-    "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
-  );
-  const data = await response.json();
-  console.log(data);
-  return data;
-};
+// export const Alasky = async () => {
+//   const response = await fetch(
+//     "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
+//   );
+//   const data = await response.json();
+//   console.log(data);
+//   return data;
+// };
