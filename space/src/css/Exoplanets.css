@@ -1,0 +1,37 @@
+#t_message {
+  font-size: 4rem;
+  font-weight: 680;
+  color: aqua;
+}
+ 
+#head {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: gold;
+}
+ 
+#p {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(162, 94%, 65%);
+}
+ 
+@media (prefers-color-scheme: light) {
+  #t_message {
+    font-size: 4rem;
+    font-weight: 680;
+    color: darkcyan;
+  }
+ 
+  #head {
+    font-size: 4.2rem;
+    font-weight: 400;
+    color: darkgoldenrod;
+  }
+ 
+  #p {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(162, 96%, 28%);
+  }
+}

@@ -53,6 +53,12 @@ function NavBar() {
           Black Hole
         </Link>
       </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/aurora" className="nav-link">
+          Aurora
+        </Link>
+      </div>
     </nav>
   );
 }

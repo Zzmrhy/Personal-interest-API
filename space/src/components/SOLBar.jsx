@@ -18,7 +18,7 @@ function SOLSearch(index = 0) {
         <input
           name="sol"
           type="text"
-          placeholder={`Enter a number to change SOL "{num}"`}
+          placeholder={`Enter a number to change SOL`}
           className="search-input"
         />
         <input type="hidden" value={index} name="index" />

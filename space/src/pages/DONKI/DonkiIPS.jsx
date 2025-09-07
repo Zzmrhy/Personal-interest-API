@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { DONKIIPS } from "../../services/api";
 import { Link } from "react-router-dom";
-
+ 
 function DonkiIPS() {
   const [links, setLink] = useState(null);
   const [activity, setActivity] = useState("");
@@ -16,45 +16,45 @@ function DonkiIPS() {
       // You can await here
       const response = await DONKIIPS();
       const focusRecord = response[response.length - 1];
-
+ 
       if (!focusRecord) {
         setAvailable(null);
       }
-
+ 
       if (focusRecord.instruments) {
         setInstruments(focusRecord.instruments);
       }
-
+ 
       if (focusRecord.activityID) {
         setActivity(focusRecord.activityID);
       } else {
         setActivity("N/A");
       }
-
+ 
       if (focusRecord.link) {
         setLink(focusRecord.link);
       } else {
         setLink(null);
       }
-
+ 
       if (focusRecord.catalog) {
         setCatalog(focusRecord.catalog);
       } else {
         setCatalog("N/A");
       }
-
+ 
       if (focusRecord.eventTime) {
         setEvent(focusRecord.eventTime);
       } else {
         setEvent("N/A");
       }
-
+ 
       if (focusRecord.location) {
         setLocation(focusRecord.location);
       } else {
         setLocation("N/A");
       }
-
+ 
       if (focusRecord.submissionTime) {
         setTime(focusRecord.submissionTime);
       } else {
@@ -63,7 +63,7 @@ function DonkiIPS() {
     }
     fetchData();
   }, []);
-
+ 
   return (
     <div>
       <div>
@@ -87,74 +87,74 @@ function DonkiIPS() {
               <h2>No Instrument Found</h2>
             )}
             <h1>---------------------------------------------------------</h1>
-
+ 
             <h1>
               Click For Information On IPS:
               <a href={links}> Link For IPS</a>
             </h1>
           </div>
         ) : (
-          <h1>
+          <h1 id="failure">
             No Information Is Available, Click Links Below To See Other Pages
             Instead.
           </h1>
         )}
-
+ 
         <div>
-          <h1>Link For Other DONKI Pages</h1>
+          <h1 id="header">Link For Other DONKI Pages</h1>
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donki">Click Here To See The DonkiCME Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
-            </h2>
+            </p>
           </div>
-
+ 
           <div>
-            <h2>
+            <p id="link">
               <Link to="/donkiNotifications">
                 Click Here To See The DonkiNotifications Page
               </Link>
-            </h2>
+            </p>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
+ 
 export default DonkiIPS;

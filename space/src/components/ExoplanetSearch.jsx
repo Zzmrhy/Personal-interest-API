@@ -20,7 +20,7 @@ function ExoSearch() {
         <input
           name="index"
           type="text"
-          placeholder={`Type A Number To Change Exoplanet Information (min = 0, max = ${max}`}
+          placeholder={`Type A Number To Change Exoplanet Information (min = 0, max = ${max})`}
           className="search-input"
         />
       </form>

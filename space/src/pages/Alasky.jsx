@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-// import { Alasky } from "../services/api";
-
+import { Alasky } from "../services/api";
+ 
 function AlaskyAPI() {
   let vals = {
     hips: "CDS%2FP%2FDSS2%2Fcolor",
@@ -15,14 +15,14 @@ function AlaskyAPI() {
     format: "jpg",
   };
   let root = "https://alasky.cds.unistra.fr/hips-image-services/hips2fits?";
-
+ 
   const [link] = useState(
     "https://alasky.cds.unistra.fr/hips-image-services/hips2fits"
   );
-
+ 
   useEffect(() => {
     let aladin;
-
+ 
     A.init.then(() => {
       aladin = A.aladin("#aladin-lite-div", {
         survey: "P/DSS2/color",
@@ -30,7 +30,7 @@ function AlaskyAPI() {
       });
     });
   }, []);
-
+ 
   return (
     <div>
       <h1>Example Image From Alasky Site</h1>
@@ -54,7 +54,7 @@ function AlaskyAPI() {
           backgroundColor: "black",
         }}
       ></div>
-
+ 
       <script type="text/javascript">
         {/* {A.init.then(() => {
           aladin = A.aladin("#aladin-lite-div", {
@@ -82,5 +82,5 @@ function AlaskyAPI() {
     </div>
   );
 }
-
+ 
 export default AlaskyAPI;

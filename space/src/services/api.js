@@ -101,7 +101,7 @@ export const DONKINotifications = async () => {
   return data;
 };
 
-export const Rover = async (num = 4498) => {
+export const Rover = async (num) => {
   const response = await fetch(
     `${BASE_URL}/mars-photos/api/v1/rovers/curiosity/photos?sol=${num}&api_key=${API_KEY}`
   );
@@ -115,15 +115,31 @@ export const Exoplanets = async () => {
     "https://cors-anywhere.herokuapp.com/https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps+where+tran_flag=1+and+default_flag=1+order+by+pl_name&format=json"
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
-// export const Alasky = async () => {
-//   const response = await fetch(
-//     "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
-//   );
-//   const data = await response.json();
-//   console.log(data);
-//   return data;
-// };
+export const Alasky = async () => {
+  const response = await fetch(
+    "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
+  );
+  const data = await response.json();
+  // console.log(data);
+  return data;
+};
+ 
+export const Aurora = async () => {
+  const response = await fetch(
+    "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json"
+  );
+  const data = await response.json();
+  console.log(data);
+  return data;
+};
+ 
+export const Celestial = async () => {
+  const response = await fetch("/api/v1/celestial-bodies");
+  const data = await response.json();
+  console.log(data);
+  return data;
+};

@@ -1,0 +1,25 @@
+#m {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(162, 94%, 65%);
+}
+ 
+#information {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: gold;
+}
+ 
+@media (prefers-color-scheme: light) {
+  #m {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(162, 96%, 28%);
+  }
+ 
+  #information {
+    font-size: 4.2rem;
+    font-weight: 400;
+    color: darkgoldenrod;
+  }
+}

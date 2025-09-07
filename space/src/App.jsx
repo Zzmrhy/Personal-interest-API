@@ -18,9 +18,8 @@ import Exoplanets from "./pages/Exoplanets";
 import Hubble from "./pages/Hubble";
 import Webb from "./pages/Webb";
 import AlaskyAPI from "./pages/Alasky";
-import Footer from "./components/Footer";
-import Quantum from "./pages/Quantum";
 import BlackHole from "./pages/BlackHole";
+import AuroraPage from "./pages/Aurora";
 function App() {
   return (
     <main>
@@ -43,12 +42,8 @@ function App() {
         <Route path="/webb" element={<Webb />} />
         <Route path="/alasky" element={<AlaskyAPI />} />
         <Route path="/black-hole" element={<BlackHole />} />
+        <Route path="/aurora" element={<AuroraPage />} />
       </Routes>
-
-      {/* <Routes>
-        <Route path="/quantum" element={<Quantum />} />
-      </Routes>
-      <Footer /> */}
     </main>
   );
 }

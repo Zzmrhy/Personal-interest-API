@@ -14,37 +14,37 @@ function DonkiRBE() {
       // You can await here
       const response = await DONKIRBE();
       const focusRecord = response[response.length - 1];
-
+ 
       if (!focusRecord) {
         setAvailable(null);
       }
-
+ 
       if (focusRecord.instruments) {
         setInstruments(focusRecord.instruments);
       }
-
+ 
       if (focusRecord.linkedEvents) {
         setLinked(focusRecord.linkedEvents);
       }
-
+ 
       if (focusRecord.eventTime) {
         setEvent(focusRecord.eventTime);
       } else {
         setEvent("N/A");
       }
-
+ 
       if (focusRecord.rbeID) {
         setRBEID(focusRecord.rbeID);
       } else {
         setRBEID("N/A");
       }
-
+ 
       if (focusRecord.submissionTime) {
         setSubmission(focusRecord.submissionTime);
       } else {
         setSubmission("N/A");
       }
-
+ 
       if (focusRecord.link) {
         setLink(focusRecord.link);
       } else {
@@ -53,102 +53,101 @@ function DonkiRBE() {
     }
     fetchData();
   }, []);
-
+ 
   return (
     <div>
       {available ? (
         <div>
-          <h1>Time Of Event: {event}</h1>
-          <h1>Submission Time: {submit}</h1>
-
-          <h1>RBE ID: {rbeID}</h1>
+          <p id="text">Time Of Event: {event}</p>
+          <p id="text">Submission Time: {submit}</p>
+          <p id="text">RBE ID: {rbeID}</p>
           <h1>---------------------------------------------------------</h1>
           {instruments ? (
             instruments.map((obj, idx) => (
-              <h1 key={idx}>
+              <p id="text" key={idx}>
                 Instrument {idx + 1}: {obj.displayName}
-              </h1>
+              </p>
             ))
           ) : (
-            <h2>No Instrument Found</h2>
+            <h2 id="failure">No Instrument Found</h2>
           )}
           <h1>---------------------------------------------------------</h1>
-          <h1>Linked Events For RBE:</h1>
+          <h1 id="header">Linked Events For RBE:</h1>
           {linked ? (
             linked.map((obj, idx) => (
-              <h1 key={idx}>
+              <p id="text" key={idx}>
                 Linked Event {idx + 1}: {obj.activityID}
-              </h1>
+              </p>
             ))
           ) : (
-            <h2>No Linked Event Found</h2>
+            <h2 id="failure">No Linked Event Found</h2>
           )}
           <h1>---------------------------------------------------------</h1>
-          <h1>
+          <p id="text">
             Click This: <a href={links}>Click This For RBE Information</a>
-          </h1>
+          </p>
         </div>
       ) : (
-        <h1>
+        <h1 id="failure">
           No Information Is Available, Click Links Below To See Other Pages
           Instead.
         </h1>
       )}
-
+ 
       <div>
-        <h1>Link For Other DONKI Pages</h1>
+        <h1 id="header">Link For Other DONKI Pages</h1>
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donki">Click Here To See The DonkiCME Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
-          </h2>
+          </p>
         </div>
-
+ 
         <div>
-          <h2>
+          <p id="link">
             <Link to="/donkiNotifications">
               Click Here To See The DonkiNotifications Page
             </Link>
-          </h2>
+          </p>
         </div>
       </div>
     </div>
   );
 }
-
+ 
 export default DonkiRBE;

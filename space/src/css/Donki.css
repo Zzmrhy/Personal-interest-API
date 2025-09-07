@@ -1,4 +1,47 @@
-.btn {
-  background-color: gold;
-  color: black;
+#text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(162, 94%, 65%);
+}
+ 
+#header {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: gold;
+}
+ 
+#link {
+  font-size: 2.5rem;
+}
+ 
+#failure {
+  color: salmon;
+  font-size: 2.6rem;
+}
+ 
+a {
+  color: lightgray;
+}
+ 
+@media (prefers-color-scheme: light) {
+  #text {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: hsl(162, 96%, 28%);
+  }
+ 
+  #header {
+    font-size: 4.8rem;
+    font-weight: 450;
+    color: darkgoldenrod;
+  }
+ 
+  #failure {
+    color: darksalmon;
+    font-size: 2.6rem;
+  }
+ 
+  a {
+    color: lightgray;
+  }
 }

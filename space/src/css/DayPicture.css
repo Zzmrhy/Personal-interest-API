@@ -1,0 +1,37 @@
+#t {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(162, 94%, 65%);
+}
+ 
+#h {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: gold;
+}
+
+#other {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: red;
+}
+ 
+@media (prefers-color-scheme: light) {
+  #t {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(162, 96%, 28%);
+  }
+ 
+  #h {
+    font-size: 4.2rem;
+    font-weight: 400;
+    color: darkgoldenrod;
+  }
+
+  #other {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: darkred;
+}
+}

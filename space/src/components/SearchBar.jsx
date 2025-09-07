@@ -1,17 +1,24 @@
 import { useEffect, useState } from "react";
 import { Rover } from "../services/api";
 import "../css/SearchBar.css";
-
-function Search(sol = 1000) {
-  const [max, setMax] = useState(0);
+import SOLSearch from "./SOLBar";
+ 
+function Search(sol = 1000, index = 0) {
+  const [limit, setLimit] = useState(0);
   useEffect(() => {
     async function fetchData() {
-      const response = await Rover();
-
-      setMax(response.photos.length - 1);
+      const response = await Rover(sol);
+      
+      if (response.photos.length - 1) {
+        setLimit(response.photos.length - 1)
+      } else if (response.photos.length > 0) {
+        setLimit(response.photos.length - 1)
+      }
     }
     fetchData();
-  }, []);
+  }, [limit]);
+  
+  
 
   return (
     <div>
@@ -19,14 +26,13 @@ function Search(sol = 1000) {
         <input
           name="index"
           type="text"
-          placeholder={`Get Image By Index ${`(min = 0, max = ${max})`}`}
+          placeholder={`Get Information By Index ${`(min = 0, max = ${limit})`}`}
           className="search-input"
         />
         <input type="hidden" value={sol} name="sol" />
-        <input type="hidden" value={name} name="name" />
       </form>
     </div>
   );
 }
-
+ 
 export default Search;
