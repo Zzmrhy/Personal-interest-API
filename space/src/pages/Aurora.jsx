@@ -60,12 +60,12 @@ function AuroraPage() {
  
   return (
     <div>
-      <h1 id="main">This Is A Page For The Aurora Lights</h1>
+      <h1 id="information">This Is A Page For The Aurora Lights</h1>
       <p id="format">Data Format: {data}</p>
-      <p id="a">Forecast Time: {forecast}</p>
-      <p id="a">Observation Time: {observation}</p>
+      <p id="m">Forecast Time: {forecast}</p>
+      <p id="m">Observation Time: {observation}</p>
       {/* <p id="a">Coordinates: {coordinates}</p> */}
-      <p id="a">Type: {type}</p>
+      <p id="m">Type: {type}</p>
     </div>
   );
 }

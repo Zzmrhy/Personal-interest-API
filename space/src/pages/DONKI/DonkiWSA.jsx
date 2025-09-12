@@ -129,7 +129,7 @@ function DonkiWSA() {
               {impactList ? (
                 impactList.map((obj, idx) => (
                   <p id="text" key={idx}>
-                    Location {idx + 1}: {obj.location}
+                    {obj.location}
                   </p>
                 ))
               ) : (
@@ -140,7 +140,7 @@ function DonkiWSA() {
               {impactList ? (
                 impactList.map((obj, idx) => (
                   <p id="text" key={idx}>
-                    Arrival Time {idx + 1}: {obj.arrivalTime}
+                    {obj.arrivalTime}
                   </p>
                 ))
               ) : (

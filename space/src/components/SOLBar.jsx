@@ -2,7 +2,7 @@ import { Rover } from "../services/api";
 import "../css/SearchBar.css";
 // import { useEffect, useState } from "react";
 
-function SOLSearch(index = 0) {
+function SOLSearch(index = 0, name = "curiosity") {
   // const [num, setNum] = useState(0);
   // useEffect(() => {
   //   async function fetchData() {
@@ -22,6 +22,7 @@ function SOLSearch(index = 0) {
           className="search-input"
         />
         <input type="hidden" value={index} name="index" />
+        <input type="hidden" value={name} name="name" />
       </form>
     </div>
   );

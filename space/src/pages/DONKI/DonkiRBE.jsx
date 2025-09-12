@@ -62,10 +62,11 @@ function DonkiRBE() {
           <p id="text">Submission Time: {submit}</p>
           <p id="text">RBE ID: {rbeID}</p>
           <h1>---------------------------------------------------------</h1>
+          <h1 id="header">Instruments Used:</h1>
           {instruments ? (
             instruments.map((obj, idx) => (
               <p id="text" key={idx}>
-                Instrument {idx + 1}: {obj.displayName}
+                {obj.displayName}
               </p>
             ))
           ) : (
@@ -76,7 +77,7 @@ function DonkiRBE() {
           {linked ? (
             linked.map((obj, idx) => (
               <p id="text" key={idx}>
-                Linked Event {idx + 1}: {obj.activityID}
+                {obj.activityID}
               </p>
             ))
           ) : (

@@ -9,6 +9,12 @@
   font-weight: 400;
   color: gold;
 }
+
+#format {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: lightgray;
+}
  
 @media (prefers-color-scheme: light) {
   #m {
@@ -22,4 +28,10 @@
     font-weight: 400;
     color: darkgoldenrod;
   }
+
+  #format {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: darkgray;
+}
 }

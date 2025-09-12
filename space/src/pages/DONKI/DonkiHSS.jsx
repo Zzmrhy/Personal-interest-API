@@ -75,22 +75,22 @@ function DonkiHSS() {
             {instruments ? (
               instruments.map((obj, idx) => (
                 <p id="text" key={idx}>
-                  Instrument {idx + 1}: {obj.displayName}
+                  {obj.displayName}
                 </p>
               ))
             ) : (
-              <h2 className="failure">No instrument Found</h2>
+              <h2 id="failure">No instrument Found</h2>
             )}
             <h1>---------------------------------------------------------</h1>
             <h1 id="header">Linked Events For HSS:</h1>
             {linked ? (
               linked.map((obj, idx) => (
                 <p id="text" key={idx}>
-                  Linked Event #{idx + 1}: {obj.activityID}
+                  {obj.activityID}
                 </p>
               ))
             ) : (
-              <h2 className="failure">No Linked Event Found</h2>
+              <h2 id="failure">No Linked Event Found</h2>
             )}
             <h1>---------------------------------------------------------</h1>
             <p id="text">

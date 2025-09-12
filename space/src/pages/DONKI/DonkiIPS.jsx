@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { DONKIIPS } from "../../services/api";
 import { Link } from "react-router-dom";
- 
+ import "../../css/Donki.css"
 function DonkiIPS() {
   const [links, setLink] = useState(null);
   const [activity, setActivity] = useState("");
@@ -69,29 +69,29 @@ function DonkiIPS() {
       <div>
         {available ? (
           <div>
-            <h1>Recent IPS Information:</h1>
-            <h1>{activity}</h1>
-            <h1>Catalog: {catalog}</h1>
-            <h1>Event Time: {eventTime}</h1>
-            <h1>Location: {location}</h1>
-            <h1>Submission Time: {submission}</h1>
+            <h1 id="header">Recent IPS Information:</h1>
+            <p id="text">{activity}</p>
+            <p id="text">Catalog: {catalog}</p>
+            <p id="text">Event Time: {eventTime}</p>
+            <p id="text">Location: {location}</p>
+            <p id="text">Submission Time: {submission}</p>
             <h1>---------------------------------------------------------</h1>
-            <h1>Instruments Used: </h1>
+            <h1 id="header">Instruments Used: </h1>
             {instruments ? (
               instruments.map((obj, idx) => (
-                <h1 key={idx}>
-                  Instrument {idx + 1}: {obj.displayName}
-                </h1>
+                <p key={idx} id="text">
+                  {obj.displayName}
+                </p>
               ))
             ) : (
-              <h2>No Instrument Found</h2>
+              <h2 id="failure">No Instrument Found</h2>
             )}
             <h1>---------------------------------------------------------</h1>
  
-            <h1>
+            <p id="text">
               Click For Information On IPS:
               <a href={links}> Link For IPS</a>
-            </h1>
+            </p>
           </div>
         ) : (
           <h1 id="failure">

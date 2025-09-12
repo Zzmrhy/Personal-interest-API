@@ -107,7 +107,7 @@ function DayImage() {
           ) : media == "other" && media.url ? (
             <h1 id="other">This is just dummy text until a media type of other with a url is seen, so if these words are seen then I'll have extra stuff to do</h1>
           ) : (
-            <p>
+            <p id="fail">
               No content loaded. Check it out{" "}
               <a href={video} target="_blank">
                 here

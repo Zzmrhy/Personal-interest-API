@@ -120,7 +120,7 @@ function DonkiFLR() {
           {instrument ? (
             instrument.map((obj, idx) => (
               <p id="text" key={idx}>
-                Instrument #{idx + 1}: {obj.displayName}
+                {obj.displayName}
               </p>
             ))
           ) : (
@@ -130,10 +130,10 @@ function DonkiFLR() {
           {linked ? (
             linked.map((obj, idx) => (
               <div>
-                <h1>Linked Event For FLR</h1>
-                <h1 key={idx}>
-                  Linked Event #{idx + 1}: {obj.activityID}
-                </h1>
+                <h1 id="header">Linked Event For FLR</h1>
+                <p key={idx} id="text">
+                  {obj.activityID}
+                </p>
               </div>
             ))
           ) : (

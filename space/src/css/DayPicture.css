@@ -15,7 +15,7 @@
   font-weight: 400;
   color: red;
 }
- 
+
 @media (prefers-color-scheme: light) {
   #t {
     font-size: 3.5rem;

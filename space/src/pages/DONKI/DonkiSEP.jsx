@@ -69,7 +69,7 @@ function DonkiSEP() {
             {instrument ? (
               instrument.map((obj, idx) => (
                 <p id="text" key={idx}>
-                  Instrument {idx + 1}: {obj.displayName}
+                  {obj.displayName}
                 </p>
               ))
             ) : (
@@ -80,7 +80,7 @@ function DonkiSEP() {
             {link ? (
               link.map((obj, idx) => (
                 <p id="text" key={idx}>
-                  #{idx + 1}: {obj.activityID}
+                  {obj.activityID}
                 </p>
               ))
             ) : (

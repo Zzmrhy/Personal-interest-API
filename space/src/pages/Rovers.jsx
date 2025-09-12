@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Rover } from "../services/api";
 import Search from "../components/SearchBar";
 import SOLSearch from "../components/SOLBar";
+import NameSearch from "../components/NameSearch";
 import { useSearchParams } from "react-router-dom";
  
 function Rovers() {
@@ -11,6 +12,7 @@ function Rovers() {
   const [SOLParams] = useSearchParams();
   let sol = SOLParams.get("sol") ? SOLParams.get("sol") : 1000;
   const [activeIdx, setActiveIndex] = useState(index);
+  let named = SOLParams.get("name") ? SOLParams.get("name") : "curiosity"
   const [solin, setSolin] = useState(sol);
   const [rover, setPic] = useState(null);
   const [earth, setEarth] = useState("");
@@ -24,7 +26,7 @@ function Rovers() {
   const [available, setAvailable] = useState(true);
   useEffect(() => {
     async function fetchData() {
-      const response = await Rover(solin);
+      const response = await Rover(solin, named);
  
       if (!response) {
         setAvailable(null);
@@ -102,6 +104,13 @@ function Rovers() {
  
   return (
     <div>
+      <h1 id="info">Enter A Rovers Name</h1>
+      <div>{NameSearch(named)}</div>
+      <h1>
+        ----------------------------------------------------------------------------------
+      </h1>
+      {available ? (
+        <div>
       <h1 id="info">Search For Index</h1>
       <div>{Search(solin)}</div>
       <h1>
@@ -124,6 +133,11 @@ function Rovers() {
       </h1>
       <h1 id="info">Search SOL Number To Change All Information</h1>
       <div>{SOLSearch(index)}</div>
+      </div>
+      
+      ) : (
+        <h1>Enter Rover Name First To See Information</h1>
+      )}
     </div>
   );
 }

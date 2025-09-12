@@ -1,0 +1,25 @@
+#hips {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(162, 94%, 65%);
+}
+
+#alasky {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: lightgreen;
+}
+
+@media (prefers-color-scheme: light) {
+  #hips {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(162, 96%, 28%);
+  }
+
+  #alasky {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: darkgreen;
+}
+}

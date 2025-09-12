@@ -87,7 +87,7 @@ function DonkiGST() {
             {linked ? (
               linked.map((obj, idx) => (
                 <p id="text" key={idx}>
-                  #{idx + 1}: {obj.activityID}
+                  {obj.activityID}
                 </p>
               ))
             ) : (

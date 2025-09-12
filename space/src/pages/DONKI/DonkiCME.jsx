@@ -82,7 +82,7 @@ function Donki() {
             {instruments ? (
               instruments.map((obj, idx) => (
                 <p key={idx} id="text">
-                  Instrument {idx + 1}: {obj.displayName}
+                  {obj.displayName}
                 </p>
               ))
             ) : (
