@@ -12,7 +12,8 @@ function Rovers() {
   const [SOLParams] = useSearchParams();
   let sol = SOLParams.get("sol") ? SOLParams.get("sol") : 1000;
   const [activeIdx, setActiveIndex] = useState(index);
-  let named = SOLParams.get("name") ? SOLParams.get("name") : "curiosity"
+  const [nameParams] = useSearchParams();
+  let named = nameParams.get("name") ? nameParams.get("name") : "curiosity"
   const [solin, setSolin] = useState(sol);
   const [rover, setPic] = useState(null);
   const [earth, setEarth] = useState("");
@@ -109,10 +110,9 @@ function Rovers() {
       <h1>
         ----------------------------------------------------------------------------------
       </h1>
-      {available ? (
         <div>
       <h1 id="info">Search For Index</h1>
-      <div>{Search(solin)}</div>
+      <div>{Search(solin, named)}</div>
       <h1>
         ----------------------------------------------------------------------------------
       </h1>
@@ -127,17 +127,18 @@ function Rovers() {
       <p id="message">Camera Name: {camName}</p>
       <p id="message">Camera Full Name: {full}</p>
       <p id="message">Camera ID: {camID}</p>
-      <img src={rover} alt="Picture" />
+      {named == "spirit" || named == "opportunity" ? (
+        <h1 id="message">No Picture Available, Link Auto-Redirects To A Different Page Instead. Here's The <a href="http://mars.nasa.gov/mer/gallery/all/2/n/1000/2N215136972EDNAS00P1585L0M1-BR.JPG">Link</a> For The Image That's Supposed To Show But Doesn't</h1>
+      ) : (
+        <img src={rover} alt="Picture" />
+      )}
+      
       <h1>
         ----------------------------------------------------------------------------------
       </h1>
       <h1 id="info">Search SOL Number To Change All Information</h1>
       <div>{SOLSearch(index)}</div>
       </div>
-      
-      ) : (
-        <h1>Enter Rover Name First To See Information</h1>
-      )}
     </div>
   );
 }

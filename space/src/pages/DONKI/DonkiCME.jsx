@@ -9,9 +9,6 @@ function Donki() {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [cmeaLink, setCMEA] = useState(null);
-  const [name1, setName1] = useState("");
-  const [name2, setName2] = useState("");
-  const [name3, setName3] = useState("");
   const [instruments, setInstruments] = useState(null);
   const [available, setAvailable] = useState(true);
   useEffect(() => {

@@ -40,9 +40,6 @@ function BlackHole() {
   const [luminosity, setLuminosity] = useState("");
   useEffect(() => {
     async function fetchData() {
-      // You can await here
-      // console.log(data);
-      //console.log(data[0].name[0])
  
       if (index < 0 || index > data.length - 1) {
         alert("Index chosen was out of bounds, setting information to index 0");
