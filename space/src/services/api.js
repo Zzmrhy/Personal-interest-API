@@ -6,7 +6,7 @@ export const getPictureOfTheDay = async (day) => {
     `${BASE_URL}/planetary/apod?api_key=${API_KEY}&date=${day}`
   );
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 

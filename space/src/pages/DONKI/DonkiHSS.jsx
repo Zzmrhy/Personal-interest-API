@@ -69,7 +69,7 @@ function DonkiHSS() {
           <div>
             <p id="text">Event Time: {event}</p>
             <p id="text">HSS ID: {hss}</p>
-            <p id="text">Submission TIme: {submit}</p>
+            <p id="text">Submission Time: {submit}</p>
             <h1>---------------------------------------------------------</h1>
             <h1 id="header">Instruments Used:</h1>
             {instruments ? (
@@ -105,57 +105,57 @@ function DonkiHSS() {
         )}
  
         <div>
-          <h1 id="header">Links For Other DONKI Pages</h1>
-          <div>
-            <p id="link">
-              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiNotifications">
-                Click Here To See The DonkiNotifications Page
-              </Link>
-            </p>
-          </div>
+        <h1 id="header">Links For Other DONKI Pages</h1>
+        <div>
+          <p id="link">
+            <Link to="/donki">Click Here To See The DonkiCME Page</Link>
+          </p>
         </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiNotifications">
+              Click Here To See The DonkiNotifications Page
+            </Link>
+          </p>
+        </div>
+      </div>
       </div>
     </div>
   );

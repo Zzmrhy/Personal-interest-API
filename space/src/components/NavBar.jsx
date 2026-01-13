@@ -18,11 +18,6 @@ function NavBar() {
           DONKI
         </Link>
       </div>
-      <div className="navbar-brand, link">
-        <Link to="/rover" className="nav-link">
-          Rover
-        </Link>
-      </div>
 
       <div className="navbar-brand, link">
         <Link to="/exoplanets" className="nav-link">

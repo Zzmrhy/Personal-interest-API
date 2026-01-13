@@ -16,6 +16,18 @@
   color: red;
 }
 
+#null {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: red;
+}
+
+#in {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: green;
+}
+
 @media (prefers-color-scheme: light) {
   #t {
     font-size: 3.5rem;
@@ -30,8 +42,20 @@
   }
 
   #other {
-  font-size: 4.2rem;
-  font-weight: 400;
-  color: darkred;
-}
+    font-size: 4.2rem;
+    font-weight: 400;
+    color: darkred;
+  }
+
+  #null {
+    font-size: 4.2rem;
+    font-weight: 400;
+    color: darkred;
+  }
+
+  #in {
+    font-size: 4.2rem;
+    font-weight: 400;
+    color: darkgreen;
+  }
 }

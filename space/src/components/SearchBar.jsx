@@ -2,14 +2,18 @@ import { useEffect, useState } from "react";
 import { Rover } from "../services/api";
 import "../css/SearchBar.css";
 import SOLSearch from "./SOLBar";
+import { useSearchParams, useSubmit } from "react-router-dom";
 
 function Search(sol = 1000, name = "curiosity") {
-
+  const [searchParams] = useSearchParams();
+  let index = searchParams.get("index") ? searchParams.get("index") : 0;
+  
 const [data, setData] = useState()
   function handleSubmit(event){
     event.preventDefault();
     // console.log(data);
     let formdata = event.target;
+    
   }
 
   const [limit, setLimit] = useState(0);
@@ -32,7 +36,7 @@ const [data, setData] = useState()
 
   return (
     <div>
-      <form className="search-form" action={Rover.data} onSubmit={handleSubmit}>
+      <form className="search-form" action="" onSubmit={handleSubmit}>
         <input
           name="index"
           type="text"

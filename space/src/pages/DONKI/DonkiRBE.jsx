@@ -96,7 +96,7 @@ function DonkiRBE() {
       )}
  
       <div>
-        <h1 id="header">Link For Other DONKI Pages</h1>
+        <h1 id="header">Links For Other DONKI Pages</h1>
         <div>
           <p id="link">
             <Link to="/donki">Click Here To See The DonkiCME Page</Link>
@@ -111,7 +111,7 @@ function DonkiRBE() {
  
         <div>
           <p id="link">
-            <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
+            <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
           </p>
         </div>
  
@@ -123,7 +123,7 @@ function DonkiRBE() {
  
         <div>
           <p id="link">
-            <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+            <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
           </p>
         </div>
  

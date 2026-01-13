@@ -75,55 +75,57 @@ function DonkiNotification() {
         )}
  
         <div>
-          <h1 id="header">Link For Other DONKI Pages</h1>
-          <div>
-            <p id="link">
-              <Link to="/donki">Click Here To See The DonkiCME Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
-            </p>
-          </div>
- 
-          <div>
-            <p id="link">
-              <Link to="/donkiWSA">Click Here To See The DonkiWSA Page</Link>
-            </p>
-          </div>
+        <h1 id="header">Links For Other DONKI Pages</h1>
+        <div>
+          <p id="link">
+            <Link to="/donki">Click Here To See The DonkiCME Page</Link>
+          </p>
         </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiGST">Click Here To See The DonkiGST Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiSEP">Click Here To See The DonkiSEP Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiIPS">Click Here To See The DonkiIPS Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiRBE">Click Here To See The DonkiRBE Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiFLR">Click Here To See The DonkiFLR Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiHSS">Click Here To See The DonkiHSS Page</Link>
+          </p>
+        </div>
+ 
+        <div>
+          <p id="link">
+            <Link to="/donkiWSA">
+              Click Here To See The DonkWSA Page
+            </Link>
+          </p>
+        </div>
+      </div>
       </div>
     </div>
   );

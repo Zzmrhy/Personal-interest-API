@@ -38,8 +38,17 @@ function BlackHole() {
   const [type, setType] = useState("");
   const [wikipedia, setWikipedia] = useState("");
   const [luminosity, setLuminosity] = useState("");
+  const [available, setAvailable] = useState(true);
   useEffect(() => {
     async function fetchData() {
+
+      if (data[index].image) {
+        setImage(data[index].image)
+        setAvailable(true)
+      } else {
+        setImage()
+        setAvailable(false)
+      }
  
       if (index < 0 || index > data.length - 1) {
         alert("Index chosen was out of bounds, setting information to index 0");
@@ -286,7 +295,7 @@ function BlackHole() {
       <p id="m">
         Radius Of {kind}: {radius}
       </p>
-      <img src={`${image}`} alt="Picture" width="700px" height="700px" />
+        <img src={`${image}`} alt="Picture" width="700px" height="700px" />
       <h1 id="information">Map Of Where {kind} Is: </h1>
       <iframe src={map} width="500" height="500"></iframe>
       <h1 id="information">

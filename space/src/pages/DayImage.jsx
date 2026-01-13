@@ -24,13 +24,39 @@ function DayImage() {
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [media, setMedia] = useState("");
+  const [code, setCode] = useState(0);
+  const [msg, setMsg] = useState("");
+  const [service, setService] = useState("");
   useEffect(() => {
     async function fetchData() {
       // You can await here
       const response = await getPictureOfTheDay(chosen);
- 
-      if (!response) {
-        setAvailable(null);
+
+      // if (response) {
+      //   setAvailable(true);
+      // }else{
+      //   setAvailable(false)
+      // }
+
+      if (response.code) {
+        setCode(response.code)
+        //assume code means not available - no code with valid resposes
+        setAvailable(false);
+      } else {
+        setCode()
+        setAvailable(true);
+      }
+
+      if (response.msg) {
+        setMsg(response.msg)
+      } else {
+        setMsg()
+      }
+
+      if (response.service_version) {
+        setService(response.service_version)
+      } else {
+        setService()
       }
  
       if (response.copyright) {
@@ -76,7 +102,15 @@ function DayImage() {
  
   return (
     <div>
-      {available ? (
+      {!available ? (
+        <div>
+        <h1 id="h">Put A Date To Change Information (YYYY-MM-DD format)</h1>
+        <div>{DateSearch()}</div>
+        <p id="t">Chosen Date: {chosen}</p>
+        <p id="null">No Picture Of The Day Available Today, Choose Another Page To See What It Has To Offer</p>
+        <p id="in">Server Responded With A Code Of {code} With A Message Of ("{msg}") With A Service Version Of {service}</p>
+        </div>
+      ) : (
         <div>
           <h1 id="h">Put A Date To Change Information (YYYY-MM-DD format)</h1>
           <div>{DateSearch()}</div>
@@ -114,11 +148,8 @@ function DayImage() {
               </a>
             </p>
           )}
- 
           <p id="t">Explanation: {desc}</p>
         </div>
-      ) : (
-        <p id="t">No Picture Of The Day Today</p>
       )}
     </div>
   );
