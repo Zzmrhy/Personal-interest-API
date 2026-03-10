@@ -3,14 +3,14 @@ import { useState, useEffect } from "react";
 import { getPictureOfTheDay } from "../services/api";
 import { useSearchParams } from "react-router-dom";
 import DateSearch from "../components/DateSearch";
- 
+
 function getFormattedDate(date) {
   const yyyy = date.getFullYear();
   const mm = String(date.getMonth() + 1).padStart(2, "0");
   const dd = String(date.getDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
 }
- 
+
 function DayImage() {
   const [params] = useSearchParams();
   let chosen = params.get("date")
@@ -39,44 +39,44 @@ function DayImage() {
       // }
 
       if (response.code) {
-        setCode(response.code)
+        setCode(response.code);
         //assume code means not available - no code with valid resposes
         setAvailable(false);
       } else {
-        setCode()
+        setCode();
         setAvailable(true);
       }
 
       if (response.msg) {
-        setMsg(response.msg)
+        setMsg(response.msg);
       } else {
-        setMsg()
+        setMsg();
       }
 
       if (response.service_version) {
-        setService(response.service_version)
+        setService(response.service_version);
       } else {
-        setService()
+        setService();
       }
- 
+
       if (response.copyright) {
         setCopy(response.copyright);
       } else {
         setCopy("N/A");
       }
- 
+
       if (response.title) {
         setTitle(response.title);
       } else {
         setTitle("N/A");
       }
- 
+
       if (response.date) {
         setDate(response.date);
       } else {
         setDate("N/A");
       }
- 
+
       if (response.url) {
         setPic(response.url);
         setVideo(response.url);
@@ -84,13 +84,13 @@ function DayImage() {
         setPic(null);
         setVideo(null);
       }
- 
+
       if (response.explanation) {
         setDesc(response.explanation);
       } else {
         setDesc("N/A");
       }
- 
+
       if (response.media_type) {
         setMedia(response.media_type);
       } else {
@@ -99,16 +99,22 @@ function DayImage() {
     }
     fetchData();
   }, []);
- 
+
   return (
     <div>
       {!available ? (
         <div>
-        <h1 id="h">Put A Date To Change Information (YYYY-MM-DD format)</h1>
-        <div>{DateSearch()}</div>
-        <p id="t">Chosen Date: {chosen}</p>
-        <p id="null">No Picture Of The Day Available Today, Choose Another Page To See What It Has To Offer</p>
-        <p id="in">Server Responded With A Code Of {code} With A Message Of ("{msg}") With A Service Version Of {service}</p>
+          <h1 id="h">Put A Date To Change Information (YYYY-MM-DD format)</h1>
+          <div>{DateSearch()}</div>
+          <p id="t">Chosen Date: {chosen}</p>
+          <p id="null">
+            No Picture Of The Day Available Today, Choose Another Page To See
+            What It Has To Offer
+          </p>
+          <p id="in">
+            Server Responded With A Code Of {code} With A Message Of ("{msg}")
+            With A Service Version Of {service}
+          </p>
         </div>
       ) : (
         <div>
@@ -136,10 +142,18 @@ function DayImage() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
+          ) : media == "video" && video.indexOf("mp4") > 0 ? (
+            <video controls width="100%">
+              <source src = {video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           ) : media == "other" && !media.url ? (
             <h1 id="other">There Is No Content To Be Loaded</h1>
           ) : media == "other" && media.url ? (
-            <h1 id="other">This is just dummy text until a media type of other with a url is seen, so if these words are seen then I'll have extra stuff to do</h1>
+            <h1 id="other">
+              This is just dummy text until a media type of other with a url is
+              seen, so if these words are seen then I'll have extra stuff to do
+            </h1>
           ) : (
             <p id="fail">
               No content loaded. Check it out{" "}
