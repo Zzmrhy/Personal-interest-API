@@ -6,7 +6,7 @@ export const getPictureOfTheDay = async (day) => {
     `${BASE_URL}/planetary/apod?api_key=${API_KEY}&date=${day}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -61,7 +61,7 @@ export const DONKIMPC = async () => {
     `${BASE_URL}/DONKI/MPC?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=${API_KEY}`
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
 
@@ -123,7 +123,7 @@ export const Exoplanets = async () => {
 
 export const Alasky = async () => {
   const response = await fetch(
-    "https://alaskybis.cds.unistra.fr/hips-image-services/hips2fits"
+    "C:\Users\CMP_AiRathbun\Downloads\OpenSpace-0.21.3\bin\OpenSpace.exe"
   );
   const data = await response.json();
   // console.log(data);
@@ -135,12 +135,19 @@ export const Aurora = async () => {
     "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json"
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data;
 };
  
 export const Celestial = async () => {
   const response = await fetch("/api/v1/celestial-bodies");
+  const data = await response.json();
+  // console.log(data);
+  return data;
+};
+
+export const Gravitational = async () => {
+  const response = await fetch("https://gwosc.org/api/v2/event-versions?format=json");
   const data = await response.json();
   console.log(data);
   return data;

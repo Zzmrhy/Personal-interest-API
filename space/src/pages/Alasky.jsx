@@ -15,22 +15,22 @@ function AlaskyAPI() {
     dec: -69.75611111111111,
     format: "jpg",
   };
-  let root = "https://alasky.cds.unistra.fr/hips-image-services/hips2fits?";
+  let root = "C:\Users\CMP_AiRathbun\Downloads\OpenSpace-0.21.3\bin";
  
   const [link] = useState(
-    "https://alasky.cds.unistra.fr/hips-image-services/hips2fits"
+    "C:\Users\CMP_AiRathbun\Downloads\OpenSpace-0.21.3\bin"
   );
  
-  useEffect(() => {
-    let aladin;
+  // useEffect(() => {
+  //   let aladin;
  
-    A.init.then(() => {
-      aladin = A.aladin("#aladin-lite-div", {
-        survey: "P/DSS2/color",
-        fov: 60,
-      });
-    });
-  }, []);
+  //   A.init.then(() => {
+  //     aladin = A.aladin("#aladin-lite-div", {
+  //       survey: "P/DSS2/color",
+  //       fov: 60,
+  //     });
+  //   });
+  // }, []);
  
   return (
     <div>

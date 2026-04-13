@@ -143,7 +143,7 @@ function DayImage() {
               allowFullScreen
             ></iframe>
           ) : media == "video" && video.indexOf("mp4") > 0 ? (
-            <video controls width="100%">
+            <video controls width="75%">
               <source src = {video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>

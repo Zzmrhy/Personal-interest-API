@@ -19,6 +19,8 @@ import Webb from "./pages/Webb";
 import AlaskyAPI from "./pages/Alasky";
 import BlackHole from "./pages/BlackHole";
 import AuroraPage from "./pages/Aurora";
+import GravitationalWaves from "./pages/Gravitational";
+
 function App() {
   return (
     <main>
@@ -41,6 +43,7 @@ function App() {
         <Route path="/alasky" element={<AlaskyAPI />} />
         <Route path="/black-hole" element={<BlackHole />} />
         <Route path="/aurora" element={<AuroraPage />} />
+        <Route path="/gravitational" element={<GravitationalWaves />} />
       </Routes>
     </main>
   );

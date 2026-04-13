@@ -54,6 +54,12 @@ function NavBar() {
           Aurora
         </Link>
       </div>
+
+      <div className="navbar-brand, link">
+        <Link to="/gravitational" className="nav-link">
+          Gravitational Waves
+        </Link>
+      </div>
     </nav>
   );
 }

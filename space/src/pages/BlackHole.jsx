@@ -268,7 +268,7 @@ function BlackHole() {
       </p>
       <p id="m">Apparent Magnitude: {apparentMagnitude}</p>
       <h1>----------------------------------------------</h1>
-      <p id="m">ID: {id}</p>
+      <p id="m">ID: {id - 1}</p>
       {data[index].name.map((n) => (
         // console.log(n);
         <p id="m">Name: {n}</p>
