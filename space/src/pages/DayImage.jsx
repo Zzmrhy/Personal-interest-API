@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getPictureOfTheDay } from "../services/api";
 import { useSearchParams } from "react-router-dom";
 import DateSearch from "../components/DateSearch";
+import DOMPurify from 'dompurify'
 
 function getFormattedDate(date) {
   const yyyy = date.getFullYear();
@@ -12,21 +13,31 @@ function getFormattedDate(date) {
 }
 
 function DayImage() {
+  const [searchParams] = useSearchParams();
   const [params] = useSearchParams();
   let chosen = params.get("date")
     ? params.get("date")
     : getFormattedDate(new Date());
-  const [pic, setPic] = useState(null);
-  const [video, setVideo] = useState(null);
-  const [available, setAvailable] = useState(true);
-  const [desc, setDesc] = useState("");
-  const [copy, setCopy] = useState("");
-  const [title, setTitle] = useState("");
-  const [date, setDate] = useState("");
-  const [media, setMedia] = useState("");
+  let index = searchParams.get("index") ? searchParams.get("index") : 0;
   const [code, setCode] = useState(0);
   const [msg, setMsg] = useState("");
   const [service, setService] = useState("");
+  const [alt, setAlt] = useState("");
+  const [basicAlt, setBasicAlt] = useState("");
+  const [basicHTML, setBasicHTML] = useState("");
+  const [copyright, setCopyright] = useState("");
+  const [credit, setCredit] = useState("");
+  const [date, setDate] = useState("");
+  const [explanation, setExplanation] = useState("");
+  const [hdurl, setHDURL] = useState(null);
+  const [media, setMedia] = useState(null);
+  const [video, setVideo] = useState(null);
+  const [image, setImage] = useState("");
+  // const [permaLink, setPermaLink] = useState(null);
+  const [title, setTitle] = useState("");
+  // const [URL, setURL] = useState(null);
+  const [available, setAvailable] = useState(true);
+  const [data, setData] = useState(null);
   useEffect(() => {
     async function fetchData() {
       // You can await here
@@ -38,8 +49,12 @@ function DayImage() {
       //   setAvailable(false)
       // }
 
-      if (response.code) {
-        setCode(response.code);
+      if (response[index].hdurl) {
+        setHDURL(response[index].hdurl)
+      }
+
+      if (response[index].code) {
+        setCode(response[index].code);
         //assume code means not available - no code with valid resposes
         setAvailable(false);
       } else {
@@ -47,58 +62,75 @@ function DayImage() {
         setAvailable(true);
       }
 
-      if (response.msg) {
-        setMsg(response.msg);
+      if (response[index].msg) {
+        setMsg(response[index].msg);
       } else {
         setMsg();
       }
 
-      if (response.service_version) {
-        setService(response.service_version);
+      if (response[index].service_version) {
+        setService(response[index].service_version);
       } else {
         setService();
       }
 
-      if (response.copyright) {
-        setCopy(response.copyright);
+      if (response[index].copyright) {
+        setCopyright(response[index].copyright);
       } else {
-        setCopy("N/A");
+        setCopyright("N/A");
       }
 
-      if (response.title) {
-        setTitle(response.title);
+      if (response[index].title) {
+        setTitle(response[index].title);
       } else {
         setTitle("N/A");
       }
 
-      if (response.date) {
-        setDate(response.date);
+      if (response[index].date) {
+        setDate(response[index].date);
       } else {
         setDate("N/A");
       }
 
-      if (response.url) {
-        setPic(response.url);
-        setVideo(response.url);
+      if (response[index].hdurl) {
+        setImage(response[index].hdurl);
+        setVideo(response[index].hdurl);
       } else {
-        setPic(null);
+        setImage(null);
         setVideo(null);
       }
 
-      if (response.explanation) {
-        setDesc(response.explanation);
+      if (response[index].explanation) {
+        setExplanation(response[index].explanation);
       } else {
-        setDesc("N/A");
+        setExplanation("N/A");
       }
 
-      if (response.media_type) {
-        setMedia(response.media_type);
+      if (response[index].media_type) {
+        setMedia(response[index].media_type);
       } else {
         setMedia("N/A");
       }
     }
     fetchData();
   }, []);
+
+  useEffect(() => {
+    fetch("https://science.nasa.gov/wp-json/wp/v2/apod-basic")
+      .then((response) => response.json())
+      .then((data) => {
+        const cleanExplanation = DOMPurify.sanitize(String(data.explanation));
+        const cleanCopyright = DOMPurify.sanitize(String(data.copyright));
+        setData({
+          ...data,
+          explanation: cleanExplanation,
+          copyright: cleanCopyright
+        });
+      })
+      .catch((error) => console.error("Data synchronization error: ", error));
+  }, [])
+
+  if (!data) return <span>Synchronizing NASA Stream...</span>
 
   return (
     <div>
@@ -120,17 +152,17 @@ function DayImage() {
         <div>
           <h1 id="h">Put A Date To Change Information (YYYY-MM-DD format)</h1>
           <div>{DateSearch()}</div>
-          <p id="t">Chosen Date: {chosen}</p>
+          <p id="t">Chosen Date: {date}</p>
           <h1>
             ----------------------------------------------------------------------------
           </h1>
           <h1 id="h">Today's Picture Of the Day: </h1>
           <p id="t">{title}</p>
-          <p id="t">Copyright: {copy}</p>
+          <p id="t" dangerouslySetInnerHTML={{__html: copyright}} />
           <p id="t">Today's Date: {chosen}</p>
           <p id="t">Media Type: {media}</p>
           {media == "image" ? (
-            <img src={pic} alt="Some Picture" />
+            <img src={image} alt="Some Picture" width={1000}/>
           ) : media == "video" && video.indexOf("youtube") > 0 ? (
             <iframe
               width="560"
@@ -157,12 +189,12 @@ function DayImage() {
           ) : (
             <p id="fail">
               No content loaded. Check it out{" "}
-              <a href={video} target="_blank">
+              <a href={hdurl} target="_blank">
                 here
               </a>
             </p>
           )}
-          <p id="t">Explanation: {desc}</p>
+          <p id="t" dangerouslySetInnerHTML={{__html: explanation}} />
         </div>
       )}
     </div>
